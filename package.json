@@ -40,6 +40,7 @@
     "webpack": "^2.4.1"
   },
   "dependencies": {
+    "@atomic-package/core": "^0.4.1",
     "@atomic-package/css": "0.0.2"
   }
 }
