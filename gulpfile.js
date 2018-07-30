@@ -194,7 +194,7 @@ gulp.task('server', ['connect'], function() {
 
 gulp.task('connect', function() {
     connect.server({
-        root: [__dirname + '/docs/public/'],
+        root: [__dirname + '/public/'],
         port: 8088,
         livereload: true
     });
