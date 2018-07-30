@@ -2,7 +2,7 @@
   "name": "@atomic-package/docs",
   "version": "0.0.1",
   "description": "atomic-package - docs",
-  "main": "dist/atomic-package.js",
+  "main": "index.js",
   "scripts": {
     "boot": "concurrent \"npm run boot:hugo\" \"npm run boot:gulp\"",
     "boot:hugo": "./boot.sh",

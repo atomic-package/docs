@@ -12,7 +12,6 @@ var gulp = require("gulp"),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     typescript = require('gulp-tsc'),
-    sketch = require('gulp-sketch'),
     server = require('gulp-express'),
     plumber = require('gulp-plumber'),
     del = require('del'),
@@ -21,7 +20,7 @@ var gulp = require("gulp"),
 
 var SOURCE_DIR = './assets',
     DOCS_DIR = '.',
-    RELEASE_DIR = 'docs/dist',
+    RELEASE_DIR = 'dist',
     DIST_DIR = 'dist';
 
 var tsFiles = [ SOURCE_DIR + '/ts/**/*.ts', '!node_modules/**' ];
@@ -154,16 +153,6 @@ gulp.task('font.copy.dist', function() {
         .pipe(gulp.dest( DIST_DIR + '/font/' ));
 });
 
-// Sketch
-gulp.task('sketch.build', function(){
-    return gulp.src('./design/sketch/*.sketch')
-        .pipe(sketch({
-            export: 'artboards',
-            formats: 'png'
-        }))
-        .pipe(gulp.dest('./design/.export'));
-});
-
 // ファイル更新監視
 gulp.task('watch', function() {
     // SCSS
@@ -188,7 +177,7 @@ gulp.task('docs.boot', function() {
 });
 
 gulp.task('docs.build', function() {
-    return exec('cd docs && hugo');
+    return exec('hugo');
 });
 
 /**
@@ -248,13 +237,6 @@ gulp.task('build.font', function(callback) {
     );
 });
 
-gulp.task('build.sketch', function(callback) {
-    return runSequence(
-        'sketch.build',
-        callback
-    );
-});
-
 /**
  * Output Task
  **/
@@ -262,7 +244,7 @@ gulp.task('dist', function(callback) {
     return runSequence(
         'clean.release',
         'clean.dist',
-        ['css.dist', 'js.dist', 'font.dist', 'docs.build', 'build.sketch'],
+        ['css.dist', 'js.dist', 'font.dist', 'docs.build'],
         callback
     );
 });
