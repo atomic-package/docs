@@ -53,52 +53,6 @@ date = "2016-11-14"
 </div>
 
 
-```html
-<table class="table">
-  <caption>Atomic Parts Size</caption>
-  <thead>
-      <tr>
-        <th>Width x Height</th>
-        <th>Width</th>
-        <th>Height</th>
-      </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>mini</td>
-      <td>narrow</td>
-      <td>lower</td>
-    </tr>
-    <tr>
-      <td>small</td>
-      <td>short</td>
-      <td>low</td>
-    </tr>
-    <tr>
-      <td>medium or default</td>
-      <td>medium or default</td>
-      <td>medium or default</td>
-    </tr>
-    <tr>
-      <td>large</td>
-      <td>long</td>
-      <td>high</td>
-    </tr>
-    <tr>
-      <td>big</td>
-      <td>wide</td>
-      <td>lofty</td>
-    </tr>
-    <tr>
-      <td>free</td>
-      <td>free</td>
-      <td>free</td>
-    </tr>
-  </tbody>
-</table>
-```
-
-
 ### Parts Color CSS Class
 <div>
 <table class="table">
@@ -208,6 +162,13 @@ date = "2016-11-14"
 <hr class="large dashed">
 
 
+```html
+<hr class="large">
+<hr class="large dotted">
+<hr class="large double">
+<hr class="large dashed">
+```
+
 **big**
 <hr class="big">
 <br>
@@ -216,6 +177,13 @@ date = "2016-11-14"
 <hr class="big double">
 <br>
 <hr class="big dashed">
+
+```html
+<hr class="big">
+<hr class="big dotted">
+<hr class="big double">
+<hr class="big dashed">
+```
 
 <br><br>
 
@@ -229,6 +197,12 @@ date = "2016-11-14"
 <br>
 <hr class="dashed">
 
+```html
+<hr class="double">
+<hr class="dotted">
+<hr class="dashed">
+```
+
 <br><br>
 
 <hr class="primary">
@@ -238,6 +212,14 @@ date = "2016-11-14"
 <hr class="primary dotted">
 <br>
 <hr class="primary dashed">
+
+
+```html
+<hr class="primary">
+<hr class="primary double">
+<hr class="primary dotted">
+<hr class="primary dashed">
+```
 
 <br>
 
@@ -249,6 +231,14 @@ date = "2016-11-14"
 <br>
 <hr class="green dashed">
 
+
+```html
+<hr class="green">
+<hr class="green double">
+<hr class="green dotted">
+<hr class="green dashed">
+```
+
 <hr class="blue">
 <br>
 <hr class="blue double">
@@ -256,6 +246,13 @@ date = "2016-11-14"
 <hr class="blue dotted">
 <br>
 <hr class="blue dashed">
+
+```html
+<hr class="blue">
+<hr class="blue double">
+<hr class="blue dotted">
+<hr class="blue dashed">
+```
 
 <br><br>
 
@@ -267,6 +264,13 @@ date = "2016-11-14"
 <br>
 <hr class="orange dashed">
 
+```html
+<hr class="orange">
+<hr class="orange double">
+<hr class="orange dotted">
+<hr class="orange dashed">
+```
+
 <br><br>
 
 <hr class="red">
@@ -277,6 +281,12 @@ date = "2016-11-14"
 <br>
 <hr class="red dashed">
 
+```html
+<hr class="red">
+<hr class="red double">
+<hr class="red dotted">
+<hr class="red dashed">
+```
 
 #### Other Elements
 
@@ -294,15 +304,39 @@ Atomic-Packageでは、 hr以外の要素でも罫線を表現することが可
 
 <p class="text">テキストテキストテキストテキストテキストテキストテキスト</p>
 
+```html
+<p class="text">テキストテキストテキストテキストテキストテキストテキスト</p>
+```
+
 <p class="text strong">Strong is used to indicate strong importance</p>
+
+```html
+<p class="text strong">Strong is used to indicate strong importance</p>
+```
 
 <p class="text strong">Strong is used to <strong>indicate strong importance</strong></p>
 
+```html
+<p class="text strong">Strong is used to <strong>indicate strong importance</strong></p>
+```
+
 <p class="text">The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
+
+```html
+<p class="text">The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
+```
 
 <p class="text link"></p>
 
+```html
+<p class="text link"></p>
+```
+
 <p class="text">The <i>i element</i> is text that is set off from the normal text</p>
+
+```html
+<p class="text">The <i>i element</i> is text that is set off from the normal text</p>
+```
 
 The u element is text with an unarticulated, though explicitly rendered, non-textual annotation
 
