@@ -88,6 +88,15 @@ gulp.task('css.copy.dist', function() {
         .pipe(gulp.dest( DIST_DIR + '/css/' ));
 });
 
+gulp.task('css.copy.public', function() {
+    return gulp.src([
+        RELEASE_DIR + '/css/atomic-package/*.css',
+        RELEASE_DIR + '/css/atomic-package-theme/*.css'
+    ])
+        .pipe(gulp.dest( DIST_DIR + '/css/' ));
+});
+
+
 gulp.task('css.min', function () {
     return gulp.src([
         RELEASE_DIR + '/css/**/*.css',
@@ -253,6 +262,7 @@ gulp.task('css.dist', function(callback) {
     return runSequence(
         'build.css',
         'css.copy.dist',
+        'css.copy.public',
         callback
     );
 });

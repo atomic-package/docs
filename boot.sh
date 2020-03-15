@@ -1,3 +1,3 @@
 #!/bin/sh
 cd `dirname $0`
-hugo server -w
+hugo server -w --ignoreCache ./*
