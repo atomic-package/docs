@@ -7,14 +7,14 @@
 <meta content="width=device-width,initial-scale=1" name="viewport">
 <meta content="Daisuke Takayama, Tatsuki Takamatsu, and Atomic-Package contributors" name="author">
 
-  <base href="http://atomic-package.com/">
+  <base href="http://localhost:1313/">
   <title>Breadcrumb Component - Atomic Package</title>
-  <link rel="canonical" href="http://atomic-package.com/core/breadcrumb.html">
+  <link rel="canonical" href="http://localhost:1313/core/breadcrumb.html">
 
-  <link rel="shortcut icon" href="http://atomic-package.com/img/favicon.ico" type="image/x-icon">
-<link href="http://atomic-package.com/css/atomic-package.min.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="http://atomic-package.com/css/atomic-package-docs.min.css" rel="stylesheet" type="text/css" media="screen" />
-<script src="http://atomic-package.com/js/atomic-package.js"></script>
+  <link rel="shortcut icon" href="http://localhost:1313/img/favicon.ico" type="image/x-icon">
+<link href="http://localhost:1313/css/atomic-package.min.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="http://localhost:1313/css/atomic-package-docs.min.css?dfewfew" rel="stylesheet" type="text/css" media="screen" />
+<script src="http://localhost:1313/js/atomic-package.js"></script>
 
 
 </head>
@@ -63,540 +63,284 @@
     <ul class="navList">
       
       <li class="title">BASE</li>
-      <li><a href="/core/base/">Base</a></li>
-      <li><a href="/core/utility/">Utility</a></li>
-      <li><a href="/core/text/">Text</a></li>
-      <li><a href="/core/title/">Title</a></li>
-      <li><a href="/core/button/">Button</a></li>
-      <li><a href="/core/list">List</a></li>
-      <li><a href="/core/thumbnail">Thumbnail</a></li>
+      <li><a href="/core/base.html">Base</a></li>
+      <li><a href="/core/utility.html">Utility</a></li>
+      <li><a href="/core/text.html">Text</a></li>
+      <li><a href="/core/title.html">Title</a></li>
+      <li><a href="/core/button.html">Button</a></li>
+      <li><a href="/core/list.html">List</a></li>
+      <li><a href="/core/thumbnail.html">Thumbnail</a></li>
       <li class="title">NAVIGATIONS</li>
-      <li><a href="/core/nav">Nav</a></li>
-      <li><a href="/core/navbar">Navbar</a></li>
-      <li><a href="/core/subnav">Subnav</a></li>
-      <li><a href="/core/breadcrumb">Breadcrumb</a></li>
-      <li><a href="/core/pagination">Pagination</a></li>
-      <li><a href="/core/tab">Tab</a></li>
-      <li><a href="/core/thumbnav">ThumbNav</a></li>
+      <li><a href="/core/nav.html">Nav</a></li>
+      <li><a href="/core/navbar.html">Navbar</a></li>
+      <li><a href="/core/subnav.html">Subnav</a></li>
+      <li><a href="/core/breadcrumb.html">Breadcrumb</a></li>
+      <li><a href="/core/pagination.html">Pagination</a></li>
+      <li><a href="/core/tab.html">Tab</a></li>
+      <li><a href="/core/thumbnav.html">ThumbNav</a></li>
       <li class="title">BOX</li>
-      <li><a href="/core/box">Box</a></li>
-      <li><a href="/core/table">Table</a></li>
-      <li><a href="/core/column">Column</a></li>
-      <li><a href="/core/badge">Badge</a></li>
-      <li><a href="/core/alert">Alert</a></li>
-      <li><a href="/core/form">Form</a></li>
-      <li><a href="/core/icon">Icon</a></li>
-      <li><a href="/core/modalwindow">ModalWindow</a></li>
-      <li><a href="/core/progressbars">ProgressBars</a></li>
-      <li><a href="/core/overlay">Overlay</a></li>
-      <li><a href="/core/animation">Animation</a></li>
-      <li><a href="/core/header">Header</a></li>
-      <li><a href="/core/footer">Footer</a></li>
+      <li><a href="/core/box.html">Box</a></li>
+      <li><a href="/core/table.html">Table</a></li>
+      <li><a href="/core/column.html">Column</a></li>
+      <li><a href="/core/badge.html">Badge</a></li>
+      <li><a href="/core/alert.html">Alert</a></li>
+      <li><a href="/core/form.html">Form</a></li>
+      <li><a href="/core/icon.html">Icon</a></li>
+      <li><a href="/core/modalwindow.html">ModalWindow</a></li>
+      <li><a href="/core/progressbars.html">ProgressBars</a></li>
+      <li><a href="/core/overlay.html">Overlay</a></li>
+      <li><a href="/core/animation.html">Animation</a></li>
+      <li><a href="/core/header.html">Header</a></li>
+      <li><a href="/core/footer.html">Footer</a></li>
       
     </ul>
   </div>
 
   <article class="contents docs">
-    
-
-<h2 id="breadcrumb-components">Breadcrumb Components</h2>
-
+    <h2 id="breadcrumb-components">Breadcrumb Components</h2>
 <p>Atomic-Packageで用意されている、ベースとなるパンくずリストStyleの一覧です。</p>
-
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-<pre><code class="language-html">&lt;nav class=&quot;breadcrumb&quot;&gt;
-  &lt;ul class=&quot;breadcrumbList&quot;&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Blog&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;disable&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Category&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;active&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Post&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-</code></pre>
-
-<h3 id="breadcrumb-color-variation">Breadcrumb Color Variation</h3>
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumb&#34;</span>&gt;
+  &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumbList&#34;</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Blog&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;disable&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Category&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Post&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">nav</span>&gt;
+</code></pre></div><h3 id="breadcrumb-color-variation">Breadcrumb Color Variation</h3>
 <p>default</p>
-
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-<pre><code class="language-html">&lt;nav class=&quot;breadcrumb&quot;&gt;
-  &lt;ul class=&quot;breadcrumbList&quot;&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Blog&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;disable&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Category&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;active&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Post&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-</code></pre>
-
-<p>primary</p>
-
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-<pre><code class="language-html">&lt;nav class=&quot;breadcrumb&quot;&gt;
-  &lt;ul class=&quot;breadcrumbList&quot;&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Blog&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;disable&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Category&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;active&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Post&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-</code></pre>
-
-<p>green</p>
-
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-<pre><code class="language-html">&lt;nav class=&quot;breadcrumb&quot;&gt;
-  &lt;ul class=&quot;breadcrumbList&quot;&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Blog&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;disable&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Category&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;active&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Post&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-</code></pre>
-
-<p>blue</p>
-
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-<pre><code class="language-html">&lt;nav class=&quot;breadcrumb&quot;&gt;
-  &lt;ul class=&quot;breadcrumbList&quot;&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Blog&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;disable&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Category&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;active&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Post&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-</code></pre>
-
-<p>orange</p>
-
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-<pre><code class="language-html">&lt;nav class=&quot;breadcrumb&quot;&gt;
-  &lt;ul class=&quot;breadcrumbList&quot;&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Blog&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;disable&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Category&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;active&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Post&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-</code></pre>
-
-<p>red</p>
-
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-<pre><code class="language-html">&lt;nav class=&quot;breadcrumb&quot;&gt;
-  &lt;ul class=&quot;breadcrumbList&quot;&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Blog&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;disable&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Category&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;active&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Post&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-</code></pre>
-
-<h3 id="breadcrumb-size-variation">Breadcrumb Size Variation</h3>
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumb&#34;</span>&gt;
+  &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumbList&#34;</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Blog&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;disable&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Category&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Post&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">nav</span>&gt;
+</code></pre></div><p>primary</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumb&#34;</span>&gt;
+  &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumbList&#34;</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Blog&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;disable&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Category&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Post&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">nav</span>&gt;
+</code></pre></div><p>green</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumb&#34;</span>&gt;
+  &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumbList&#34;</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Blog&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;disable&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Category&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Post&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">nav</span>&gt;
+</code></pre></div><p>blue</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumb&#34;</span>&gt;
+  &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumbList&#34;</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Blog&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;disable&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Category&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Post&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">nav</span>&gt;
+</code></pre></div><p>orange</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumb&#34;</span>&gt;
+  &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumbList&#34;</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Blog&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;disable&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Category&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Post&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">nav</span>&gt;
+</code></pre></div><p>red</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumb&#34;</span>&gt;
+  &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumbList&#34;</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Blog&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;disable&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Category&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Post&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">nav</span>&gt;
+</code></pre></div><h3 id="breadcrumb-size-variation">Breadcrumb Size Variation</h3>
 <p>Mini</p>
-
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList mini">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-<pre><code class="language-html">&lt;nav class=&quot;breadcrumb&quot;&gt;
-  &lt;ul class=&quot;breadcrumbList mini&quot;&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Blog&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;disable&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Category&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;active&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Post&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-</code></pre>
-
-<p>Small</p>
-
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList small">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-<pre><code class="language-html">&lt;nav class=&quot;breadcrumb&quot;&gt;
-  &lt;ul class=&quot;breadcrumbList small&quot;&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Blog&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;disable&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Category&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;active&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Post&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-</code></pre>
-
-<p>Default</p>
-
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-<pre><code class="language-html">&lt;nav class=&quot;breadcrumb&quot;&gt;
-  &lt;ul class=&quot;breadcrumbList&quot;&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Blog&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;disable&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Category&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;active&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Post&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-</code></pre>
-
-<p>Large</p>
-
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList large">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-<pre><code class="language-html">&lt;nav class=&quot;breadcrumb&quot;&gt;
-  &lt;ul class=&quot;breadcrumbList large&quot;&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Blog&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;disable&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Category&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;active&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Post&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-</code></pre>
-
-<p>Big</p>
-
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList big">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-<pre><code class="language-html">&lt;nav class=&quot;breadcrumb&quot;&gt;
-  &lt;ul class=&quot;breadcrumbList big&quot;&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;&quot;&gt;Blog&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;disable&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Category&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;active&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Post&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-</code></pre>
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumb&#34;</span>&gt;
+  &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumbList mini&#34;</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Blog&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;disable&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Category&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Post&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">nav</span>&gt;
+</code></pre></div><p>Small</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumb&#34;</span>&gt;
+  &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumbList small&#34;</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Blog&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;disable&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Category&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Post&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">nav</span>&gt;
+</code></pre></div><p>Default</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumb&#34;</span>&gt;
+  &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumbList&#34;</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Blog&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;disable&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Category&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Post&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">nav</span>&gt;
+</code></pre></div><p>Large</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumb&#34;</span>&gt;
+  &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumbList large&#34;</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Blog&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;disable&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Category&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Post&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">nav</span>&gt;
+</code></pre></div><p>Big</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumb&#34;</span>&gt;
+  &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumbList big&#34;</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;Blog&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;disable&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Category&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Post&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">nav</span>&gt;
+</code></pre></div>
 
     <div class="author"></div>
     <p class="times docs"><time pubdate="2016-11-14">2016-11-14</time></p>
@@ -609,7 +353,7 @@
         <p class="text copy">&copy; Atomic Package</p>
     </div>
 </footer>
-</body>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10&v=2"></' + 'script>')</script></body>
 </html>
 
 

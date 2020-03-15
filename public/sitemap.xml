@@ -1,192 +1,198 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://atomic-package.com/core/animations.html</loc>
+    <loc>http://localhost:1313/core/animations.html</loc>
     <lastmod>2018-07-12T11:12:45+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://atomic-package.com/core/footer.html</loc>
-    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/header.html</loc>
-    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/overlay.html</loc>
-    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/progressbars.html</loc>
-    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/thumbnav.html</loc>
-    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/alert.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/all_parts/</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/badge.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/base.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/box.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/breadcrumb.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/button.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/form.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/icon.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/list.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/modalwindow.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/nav.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/navbar.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/pagination.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/subnav.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/tab.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/table.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/text.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/thumbnail.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/title.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/utility.html</loc>
-    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/post/profile.html</loc>
-    <lastmod>2015-07-24T11:12:45+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/core/column.html</loc>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/get_started/</loc>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/javascript/</loc>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/theme/</loc>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/tutorials/</loc>
-  </url>
-  
-  <url>
-    <loc>http://atomic-package.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2018-07-12T11:12:45+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://atomic-package.com/categories.html</loc>
-    <priority>0</priority>
+    <loc>http://localhost:1313/core/footer.html</loc>
+    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://atomic-package.com/post.html</loc>
+    <loc>http://localhost:1313/core/header.html</loc>
+    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/overlay.html</loc>
+    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/progressbars.html</loc>
+    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/thumbnav.html</loc>
+    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/alert.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/all_parts.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/badge.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/base.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/box.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/breadcrumb.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/button.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/form.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/icon.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/list.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/modalwindow.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/nav.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/navbar.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/pagination.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/subnav.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/tab.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/table.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/text.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/thumbnail.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/title.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/utility.html</loc>
+    <lastmod>2016-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post.html</loc>
     <lastmod>2015-07-24T11:12:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/profile.html</loc>
+    <lastmod>2015-07-24T11:12:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/core/column.html</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://atomic-package.com/tags.html</loc>
+    <loc>http://localhost:1313/get_started.html</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/javascript.html</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/theme.html</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tutorials.html</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags.html</loc>
   </url>
   
 </urlset>
