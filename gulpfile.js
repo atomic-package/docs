@@ -21,7 +21,8 @@ var gulp = require("gulp"),
 var SOURCE_DIR = './assets',
     DOCS_DIR = '.',
     RELEASE_DIR = 'dist',
-    DIST_DIR = 'dist';
+    DIST_DIR = 'dist',
+    PUBLIC_DIR = 'public';
 
 var tsFiles = [ SOURCE_DIR + '/ts/**/*.ts', '!node_modules/**' ];
 var scssFiles = [ SOURCE_DIR + '/scss/**/*.scss' ];
@@ -50,6 +51,14 @@ gulp.task('clean.release', function() {
 gulp.task('clean.dist', function() {
     return del([DIST_DIR + '/*'], {force: true});
 });
+
+gulp.task('clean.public.doccss', function() {
+    return del([
+        PUBLIC_DIR + '/css/atomic-package-docs.css',
+        PUBLIC_DIR + '/css/atomic-package-docs.min.css'
+    ], {force: true});
+});
+
 
 gulp.task('ts.clean', function(cb) {
     return del([RELEASE_DIR + '/**/*.ts'], {force: true}, cb);
@@ -90,10 +99,9 @@ gulp.task('css.copy.dist', function() {
 
 gulp.task('css.copy.public', function() {
     return gulp.src([
-        RELEASE_DIR + '/css/atomic-package/*.css',
-        RELEASE_DIR + '/css/atomic-package-theme/*.css'
+        RELEASE_DIR + '/css/*.css'
     ])
-        .pipe(gulp.dest( DIST_DIR + '/css/' ));
+        .pipe(gulp.dest( PUBLIC_DIR + '/css/' ));
 });
 
 
@@ -225,7 +233,9 @@ gulp.task('build.css', function(callback) {
     return runSequence(
         'sass',
         'css.min',
+        'clean.public.doccss',
         'css.copy',
+        'css.copy.public',
         callback
     );
 });
@@ -253,6 +263,7 @@ gulp.task('dist', function(callback) {
     return runSequence(
         'clean.release',
         'clean.dist',
+        // 'clean.public.doccss',
         ['css.dist', 'js.dist', 'font.dist', 'docs.build'],
         callback
     );
