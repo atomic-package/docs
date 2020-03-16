@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap&subset=japanese");
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 /*
  * Mixin Style
@@ -26,12 +27,18 @@
 .header.docs {
   height: 60px;
   background: none;
+  padding: 35px 0 0 0;
 }
 
 .header.docs .wrap {
+  display: flex;
+  justify-content: space-between;
   width: 1100px;
-  height: 100%;
   margin: 0 auto;
+}
+
+.header.docs .wrap h1 {
+  padding-top: 16px;
 }
 
 /* Paragraph style
@@ -117,23 +124,26 @@
 /* List Style
 -------------------------------------------------- */
 .docsHeaderMenuList {
-  float: right;
-  padding: 20px;
-}
-
-.docsHeaderMenuList::after {
-  content: "";
-  display: block;
-  clear: both;
+  display: flex;
+  padding: 13px 0 0 0;
 }
 
 .docsHeaderMenuList li {
-  float: left;
   padding: 0 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .docsHeaderMenuList li a {
   color: #fff;
+  text-decoration: none;
+}
+
+.docsHeaderMenuList li:hover a,
+.docsHeaderMenuList li.active a {
+  color: #00ffac;
+  text-decoration: underline;
 }
 
 .docsIconList {
@@ -152,12 +162,50 @@
 }
 
 #top .topView .mainView {
+  height: 660px;
   background-image: linear-gradient(91deg, #321143 1%, #521881 65%, #321143 100%);
   color: #fff;
 }
 
-#top .topView .mainView .picture {
-  padding: 60px 0 40px;
+#top .topView .mainView .text.docsTop.description {
+  margin-top: 35px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: 1.6px;
+  color: #fff;
+}
+
+#top .topView .box.docsTopMainBox {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 100px auto 0;
+}
+
+#top .topView .box.docsTopMainBox .btn {
+  margin-top: 30px;
+}
+
+#top .topView .box.docsTopMainBox .btn,
+#top .topView .box.docsTopMainBox .btn a {
+  width: 156px;
+  height: 43px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 4px 6px 0 rgba(50, 50, 93, 0.11);
+  background-color: #00ffac;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 43px;
+  letter-spacing: 0.4px;
+  font-family: LucidaGrande;
+  color: #33155c;
 }
 
 #top .topView .featuresView > .wrap {
