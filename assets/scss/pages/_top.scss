@@ -1,16 +1,23 @@
 #top {
   .topView {
     margin-bottom: 120px;
+    .wrap {
+      position: relative;
+      z-index: 100;
+    }
     .mainView {
-      height: 660px;
+      position: relative;
+      height: 600px;
+      min-width: 1100px;
       background-image: linear-gradient(91deg, #321143 1%, #521881 65%, #321143 100%);
       color: #fff;
       .picture {
         // padding: 60px 0 40px;
+        margin: 7px 93px 0 0;
       }
 
       .text.docsTop.description {
-        margin-top: 35px;
+        margin-top: 57px;
         font-family: 'Noto Sans JP', sans-serif;
         font-size: 36px;
         font-weight: 500;
@@ -27,7 +34,7 @@
       width: 1100px;
       margin: 100px auto 0;
       .btn {
-        margin-top: 30px;
+        margin-top: 35px;
       }
       .btn,
       .btn a {

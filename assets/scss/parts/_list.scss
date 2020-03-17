@@ -1,7 +1,6 @@
 .docsHeaderMenuList {
   display: flex;
-  padding: 13px 0 0 0;
-
+  padding: 7px 0 0 0;
   li {
     padding: 0 10px;
     font-family: 'Noto Sans JP', sans-serif;
@@ -26,5 +25,71 @@
     width: 200px;
     margin-right: 15px;
     margin-bottom: 15px;
+  }
+}
+
+.pic.circleList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 1100px;
+  z-index: 1;
+  overflow: hidden;
+  & > li {
+    position: absolute;
+    display: block;
+    opacity: 0.1;
+    border-radius: 100%;
+    background-color: #fff;
+    &:nth-child(1) {
+      top: 76.83%;
+      left: 18.45%;
+      width: 200px;
+      height: 200px;
+    }
+    &:nth-child(2) {
+      top: 70.666%;
+      left: 6.545%;
+      width: 120px;
+      height: 120px;
+    }
+    &:nth-child(3) {
+      top: 34.3333%;
+      left: 0;
+      width: 120px;
+      height: 120px;
+    }
+    &:nth-child(4) {
+      top: 32.283333%;
+      left: 50.072%;
+      width: 78px;
+      height: 78px;
+    }
+    &:nth-child(5) {
+      top: 44.3333%;
+      right: 0.2%;
+      width: 78px;
+      height: 78px;
+    }
+    &:nth-child(6) {
+      top: 81.5%;
+      right: 11%;
+      width: 120px;
+      height: 120px;
+    }
+    &:nth-child(7) {
+      top: 79%;
+      right: 11%;
+      width: 76px;
+      height: 76px;
+    }
+    &:nth-child(8) {
+      top: 62.833%;
+      right: 29.5%;
+      width: 120px;
+      height: 120px;
+    }
   }
 }
