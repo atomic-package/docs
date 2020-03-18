@@ -58,12 +58,38 @@
       > .wrap {
         width: 1200px;
         margin: 0 auto;
-        padding: 80px 0 70px;
+        padding: 102px 0 70px;
         .title {
-          margin-bottom: 45px;
+          font-size: 32px;
+          color: #2D1B49;
+          &.docsTop {
+            margin-bottom: 15px;
+            font-weight: bold;
+          }
         }
         .text.description {
           margin-bottom: 60px;
+          font-size: 16px;
+          color: #6d7982;
+          line-height: 1.8;
+        }
+        .logo.picture {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 120px;
+        }
+        .title.picture {
+          margin-top: 10px;
+          color: #6d7982;
+          font-size: 20px;
+          font-weight: bold;
+        }
+        .text.picture {
+          margin-top: 25px;
+          color: #6d7982;
+          font-size: 14px;
+          line-height: 1.8;
         }
       }
 
