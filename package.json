@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "run": "symlink-dir ./node_modules/@atomic-package ./assets/atomic-package",
+    "run": "symlink-dir ./node_modules/atomic-package/dist ./assets/atomic-package",
     "compile-sass": "make-dir css && node-sass --include-path scss scss/atomic-package-docs.scss > css/theme.css && yarn autoprefixer",
     "autoprefixer": "postcss --use autoprefixer --no-map css/theme.css -d css/",
     "boot": "concurrent \"npm run boot:hugo\" \"npm run boot:gulp\"",
@@ -13,7 +13,7 @@
     "iOS >= 9"
   ],
   "devDependencies": {
-    "@atomic-package/atomic-package": "0.0.1",
+    "atomic-package": "^0.4.3",
     "autoprefixer": "^9.7.4",
     "babel-plugin-espower": "^2.3.1",
     "babelify": "^7.3.0",
