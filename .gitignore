@@ -14,3 +14,5 @@ Thumbs.db
 bower_components
 node_modules
 .sass-cache
+assets/atomic-package
+css/
