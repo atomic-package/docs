@@ -30,7 +30,7 @@ const router = new VueRouter({
     routes,
     mode: 'history',
     history: true,
-    linkActiveClass: 'uk-active'
+    linkActiveClass: 'active'
 });
 
 Vue.component('navbar', Navbar);
@@ -46,4 +46,4 @@ new Vue({
     })
 });
 
-analytics('UA-42150424-1', { anonymize_ip: true });
+analytics('UA-85279513-1', { anonymize_ip: true });
