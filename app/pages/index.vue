@@ -8,12 +8,10 @@
                             <h1 class="headerLogo"><a href="/"><img :src="'images/logo_header@2x.png'" width="306" alt=""/></a></h1>
                             <ul class="docsHeaderMenuList">
                                 <li>
-                                    <a href="./docs">Documentation
-                                    </a>
+                                    <a href="./docs">Documentation</a>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/atomic-package/atomic-package">GitHub
-                                    </a>
+                                    <a href="https://github.com/atomic-package/atomic-package">GitHub</a>
                                 </li>
                                 <li>
                                     <router-link to="/changelog">Changelog</router-link>
@@ -40,7 +38,7 @@
                         <ul class="list">
                             <li><span>Version<span ap-version></span></span></li>
                             <li>
-                                <a href="https://github.com/uikit/uikit/stargazers"><span class="icon ap-star"></span> <span ap-stargazers>0</span> Stargazers</a>
+                                <a href="https://github.com/atomic-package/atomic-package/stargazers"><span class="icon ap-star"></span> <span ap-stargazers>0</span> Stargazers</a>
                             </li>
                         </ul>
                     </div>

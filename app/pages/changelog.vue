@@ -1,94 +1,67 @@
 <template>
-
-    <div class="uk-section-primary tm-section-texture uk-preserve-color">
-
-        <navbar class="uk-light" uk-sticky="media: 960;show-on-up: true;animation: uk-animation-slide-top;cls-inactive: uk-navbar-transparent;top: 400"/>
-
-        <div class="uk-section" uk-height-viewport="expand: true">
-            <div class="uk-container uk-container-small">
-
-                <div class="uk-card uk-card-default uk-card-body">
-
-                    <h1 class="uk-margin-medium uk-text-center">Changelog</h1>
-
+    <section id="changelog">
+        <navbar />
+        <div class="box changelogMain" style="min-height: calc(100vh - 80px);">
+            <div class="changelogMainWrap">
+                <div class="box changelogContents">
+                    <h1>Changelog</h1>
                     <div ref="changelog"></div>
-
                 </div>
-
             </div>
         </div>
-
-    </div>
-
+    </section>
 </template>
 
 <script>
+/* global marked */
+import { ajax } from 'uikit-util';
 
-    /* global marked */
+export default {
+    mounted() {
+        ajax('assets/atomic-package/CHANGELOG.md?{{BUILD}}').then(({response}) => this.$refs.changelog.innerHTML = this.parse(response));
+    },
 
-    import {ajax} from 'uikit-util';
+    methods: {
+        parse(markdown) {
+            let section;
+            const renderer = new marked.Renderer();
+            renderer.list = text => `<ul class="list changelogList">${text}</ul>`;
 
-    export default {
+            renderer.listitem = function (text) {
+                let label = '';
 
-        mounted() {
+                switch (section) {
+                    case 'Added':
+                        label = 'success';
+                        break;
+                    case 'Removed':
+                    case 'Deprecated':
+                        label = 'warning';
+                        break;
+                    case 'Fixed':
+                    case 'Security':
+                        label = 'danger';
+                }
+                return `<li>
+                            <span class="label ${label}">${section}</span>
+                            <div>${text}</div>
+                        </li>`;
+            };
 
-            ajax('assets/uikit/CHANGELOG.md?{{BUILD}}').then(({response}) => this.$refs.changelog.innerHTML = this.parse(response));
+            renderer.heading = (text, level) => {
+                text = text.replace(/(\(.*?\))/, '<span class="text muted">$1</span>');
 
-        },
-
-        methods: {
-
-            parse(markdown) {
-
-                let section;
-                const renderer = new marked.Renderer();
-
-                renderer.list = text => `<ul class="uk-list">${text}</ul>`;
-
-                renderer.listitem = function (text) {
-
-                    let label = '';
-
-                    switch (section) {
-
-                        case 'Added':
-                            label = 'uk-label-success';
-                            break;
-
-                        case 'Removed':
-                        case 'Deprecated':
-                            label = 'uk-label-warning';
-                            break;
-
-                        case 'Fixed':
-                        case 'Security':
-                            label = 'uk-label-danger';
-                    }
-
-                    return `<li class="uk-flex uk-flex-top">
-                                <span class="uk-label ${label} uk-margin-right uk-text-center uk-width-small tm-label-changelog uk-flex-none">${section}</span>
-                                <div>${text}</div>
-                            </li>`;
-                };
-
-                renderer.heading = (text, level) => {
-
-                    text = text.replace(/(\(.*?\))/, '<span class="uk-text-muted">$1</span>');
-
-                    if (level === 2) {
-                        return '<h' + level + ' class="uk-h3">' + text + '</h' + level + '>';
-                    }
-
-                    if (level === 3) {
-                        section = text;
-                    }
-
-                    return '';
-                };
-
-                return marked(markdown, {renderer});
-            }
+                if (level === 2) {
+                    return '<h' + level + '>' + text + '</h' + level + '>';
+                }
+                if (level === 3) {
+                    section = text;
+                }
+                return '';
+            };
+            return marked(markdown, {renderer});
         }
-    };
+    }
+};
 
 </script>

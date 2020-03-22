@@ -1,21 +1,11 @@
 <template>
-
-    <div class="uk-section-primary tm-section-texture">
-
-        <navbar class="uk-navbar-transparent"/>
-
-        <div class="uk-section uk-section-small uk-text-center" uk-height-viewport>
-            <div class="uk-width-1-1">
-                <div class="uk-container">
-
-                    <h1 class="uk-margin-medium uk-text-center">404</h1>
-
-                    <p class="uk-text-large">Page not found</p>
-
-                </div>
+    <section id="error">
+        <navbar />
+        <div class="box errorMain" style="min-height: calc(100vh - 80px);">
+            <div class="errorMainWrap">
+                <h1 class="text center">404</h1>
+                <p class="text center large">Page not found</p>
             </div>
         </div>
-
-    </div>
-
+    </section>
 </template>

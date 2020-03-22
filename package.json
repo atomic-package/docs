@@ -14,7 +14,7 @@
     "iOS >= 9"
   ],
   "devDependencies": {
-    "atomic-package": "^0.4.4",
+    "atomic-package": "^0.4.5",
     "autoprefixer": "^9.7.4",
     "babel-plugin-espower": "^2.3.1",
     "babelify": "^7.3.0",

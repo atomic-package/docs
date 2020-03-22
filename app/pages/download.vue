@@ -1,6 +1,6 @@
 <template>
     <section id="download">
-        <navbar class="uk-navbar-transparent"/>
+        <navbar />
         <div class="box downloadMain" style="min-height: calc(100vh - 80px);">
             <div class="wrap">
                 <p class="logo"><span class="icon ap-cloud-download"></span></p>
