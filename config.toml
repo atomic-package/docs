@@ -1,9 +1,0 @@
-BaseURL = "http://atomic-package.com/"
-UglyURLs = true
-Title = "Atomic-Package"
-languageCode = "ja"
-date = "2018-07-30"
-
-[Params]
-description = "APB CSS (Atomic Parts Base CSS) + JavaScript framework."
-author = "Daisuke.Takayama"

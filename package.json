@@ -1,11 +1,12 @@
 {
   "scripts": {
-    "run": "symlink-dir ./node_modules/atomic-package/dist ./assets/atomic-package",
-    "compile-sass": "make-dir css && node-sass --include-path scss scss/atomic-package-docs.scss > css/theme.css && yarn autoprefixer",
+    "setup": "symlink-dir ./node_modules/atomic-package ./assets/atomic-package",
+    "compile-sass": "make-dir css && yarn sass",
+    "sass": "node-sass --include-path scss scss/atomic-package-docs.scss > css/theme.css && yarn autoprefixer",
+    "watch:sass": "watch 'npm run sass' scss",
     "autoprefixer": "postcss --use autoprefixer --no-map css/theme.css -d css/",
-    "boot": "concurrent \"npm run boot:hugo\" \"npm run boot:gulp\"",
-    "boot:hugo": "./boot.sh",
-    "boot:gulp": "gulp"
+    "compile-js": "./node_modules/.bin/webpack -p",
+    "dev": "concurrent \"webpack -p -w\" \"yarn watch:sass\" \"python server_notcached.py\""
   },
   "browserslist": [
     "last 2 versions",
@@ -13,7 +14,7 @@
     "iOS >= 9"
   ],
   "devDependencies": {
-    "atomic-package": "^0.4.3",
+    "atomic-package": "^0.4.4",
     "autoprefixer": "^9.7.4",
     "babel-plugin-espower": "^2.3.1",
     "babelify": "^7.3.0",
@@ -30,14 +31,11 @@
     "postcss": "^7.0.27",
     "postcss-cli": "^7.1.0",
     "symlink-dir": "^3.1.0",
-    "ts-loader": "^2.0.3",
-    "tsify": "^2.0.2",
-    "tslint": "^3.2.1",
-    "typescript": "^2.3.1",
-    "typings": "^1.3.2",
+    "uikit": "^3.3.7",
     "uniqid": "^5.0.3",
     "vue-loader": "^15.7.0",
     "vue-template-compiler": "^2.6.10",
+    "watch": "^1.0.2",
     "watchify": "^3.7.0",
     "webpack": "^4.34.0",
     "webpack-cli": "^3.3.4"

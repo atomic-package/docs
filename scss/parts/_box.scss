@@ -51,4 +51,13 @@
       margin: 25px 0;
     }
   }
+  &.docMain {
+    font-family: ProximaNova,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    background: #fff;
+    color: #666;
+  }
 }

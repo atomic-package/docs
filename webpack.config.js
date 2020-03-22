@@ -1,9 +1,7 @@
-const {VueLoaderPlugin} = require('vue-loader');
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
-
     mode: 'production',
-
     externals: {
         'vue': 'Vue',
         'vue-router': 'VueRouter',
@@ -11,17 +9,14 @@ module.exports = {
         'uikit-util': 'UIkit.util',
         'he': 'he'
     },
-
     entry: {
         'app/main': './app/main',
         'docs/app/main': './docs/app/main'
     },
-
     output: {
         path: __dirname,
         filename: './[name].min.js'
     },
-
     module: {
         rules: [
             {
@@ -35,9 +30,7 @@ module.exports = {
             }
         ]
     },
-
     plugins: [
         new VueLoaderPlugin()
     ]
-
 };
