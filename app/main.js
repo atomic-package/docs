@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './app.vue';
 import Navbar from './navbar.vue';
+import Footer from './footer.vue';
 import analytics from './analytics';
 import navigation from '../docs/app/navigation.json';
 
@@ -34,6 +35,7 @@ const router = new VueRouter({
 });
 
 Vue.component('navbar', Navbar);
+Vue.component('doc-footer', Footer);
 
 new Vue({
     router,
