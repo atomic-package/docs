@@ -94,7 +94,7 @@
             <div class="top">
                 <div class="wrap">
                     <div class="box left">
-                        <p class="logo footerLogo"><img src="img/top/logo_footer_main@2x.png" width="154" alt=""></p>
+                        <p class="logo footerLogo"><img :src="'images/top/logo_footer_main@2x.png'" width="154" alt=""></p>
                         <p class="text creator">This package is created by</p>
                         <ul class="list creatorList">
                             <li><a href="https://twitter.com/panicdragon" target="_blank">@panicdragon.</a> Engineer</li>

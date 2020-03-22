@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "setup": "symlink-dir ./node_modules/atomic-package ./assets/atomic-package",
+    "setup": "symlink-dir ./node_modules/atomic-package ./assets/atomic-package && yarn font:link",
+    "font:link": "symlink-dir ./assets/atomic-package/dist/font ./font",
     "compile-sass": "make-dir css && yarn sass",
     "sass": "node-sass --include-path scss scss/atomic-package-docs.scss > css/theme.css && yarn autoprefixer",
     "watch:sass": "watch 'npm run sass' scss",
