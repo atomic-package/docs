@@ -4,15 +4,17 @@
 
 
 ## Documentation
-Atomic Package's documentation, included in this repo in the root directory, is built with Hugo.
+
+Atomic Package's documentation, included in this repo in the root directory, is built with Vue.js.
+
+
+## Development
 
 Running documentation locally
-If necessary, install Hugo and other Go.
 
 ``` 
-npm run boot
+$ npm run dev
 ```
 
-Open http://localhost:1313 in your browser.
-
+Open http://localhost:8000 in your browser.
 

@@ -1,0 +1,275 @@
+#top {
+  .topView {
+    margin-bottom: 120px;
+    .mainView {
+      position: relative;
+      height: 600px;
+      min-width: 1100px;
+      background-image: linear-gradient(91deg, #321143 1%, #521881 65%, #321143 100%);
+      color: #fff;
+      & > .wrap {
+        position: relative;
+        height: 600px;
+        z-index: 100;
+        .header.docs {
+          height: 60px;
+          background: none;
+          padding: 35px 0 0 0;
+          .wrap {
+            display: flex;
+            justify-content: space-between;
+            width: 1100px;
+            margin: 0 auto;
+            h1 {
+              padding-top: 16px;
+            }
+          }
+        }
+        .box.statusBox {
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          .list {
+            display: flex;
+            width: 1100px;
+            margin: 0 auto;
+            padding: 20px 0;
+            & > li {
+              margin-right: 20px;
+              a {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .picture {
+        // padding: 60px 0 40px;
+        margin: 7px 93px 0 0;
+      }
+
+      .text.docsTop.description {
+        margin-top: 57px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.39;
+        letter-spacing: 1.6px;
+        color: #fff;
+      }
+    }
+    .box.docsTopMainBox {
+      display: flex;
+      justify-content: space-between;
+      width: 1100px;
+      margin: 100px auto 0;
+      .btn {
+        margin-top: 35px;
+      }
+      .btn,
+      .btn a {
+        width: 156px;
+        height: 43px;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 4px 6px 0 rgba(50, 50, 93, 0.11);
+        background-color: #00ffac;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 43px;
+        letter-spacing: 0.4px;
+        font-family: LucidaGrande;
+        color: #33155c;
+      }
+    }
+    .featuresView {
+      > .wrap {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 102px 0 70px;
+        .title {
+          font-size: 32px;
+          color: #2D1B49;
+          &.docsTop {
+            margin-bottom: 15px;
+            font-weight: bold;
+          }
+        }
+        .text.description {
+          margin-bottom: 60px;
+          font-size: 16px;
+          color: #453b4f;
+          line-height: 1.8;
+        }
+        .logo.picture {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 120px;
+        }
+        .title.picture {
+          margin-top: 10px;
+          color: #6d7982;
+          font-size: 20px;
+          font-weight: bold;
+        }
+        .text.picture {
+          margin-top: 25px;
+          color: #6d7982;
+          font-size: 14px;
+          line-height: 1.8;
+        }
+      }
+      &.blue {
+        background: #3DC0F1;
+        color: #fff;
+        .text {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+section#download {
+  background-image: linear-gradient(91deg, #321143 1%, #521881 65%, #321143 100%);
+  color: #fff;
+  .box.downloadMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    margin-bottom: 30px;
+    text-align: center;
+    .icon {
+      font-size: 142px;
+    }
+  }
+  h1 {
+    font-size: 38px;
+    color: #fff;
+    line-height: 1.2;
+  }
+  .text.downloadMessage {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #fff;
+  }
+  .list.btnList {
+    & > li {
+      width: 280px;
+      height: 56px;
+      min-height: 56px;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 56px;
+        min-height: 56px;
+        padding: 0 40px;
+        border-radius: 26px;
+        background-color: #00ffac;
+        line-height: 53px;
+        font-size: 14px;
+        color: #33155c;
+        .icon {
+          margin-right: 10px;
+          font-size: 20px;
+        }
+        .text {
+          font-size: 14px;
+          color: #33155c;
+        }
+      }
+    }
+  }
+}
+
+#error {
+  background-image: linear-gradient(91deg, #321143 1%, #521881 65%, #321143 100%);
+  color: #fff;
+  .box.errorMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .errorMainWrap {
+      h1, .text {
+        font-size: 32px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+#changelog {
+  background-image: linear-gradient(91deg, #321143 1%, #521881 65%, #321143 100%);
+  color: #fff;
+  .box.changelogMain {
+    display: flex;
+    justify-content: center;
+    .changelogMainWrap {
+      width: 100%;
+      padding: 60px 80px;
+      .changelogContents {
+        padding: 30px 40px;
+        background: #fff;
+        color: #666;
+        h1 {
+          margin-bottom: 40px;
+          font-size: 38px;
+          text-align: center;
+        }
+        h2 {
+          font-size: 24px;
+          line-height: 1.4;
+          margin: 0 0 10px 0;
+          font-family: ProximaNova,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+          font-weight: 300;
+          color: #222;
+          text-transform: none;
+          .uk-text-muted {
+            color: #999 !important;
+          }
+        }
+        .list.changelogList {
+          & > li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            & > .label {
+              display: inline-block;
+              width: 90px;
+              margin-top: 3px;
+              margin-right: 20px;
+              padding: 0 10px;
+              background: #1e87f0;
+              line-height: 1.5;
+              font-size: 12px;
+              color: #fff;
+              vertical-align: middle;
+              white-space: nowrap;
+              border-radius: 2px;
+              text-transform: uppercase;
+              &.success {
+                background-color: #32d296;
+              }
+              &.warning {
+                background-color: #faa05a;
+              }
+              &.danger {
+                background-color: #f0506e;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap&subset=japanese');
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+/*
+ * setting
+*/
+$docsSiteContentWidth: 1100px;
+$docsSideBarWidth: 230px;
+
+html {
+  overflow-y: scroll;
+}
+body {
+  overflow: hidden;
+}
+
+/*
+ * Mixin Style
+*/
+@mixin clearfix {
+  &::after { content: ""; display: block; clear: both; }
+}
+
+@mixin createStyle {
+  content: "";
+  display: block;
+  position:absolute;
+}
+
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@import "parts";
+@import "pages";

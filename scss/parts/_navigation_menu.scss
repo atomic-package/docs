@@ -1,0 +1,73 @@
+.sideMenu.docs {
+  &.docs {
+    float: left;
+    width: $docsSideBarWidth;
+  }
+}
+
+.ap-navbar-container {
+  background-image: linear-gradient(91deg, #321143 1%, #521881 65%, #321143 100%);
+  color: #fff;
+  & > .wrap {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.ap-navbar {
+  display: flex;
+  position: relative;
+  & > .left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  & > .right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+  }
+}
+
+.list.navList {
+  display: flex;
+  margin: 0;
+  width: auto;
+  & > li {
+    margin-bottom: 0;
+    &.active a,
+    &:hover a {
+      background: transparent;
+    }
+    & > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      min-height: 80px;
+      padding: 0 15px;
+      font-size: 14px;
+      font-family: 'Noto Sans JP', sans-serif;
+      text-decoration: none;
+      color: #fff;
+    }
+    &.btn.download {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & > a {
+        display: block;
+        width: 166px;
+        min-width: 166px;
+        min-height: 40px;
+        height: 40px;
+        line-height: 38px;
+        border-radius: 20px;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #e5e5e5;
+      }
+    }
+  }
+}
