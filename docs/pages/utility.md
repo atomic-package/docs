@@ -760,3 +760,12 @@ To apply a move cursor to elements that are being dragged, add the `.uk-drag` cl
 ```
 
 To create a box shadow on an [upload area](upload.md) when dragging a file over it, add the `.uk-dragover` class.
+
+
++++
+title = "Utility"
+date = "2016-11-14"
++++
+
+## Utility
+

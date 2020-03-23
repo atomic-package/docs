@@ -90,3 +90,10 @@ To position the thumbnav on top of an element or the [Slideshow component](slide
 
 </div>
 ```
+
++++
+title = "Thumbnail Navigation Component"
+date = "2016-12-12"
++++
+
+## Thumbnail Navigation Components
