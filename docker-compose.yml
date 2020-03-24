@@ -1,7 +1,7 @@
 version: '3'
 services:
   nodeapp:
-    build: ./docker/nodeapp
+    build: .
     container_name: "nodeapp"
     command: npm run dev
     volumes:
@@ -11,7 +11,7 @@ services:
     image: nginx
     container_name: "nginx"
     ports:
-      - '8080:80'
+      - '80:80'
     volumes:
       - ./docker/default.conf:/etc/nginx/conf.d/default.conf
       - ./:/var/www/html
