@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "postinstall": "yarn setup && yarn compile-sass && yarn compile-js",
     "setup": "symlink-dir ./node_modules/atomic-package ./assets/atomic-package && yarn font:link",
     "font:link": "symlink-dir ./assets/atomic-package/dist/font ./font",
     "compile-sass": "make-dir css && yarn sass",
@@ -7,13 +8,15 @@
     "watch:sass": "watch 'npm run sass' scss",
     "autoprefixer": "postcss --use autoprefixer --no-map css/theme.css -d css/",
     "compile-js": "./node_modules/.bin/webpack -p",
-    "dev": "concurrent \"webpack -p -w\" \"yarn watch:sass\" \"python server_notcached.py\""
+    "dev": "concurrent \"webpack -p -w\" \"yarn watch:sass\""
   },
   "browserslist": [
     "last 2 versions",
     "Android >= 4",
     "iOS >= 9"
   ],
+  "license": "UNLICENSED",
+  "private": true,
   "devDependencies": {
     "atomic-package": "^0.4.5",
     "autoprefixer": "^9.7.4",
