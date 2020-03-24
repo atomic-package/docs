@@ -11,7 +11,6 @@
                         <li><a href="https://twitter.com/180gr_disco" target="_blank">@180gr_disco.</a> UI Designer</li>
                     </ul>
                 </div>
-
                 <div class="box menuList">
                     <dl class="menuList">
                         <dt>ABOUT</dt>
