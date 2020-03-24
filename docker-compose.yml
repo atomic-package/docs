@@ -1,0 +1,19 @@
+version: '3'
+services:
+  nodeapp:
+    build: .
+    container_name: "nodeapp"
+    command: npm run dev
+    volumes:
+      - ./:/home/app/nodeapp
+      - /home/app/nodeapp/node_modules
+  nginx-proxy:
+    image: nginx
+    container_name: "nginx"
+    ports:
+      - '8080:80'
+    volumes:
+      - ./docker/default.conf:/etc/nginx/conf.d/default.conf
+      - ./:/var/www/html
+    links:
+      - 'nodeapp'
