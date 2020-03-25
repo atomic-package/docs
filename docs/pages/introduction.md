@@ -165,7 +165,7 @@ Atomic-Packageでは、レスポンシブ対応としてStyle切り替えのBrea
 
 ## CSS architecture
 
-Atomic-Package uses APBCSS (Atomic Parts Base CSS), which is based on Atomic Design, for its CSS architecture.
+Atomic Package uses [APBCSS](http://apbcss.com/) (Atomic Parts Base CSS), which is based on Atomic Design, for its CSS architecture.
 
 Therefore, by default, each Atomic type UIParts does not have any layout styles such as margin.
 
