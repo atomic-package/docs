@@ -28,7 +28,6 @@ new Vue({
         page: false,
         component: false
     })
-
 });
 
-analytics('UA-85279513-1', {anonymize_ip: true});
+analytics('UA-85279513-1', { anonymize_ip: true });

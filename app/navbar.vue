@@ -7,7 +7,7 @@
                 </div>
                 <div class="right">
                     <ul class="list navList">
-                        <li><a href="docs/introduction">Documentation</a></li>
+                        <li><a href="/docs/">Documentation</a></li>
                         <li><router-link to="/changelog">Changelog</router-link></li>
                         <li class="btn download">
                             <router-link to="/download">Download <span class="icon ap-download"></span></router-link>

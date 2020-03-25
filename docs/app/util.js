@@ -1,5 +1,4 @@
 /* global marked */
-
 import uniqid from 'uniqid';
 import { escape } from 'he';
 import { append, includes, remove } from 'uikit-util';
@@ -22,22 +21,19 @@ export function parse(markdown, cb) {
                     </div>
                 </div>`;
     };
-    const example = code => {
 
+    const example = code => {
         const id = uniqid('code-');
 
         return `<div class="uk-position-relative uk-margin-medium">
-
                     <ul uk-tab="swiping: false">
                         <li><a href="#">Preview</a></li>
                         <li><a href="#">Markup</a></li>
                     </ul>
-
                     <ul class="uk-switcher uk-margin">
                         <li>${code}</li>
                         <li><pre><code id="${id}" class="lang-html">${escape(code)}</code></pre></li>
                     </ul>
-
                     <div class="uk-position-top-right uk-margin-small-top">
                         <ul class="uk-iconnav">
                             <li><a class="js-copy" uk-tooltip="Copy to Clipboard" rel="#${id}"><img class="uk-icon" src="../images/icon-clipboard.svg" uk-svg></a></li>
