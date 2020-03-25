@@ -1,27 +1,17 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: Node.js CI
+name: Server Deploy
 
 on:
   push:
     branches: [ master ]
 
 jobs:
-  build:
-
+  deploy:
+    name: deploy
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x]
-
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm ci
-      env:
-        CI: true
+    - name: setup ubuntu
+      run: sudo apt-get --quiet update --yes
+    - name: yarn install |
+      working-directory: ./serverless
+      run: yarn install
