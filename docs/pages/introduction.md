@@ -8,6 +8,14 @@ First of all you need to download Atomic Package. For other packages and links t
 
 ***
 
+## Core Components
+
+Here you can see all the core components of the Atomic-Package at a glance.
+
+The Atomic-Package has over 30 Atomic-type UIParts and extensible components that can be combined.
+
+***
+
 ## Package contents
 
 The Zip file contains the compiled CSS and JavaScript files, which is everything you need to get started. Later, you might want to [install and compile Atomic Package](installation.md) yourself and also [create your own Atomic Package theme](sass.md).
@@ -44,18 +52,9 @@ Once you have included Atomic Package into your document, take a look at the ava
 
 ***
 
-## Core Components
-
-こちらのページでは、Atomic-Packageのすべてのコアコンポーネントを一目で確認することができます。
-
-Atomic-Packageには、30以上のAtomic型UIPartsと拡張可能コンポーネントがあり、それらを組み合わせることができます。
-
-
-***
-
 ## Size Variation Class
 
-Atomic-PackageのAtomic型UIPartsは、それぞれのパーツに対してサイズを自由に変更することが容易に行うことができます。
+Atomic-Package's Atomic-type UIParts can be easily resized to any size for each part.
 
 ```html
 <div>
@@ -106,9 +105,9 @@ Atomic-PackageのAtomic型UIPartsは、それぞれのパーツに対してサ�
 
 ## Color Variation Class
 
-Atomic-PackageのAtomic型UIPartsは、それぞれのカラーに変更することが容易に行うことができます。
+The Atomic-Package's Atomic-type UIParts can easily be changed to their respective colors.
 
-APB CSSの特性により、skin classとSemantic Classは同等の見た目となります。
+Due to the properties of APB CSS, the skin class and Semantic class are equivalent in appearance.
 
 ```html
 <table class="table">
@@ -166,10 +165,9 @@ Atomic-Packageでは、レスポンシブ対応としてStyle切り替えのBrea
 
 ## CSS architecture
 
-Atomic-PackageのCSSアーキテクチャには、Atomic Designをベースとした「APBCSS (Atomic Parts Base CSS)」を採用しております。
+Atomic-Package uses APBCSS (Atomic Parts Base CSS), which is based on Atomic Design, for its CSS architecture.
 
-よって、それぞれのAtomic型UIPartsには、デフォルトでは margin などによるレイアウトスタイルが適応されていない状態となります。
-
+Therefore, by default, each Atomic type UIParts does not have any layout styles such as margin.
 
 
 ***

@@ -15,10 +15,10 @@
                     <dl class="menuList">
                         <dt>ABOUT</dt>
                         <dd>
-                            <a href="https://github.com/atomic-package/atomic-package">GitHub</a>
+                            <a href="https://github.com/atomic-package/atomic-package" target="_blank">GitHub</a>
                         </dd>
                         <dd>
-                            <a href="https://github.com/atomic-package/atomic-package/issues">Issues</a>
+                            <a href="https://github.com/atomic-package/atomic-package/issues" target="_blank">Issues</a>
                         </dd>
                         <dd>
                             <router-link to="/changelog">Changelog</router-link>

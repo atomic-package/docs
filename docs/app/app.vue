@@ -47,20 +47,20 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/uikit/uikit/issues" target="_blank">
-                                        <span class="uk-margin-small-right" uk-icon="icon: warning"></span>
+                                    <a href="https://github.com/atomic-package/atomic-package/issues" target="_blank">
+                                        <span class="icon ap-warning"></span>
                                         <span class="uk-text-middle">Report issue</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://discordapp.com/invite/NEt4Pv7" target="_blank">
-                                        <span class="uk-margin-small-right" uk-icon="icon: commenting"></span>
+                                        <span class="icon ap-commenting"></span>
                                         <span class="uk-text-middle">Get help</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a :href="`https://github.com/uikit/uikit-site/tree/develop/docs/pages/${page}.md`" target="_blank">
-                                        <span class="uk-margin-small-right" uk-icon="icon: pencil"></span>
+                                    <a :href="`https://github.com/atomic-package/docs/tree/master/docs/pages/${page}.md`" target="_blank">
+                                        <span class="icon ap-pencil"></span>
                                         <span class="uk-text-middle">Edit this page</span>
                                     </a>
                                 </li>
