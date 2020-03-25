@@ -13,5 +13,5 @@ jobs:
     - name: setup ubuntu
       run: sudo apt-get --quiet update --yes
     - name: yarn install |
-      working-directory: ./serverless
+      working-directory: ./
       run: yarn install
