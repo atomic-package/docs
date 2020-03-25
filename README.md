@@ -7,14 +7,32 @@
 
 Atomic Package's documentation, included in this repo in the root directory, is built with Vue.js.
 
+* [AtomicPackage Official](https://atomic-package.com/)
 
 ## Development
+
+Development Setting
+
+``` 
+$ yarn
+```
 
 Running documentation locally
 
 ``` 
-$ npm run dev
+$ yarn dev
 ```
 
-Open http://localhost:8000 in your browser.
+webpack watch starts.
+
+
+## Development & Server Boot
+
+Use Docker
+
+``` 
+$ docker-compose up
+```
+
+Open http://localhost in your browser.
 
