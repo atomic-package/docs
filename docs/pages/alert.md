@@ -11,7 +11,7 @@ To apply this component, add the `alert` class to a block element.
 ```
 
 ```example
-<p class="alert">ユーザーの登録が完了致しました。</p>
+<p class="alert">User registration is now complete.</p>
 ```
 
 ***

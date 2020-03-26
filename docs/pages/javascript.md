@@ -1,38 +1,37 @@
 # JavaScript
 
-Once you have [installed UIkit](installation.md), include the JavaScript files on your page by adding them to the `<head>` section. You can also choose to use the `defer` attribute to delay script execution.
+Once you have [installed Atomic Package](installation.md), include the JavaScript files on your page by adding them to the `<head>` section. You can also choose to use the `defer` attribute to delay script execution.
 
 ```html
-<script src="js/uikit.min.js"></script>
-<script src="js/uikit-icons.min.js"></script>
+<script src="js/atomic-package.min.js"></script>
 ```
 
 ***
 
-## UIkit and reactive JavaScript frameworks
+## Atomic Package and reactive JavaScript frameworks
 
-UIkit is listening for DOM manipulations and will automatically initialize, connect and disconnect components as they are inserted or removed from the DOM. That way it can easily be used with JavaScript frameworks like [Vue.js](http://vuejs.org/) and React.
+atomic-package is listening for DOM manipulations and will automatically initialize, connect and disconnect components as they are inserted or removed from the DOM. That way it can easily be used with JavaScript frameworks like [Vue.js](http://vuejs.org/) and React.
 
-**Note** The UIkit website and its documentation that you are currently looking at is built that way. It is a perfect example of how <em>UIkit and Vue.js</em> can be integrated. Head over to its [Github repo](https://github.com/uikit/uikit-site) to see what a good setup can look like.
+**Note** The Atomic Package website and its documentation that you are currently looking at is built that way. It is a perfect example of how <em>Atomic Package and Vue.js</em> can be integrated. Head over to its [Github repo](https://github.com/uikit/uikit-site) to see what a good setup can look like.
 
 ***
 
 ## Component usage
 
-You can use UIkit components by adding `uk-*` or `data-uk-*` attributes to your HTML elements without writing a single line of JavaScript. This is UIkit's best practice of using its components and should always be considered first.
+You can use Atomic Package components by adding `data-ap-*` attributes to your HTML elements without writing a single line of JavaScript. This is Atomic Package's best practice of using its components and should always be considered first.
 
 ```html
-<div uk-sticky="offset: 50;"></div>
+<a href="" data-ap-toggle="#toggleContents">Toggle Button</a>
 
-<div data-uk-sticky="offset: 50;"></div>
+<p data-ap-toggle="#toggleContents">ToggleContents</p>
 ```
 
-**Note** [React](https://facebook.github.io/react/) will work with `data-uk-*` prefixes only.
+**Note** [React](https://facebook.github.io/react/) will work with `data-ap-*` prefixes only.
 
 You can also initialize components via JavaScript and apply them to elements in your document.
 
 ```js
-var stickys = UIkit.sticky('#sticky', {
+var stickys = Atomic Package.sticky('#sticky', {
     offset: 50
 });
 ```
@@ -81,13 +80,13 @@ You can also pass options to the component constructor programmatically.
 
 ```js
 // Passing an options object.
-UIkit.sticky('.sticky', {
+Atomic Package.sticky('.sticky', {
     offset: 50,
     top: 100
 });
 
 // If the component supports Primary options.
-UIkit.drop('#drop', 'top-left');
+Atomic Package.drop('#drop', 'top-left');
 ```
 
 ### Precedence
@@ -105,7 +104,7 @@ Options passed via the component attribute will have the highest precedence, fol
 Component options can be changed globally by extending a component.
 
 ```js
-UIkit.mixin({
+Atomic Package.mixin({
     data: {
         offset: 50,
         top: 100
@@ -121,13 +120,13 @@ Programmatically, components may be initialized with the `element, options` argu
 
 ```js
 // Passing a selector and an options object.
-var sticky = UIkit.sticky('.sticky', {
+var sticky = Atomic Package.sticky('.sticky', {
     offset: 50,
     top: 100
 });
 
 // Functional components should omit the 'element' argument.
-var notifications = UIkit.notification('MyMessage', 'danger');
+var notifications = Atomic Package.notification('MyMessage', 'danger');
 ```
 
 **Note**
@@ -137,18 +136,18 @@ After initialisation you can get your component by calling the same initialisati
 
 ```javscript
 // Sticky is now the prior initialised components
-var sticky = UIkit.sticky('.sticky');
+var sticky = Atomic Package.sticky('.sticky');
 ```
 
 **Note**
-Using `UIkit[componentName](selector)` with css selectors will always return the first occurrence only!
-If you need to access all instances do [query](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) the elements first. Then apply the getter to each element separately - `UIkit[componentName](element)`.
+Using `Atomic Package[componentName](selector)` with css selectors will always return the first occurrence only!
+If you need to access all instances do [query](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) the elements first. Then apply the getter to each element separately - `Atomic Package[componentName](element)`.
 
 
 Initializing your components programmatically gives you the possibility to invoke their functions directly.
 
 ```js
-UIkit.offcanvas('#offcanvas').toggle();
+Atomic Package.offcanvas('#offcanvas').toggle();
 ```
 
 Any component functions and variables prefixed with an underscore are considered as part of the internal API, which may change at any given time.
@@ -156,7 +155,7 @@ Any component functions and variables prefixed with an underscore are considered
 Each component triggers DOM events that you can react to. For example when an Modal is shown or a Scrollspy element becomes visible.
 
 ```js
-UIkit.util.on('#offcanvas', 'show', function () {
+Atomic Package.util.on('#offcanvas', 'show', function () {
     // do something
 });
 ```
@@ -165,11 +164,11 @@ The component's documentation page lists its events.
 
 Sometimes, components like Grid or Tab are hidden in the markup. This may happen when used in combination with the Switcher, Modal or Dropdown. Once they become visible, they need to adjust or fix their height and other dimensions.
 
-UIkit offers several ways of updating a component. Omitting the `type` parameter will trigger an `update` event.
+Atomic Package offers several ways of updating a component. Omitting the `type` parameter will trigger an `update` event.
 
 ```js
 // Calls the update hook on components registered on the element itself, it's parents and children.
-UIkit.update(element = document.body, type = 'update');
+Atomic Package.update(element = document.body, type = 'update');
 
 // Updates the component itself.
 component.$emit(type = 'update');

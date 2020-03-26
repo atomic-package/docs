@@ -2,12 +2,12 @@
     "Getting started": {
         "Introduction": "introduction",
         "Installation": "installation",
-        "Sass": "sass",
+        // "Sass": "sass",
         "JavaScript": "javascript",
         "Webpack": "webpack"
     },
     "Components": {
-        "Accordion": "accordion",
+        // "Accordion": "accordion",
         "Alert": "alert",
         "Align": "align",
         "Background": "background",

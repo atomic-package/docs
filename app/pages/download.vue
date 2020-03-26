@@ -8,7 +8,7 @@
                 <p class="text center downloadMessage mb40">Please support our open source project and share the love on<br> Twitter or Facebook. It would really mean a lot to us.</p>
                 <ul class="list btnList">
                     <li class="btn primary">
-                        <a href="https://twitter.com/intent/tweet?text=I'm+excited+to+try+@webcyou,+a+modern+front-end+framework.+Check+it+out+at+https%3a%2f%2fatomic-package.com" target="_blank">
+                        <a href="https://twitter.com/intent/tweet?text=I'm+excited+to+try+Atomic+Package,+a+modern+front-end+framework.+Check+it+out+at+https%3a%2f%2fatomic-package.com" target="_blank">
                             <span class="icon ap-twitter"></span>
                             <span class="text">Share on Twitter</span>
                         </a>
