@@ -29,23 +29,25 @@ jobs:
         cp -r docs/pages docs/images ./dist/docs/
         cp -r docs/index.html ./dist/docs/
         cp -r docs/app/main.min.js ./dist/docs/app/
-    - name: Generate ssh key
-      run: |
-        mkdir -p "$SSH_PATH"
-        touch "$SSH_PATH/known_hosts"
-
-        echo "$SSH_PRIVATE_KEY" > key && chmod 600 key
-
-        chmod 700 "$SSH_PATH"
-        chmod 600 "$SSH_PATH/known_hosts"
-
-        eval $(ssh-agent)
-        ssh-add key
-        ssh-keyscan -t rsa $SSH_HOST >> "$SSH_PATH/known_hosts"
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        SSH_HOST: ${{ secrets.SSH_HOST }}
-        SSH_PATH: ~/.ssh
+    - name: rsync-with-ssh-github-actions
+      uses: BuildPC/rsync-with-ssh-github-actions@1.0.1
+      with:
+        key: ${{ secrets.SSH_KEY }}
+        host: ${{ secrets.SSH_HOST }}
+        port: ${{ secrets.SSH_PORT }}
+        user: ${{ secrets.SSH_USER }}
+        destination: ${{ secrets.DEPLOY_PATH }}
+        ssh_before: |
+          echo $HELLO
+          echo $MESSAGE
+          ls -lath
+        ssh_after: |
+          echo $HELLO
+          echo $MESSAGE
+          ls -lath
+        env:
+          HELLO: cool
+          MESSAGE: hello world
     - name: Deploy
       run: rsync -rlptgoD --delete --exclude ".git/" -e "ssh -i ./key -o StrictHostKeyChecking=no -p ${SSH_PORT}" dist/ $SSH_USER@$SSH_HOST:$DEPLOY_PATH
       env:
