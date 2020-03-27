@@ -35,4 +35,3 @@ $ docker-compose up
 ```
 
 Open http://localhost in your browser.
-
