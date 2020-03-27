@@ -31,3 +31,7 @@ jobs:
         cp -r docs/pages docs/images ./dist/docs/
         cp -r docs/index.html ./dist/docs/
         cp -r docs/app/main.min.js ./dist/docs/app/
+    - name: Generate ssh key
+      run: echo "$SSH_PRIVATE_KEY" > key && chmod 600 key
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
