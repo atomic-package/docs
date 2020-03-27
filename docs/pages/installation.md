@@ -60,10 +60,10 @@ atomic-package/
 
 To use Atomic Package's CSS and JavaScript, [include the files](introduction.md#html-markup) in your own HTML and then create the markup of any of the components listed here in the docs.
 
-To compile Atomic Package automatically everytime you change the LESS or JavaScript, you can use the included build scripts.
+To compile Atomic Package automatically everytime you change the SCSS or JavaScript, you can use the included build scripts.
 
 ```sh
-yarn watch
+yarn dev
 ```
 
 <script>
