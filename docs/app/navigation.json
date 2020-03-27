@@ -2,12 +2,10 @@
     "Getting started": {
         "Introduction": "introduction",
         "Installation": "installation",
-        // "Sass": "sass",
         "JavaScript": "javascript",
         "Webpack": "webpack"
     },
     "Components": {
-        // "Accordion": "accordion",
         "Alert": "alert",
         "Align": "align",
         "Background": "background",
@@ -19,7 +17,6 @@
         "Card": "card",
         "Close": "close",
         "Column": "column",
-        "Dotnav": "dotnav",
         "Dropdown": "dropdown",
         "Flex": "flex",
         "Footer": "footer",

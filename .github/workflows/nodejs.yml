@@ -15,3 +15,20 @@ jobs:
     - name: yarn install |
       working-directory: ./
       run: yarn install
+    - name: Start build
+      run: |
+        mkdir -p ./dist/assets/atomic-package/dist/js/
+        mkdir ./dist/app
+        mkdir ./dist/docs
+        mkdir ./dist/font
+        mkdir ./dist/docs/app
+
+        cp index.html package.json ./dist/
+        cp -r images css font ./dist/
+        cp -r assets/highlightjs assets/uikit assets/uikit.min.js ./dist/assets/
+        cp assets/atomic-package/dist/js/atomic-package.min.js ./dist/assets/atomic-package/dist/js/atomic-package.min.js
+
+        cp -r app/main.min.js ./dist/app/
+        cp -r docs/pages docs/images ./dist/docs/
+        cp -r docs/index.html ./dist/docs/
+        cp -r docs/app/main.min.js ./dist/docs/app/
