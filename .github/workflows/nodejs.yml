@@ -29,25 +29,16 @@ jobs:
         cp -r docs/pages docs/images ./dist/docs/
         cp -r docs/index.html ./dist/docs/
         cp -r docs/app/main.min.js ./dist/docs/app/
-    - name: rsync-with-ssh-github-actions
-      uses: BuildPC/rsync-with-ssh-github-actions@1.0.1
-      with:
-        key: ${{ secrets.SSH_KEY }}
-        host: ${{ secrets.SSH_HOST }}
-        port: ${{ secrets.SSH_PORT }}
-        user: ${{ secrets.SSH_USER }}
-        destination: ${{ secrets.DEPLOY_PATH }}
-        ssh_before: |
-          echo $HELLO
-          echo $MESSAGE
-          ls -lath
-        ssh_after: |
-          echo $HELLO
-          echo $MESSAGE
-          ls -lath
+    - name: deploy to server
+      uses: AEnterprise/rsync-deploy@v1.0
       env:
-        HELLO: cool
-        MESSAGE: hello world
+        DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        ARGS: "-e -c -r --delete"
+        SERVER_PORT: ${{ secrets.SSH_PORT }}
+        FOLDER: "./dist/"
+        SERVER_IP: ${{ secrets.SSH_HOST }}
+        USERNAME: ${{ secrets.SSH_USER }}
+        SERVER_DESTINATION: ${{ secrets.DEPLOY_PATH }}
     - name: Deploy
       run: rsync -rlptgoD --delete --exclude ".git/" -e "ssh -i ./key -o StrictHostKeyChecking=no -p ${SSH_PORT}" dist/ $SSH_USER@$SSH_HOST:$DEPLOY_PATH
       env:
