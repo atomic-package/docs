@@ -45,9 +45,9 @@ jobs:
           echo $HELLO
           echo $MESSAGE
           ls -lath
-        env:
-          HELLO: cool
-          MESSAGE: hello world
+      env:
+        HELLO: cool
+        MESSAGE: hello world
     - name: Deploy
       run: rsync -rlptgoD --delete --exclude ".git/" -e "ssh -i ./key -o StrictHostKeyChecking=no -p ${SSH_PORT}" dist/ $SSH_USER@$SSH_HOST:$DEPLOY_PATH
       env:
