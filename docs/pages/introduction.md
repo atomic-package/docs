@@ -56,52 +56,51 @@ Once you have included Atomic Package into your document, take a look at the ava
 
 Atomic-Package's Atomic-type UIParts can be easily resized to any size for each part.
 
-```html
 <div>
-<table class="table">
-  <caption>Atomic Parts Size</caption>
-  <thead>
-      <tr>
-        <th>Width x Height</th>
-        <th>Width</th>
-        <th>Height</th>
-      </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>mini</td>
-      <td>narrow</td>
-      <td>lower</td>
-    </tr>
-    <tr>
-      <td>small</td>
-      <td>short</td>
-      <td>low</td>
-    </tr>
-    <tr>
-      <td>medium or default</td>
-      <td>medium or default</td>
-      <td>medium or default</td>
-    </tr>
-    <tr>
-      <td>large</td>
-      <td>long</td>
-      <td>high</td>
-    </tr>
-    <tr>
-      <td>big</td>
-      <td>wide</td>
-      <td>lofty</td>
-    </tr>
-    <tr>
-      <td>free</td>
-      <td>free</td>
-      <td>free</td>
-    </tr>
-  </tbody>
-</table>
+    <table class="table">
+      <caption>Atomic Parts Size</caption>
+      <thead>
+          <tr>
+            <th>Width x Height</th>
+            <th>Width</th>
+            <th>Height</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>mini</td>
+          <td>narrow</td>
+          <td>lower</td>
+        </tr>
+        <tr>
+          <td>small</td>
+          <td>short</td>
+          <td>low</td>
+        </tr>
+        <tr>
+          <td>medium or default</td>
+          <td>medium or default</td>
+          <td>medium or default</td>
+        </tr>
+        <tr>
+          <td>large</td>
+          <td>long</td>
+          <td>high</td>
+        </tr>
+        <tr>
+          <td>big</td>
+          <td>wide</td>
+          <td>lofty</td>
+        </tr>
+        <tr>
+          <td>free</td>
+          <td>free</td>
+          <td>free</td>
+        </tr>
+      </tbody>
+    </table>
 </div>
-```
+
 
 ## Color Variation Class
 
@@ -109,7 +108,6 @@ The Atomic-Package's Atomic-type UIParts can easily be changed to their respecti
 
 Due to the properties of APB CSS, the skin class and Semantic class are equivalent in appearance.
 
-```html
 <table class="table">
   <caption>Atomic Parts Color</caption>
   <thead>
@@ -152,7 +150,6 @@ Due to the properties of APB CSS, the skin class and Semantic class are equivale
     </tr>
   </tbody>
 </table>
-```
 
 ## Breakpoints
 
