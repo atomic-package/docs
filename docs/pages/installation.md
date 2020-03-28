@@ -14,32 +14,15 @@ You have the following options to get Atomic Package:
 
 ## File structure of the source
 
-The Github project contains all source files which are compiled into the `dist` folder. [SCSS](https://sass-lang.com/) sources are compiled into CSS files, JavaScript sources are bundled and transpiled into ECMAScript 5.
+The Github project contains all source files which are compiled into the `dist` folder. 
 
 | Folder   | Description                                             |
 |:---------|:--------------------------------------------------------|
-| `/src`   | Contains all Less, JavaScript and image sources.        |
-| `/dist`  | Contains compiled CSS and JS, updated on every release. |
-| `/tests` | Contains HTML test files of all components.             |
+| `/css`   | Contains CSS sources.        |
+| `/font`  | Contains font sources.  |
+| `/js` | Contains JavaScript sources.
 
 ***
-
-## Compile from Github source
-
-To compile Atomic Package yourself, you can use the included build scripts.
-
-```sh
-# Run once to install all dependencies
-yarn
-
-# Compile all source files
-yarn compile
-
-# Watch files and compile automatically everytime a file changes
-yarn watch
-```
-
-**Note** Use Node.js version 8.2.0 or higher.
 
 ```html
 atomic-package/
@@ -59,12 +42,6 @@ atomic-package/
 ```
 
 To use Atomic Package's CSS and JavaScript, [include the files](introduction.md#html-markup) in your own HTML and then create the markup of any of the components listed here in the docs.
-
-To compile Atomic Package automatically everytime you change the SCSS or JavaScript, you can use the included build scripts.
-
-```sh
-yarn dev
-```
 
 <script>
     UIkit.util.ajax('https://atomic-package.com/assets/atomic-package/package.json', {responseType: 'json'}).then(function (xhr) {
