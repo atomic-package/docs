@@ -145,7 +145,7 @@ For details of each process, please refer to each component page.
 You can use Atomic Package components by adding `data-ap-*` attributes to your HTML elements without writing a single line of JavaScript. This is Atomic Package's best practice of using its components and should always be considered first.
 
 ```html
-<a href="" data-ap-toggle="#toggleContents">Toggle Button</a>
+<a href="#" data-ap-toggle="#toggleContents">Toggle Button</a>
 
 <p data-ap-toggle="#toggleContents">ToggleContents</p>
 ```
@@ -160,141 +160,19 @@ Each component comes with a set of configuration options that let you customize 
 
 Options can be set:
 
-with the `key: value;` format,
+with the string format,
 
 ```html
-<div uk-sticky="offset: 50; top: 100;"></div>
+<p class="btn" data-ap-scroll="#scroll">
+  <a href="">scroll trigger</a>
+</p>
+
+<p class="btn green" data-ap-scroll="400">
+  <a href="#">scroll trigger</a>
+</p>
 ```
 
-in valid JSON format,
-
-```html
-<div uk-sticky='{"offset": 50, "top": 100}'></div>
-```
-
-with single attributes,
-
-```html
-<div uk-sticky offset="50" top="100"></div>
-```
-
-or as single attributes prefixed with `data-`.
-
-```html
-<div uk-sticky data-offset="50" data-top="100"></div>
-```
-
-For _Primary_ options, its key may be omitted, if it's the only option in the attribute value. Please take a look at the specific component documentation to find which option is the _Primary_ option.
-
-```html
-<span uk-icon="home"></span>
-```
-
-You can also pass options to the component constructor programmatically.
-
-```js
-// Passing an options object.
-Atomic Package.sticky('.sticky', {
-    offset: 50,
-    top: 100
-});
-
-// If the component supports Primary options.
-Atomic Package.drop('#drop', 'top-left');
-```
-
-### Precedence
-
-Options passed via the component attribute will have the highest precedence, followed by single attributes and then JavaScript.
-
-```html
-<div uk-sticky="offset: 50;" offset="100"></div>
-
-<!-- The offset will be 50 -->
-```
-
-### Globally
-
-Component options can be changed globally by extending a component.
-
-```js
-Atomic Package.mixin({
-    data: {
-        offset: 50,
-        top: 100
-    }
-}, 'sticky');
-```
+It is also possible to specify a CSS id or a numeric value.
 
 ***
 
-## Programmatic use
-
-Programmatically, components may be initialized with the `element, options` arguments format in JavaScript. The `element` argument may be any `Node`, `selector` or `jQuery object`. You'll receive the initialized component as return value. `Functional Components` (e.g. `Notification`) should omit the `element` parameter.
-
-```js
-// Passing a selector and an options object.
-var sticky = Atomic Package.sticky('.sticky', {
-    offset: 50,
-    top: 100
-});
-
-// Functional components should omit the 'element' argument.
-var notifications = Atomic Package.notification('MyMessage', 'danger');
-```
-
-**Note**
-The options names must be in their camel cased representation, e.g. `show-on-up` becomes `showOnUp`.
-
-After initialisation you can get your component by calling the same initialisation function, omitting the options parameter.
-
-```javscript
-// Sticky is now the prior initialised components
-var sticky = Atomic Package.sticky('.sticky');
-```
-
-**Note**
-Using `Atomic Package[componentName](selector)` with css selectors will always return the first occurrence only!
-If you need to access all instances do [query](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) the elements first. Then apply the getter to each element separately - `Atomic Package[componentName](element)`.
-
-
-Initializing your components programmatically gives you the possibility to invoke their functions directly.
-
-```js
-Atomic Package.offcanvas('#offcanvas').toggle();
-```
-
-Any component functions and variables prefixed with an underscore are considered as part of the internal API, which may change at any given time.
-
-Each component triggers DOM events that you can react to. For example when an Modal is shown or a Scrollspy element becomes visible.
-
-```js
-Atomic Package.util.on('#offcanvas', 'show', function () {
-    // do something
-});
-```
-
-The component's documentation page lists its events.
-
-Sometimes, components like Grid or Tab are hidden in the markup. This may happen when used in combination with the Switcher, Modal or Dropdown. Once they become visible, they need to adjust or fix their height and other dimensions.
-
-Atomic Package offers several ways of updating a component. Omitting the `type` parameter will trigger an `update` event.
-
-```js
-// Calls the update hook on components registered on the element itself, it's parents and children.
-Atomic Package.update(element = document.body, type = 'update');
-
-// Updates the component itself.
-component.$emit(type = 'update');
-
-```
-
-If you need to make sure a component is properly destroyed, for example upon removal from the DOM, you can call its `$destroy` function.
-
-```js
-// Destroys the component. For example unbind its event listeners.
-component.$destroy();
-
-// Also destroys the component, but also removes the element from the DOM.
-component.$destroy(true);
-```
