@@ -11,8 +11,8 @@ To create a badge, just add the `.badge` class to an inline block element.
 ```
 
 ```example
-<p class="uk-badge">1</p>
-<p class="uk-badge">100</p>
+<p class="badge">1</p>
+<p class="badge">100</p>
 ```
 
 

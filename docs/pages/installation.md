@@ -42,11 +42,3 @@ atomic-package/
 ```
 
 To use Atomic Package's CSS and JavaScript, [include the files](introduction.md#html-markup) in your own HTML and then create the markup of any of the components listed here in the docs.
-
-<script>
-    UIkit.util.ajax('https://atomic-package.com/assets/atomic-package/package.json', {responseType: 'json'}).then(function (xhr) {
-            UIkit.util.$$('pre').forEach(function (pre) {
-                pre.innerHTML = pre.innerHTML.replace(/\[ap-version]/g, xhr.response.version);
-            });
-        });
-</script>

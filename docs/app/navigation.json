@@ -2,8 +2,7 @@
     "Getting started": {
         "Introduction": "introduction",
         "Installation": "installation",
-        "JavaScript": "javascript",
-        "Webpack": "webpack"
+        "JavaScript": "javascript"
     },
     "Components": {
         "Alert": "alert",
@@ -27,21 +26,18 @@
         "Modal": "modal",
         "Nav": "nav",
         "Navbar": "navbar",
-        "Overlay": "overlay",
         "Padding": "padding",
         "Pagination": "pagination",
         "Progress": "progress",
         "Scroll": "scroll",
         "Scrollspy": "scrollspy",
         "Search": "search",
-        "Sticky": "sticky",
         "Subnav": "subnav",
         "Switcher": "switcher",
         "Tab": "tab",
         "Table": "table",
         "Text": "text",
         "Thumbnail": "thumbnail",
-        "Thumbnav": "thumbnav",
         "Title": "title",
         "Toggle": "toggle",
         "Tooltip": "tooltip",
