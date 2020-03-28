@@ -35,7 +35,7 @@ jobs:
         private-key: ${{ secrets.SSH_PRIVATE_KEY }}
         public-key: ${{ secrets.SSH_PUBLIC_KEY }}
     - name: deploy to server
-      run: rsync -rlptgoD --delete --exclude ".git/" dist/ $SSH_USER@$SSH_HOST:$DEPLOY_PATH
+      run: rsync -avh --delete --exclude ".git/" dist/ $SSH_USER@$SSH_HOST:$DEPLOY_PATH
       env:
         SSH_USER: ${{ secrets.SSH_USER }}
         SSH_PORT: ${{ secrets.SSH_PORT }}
