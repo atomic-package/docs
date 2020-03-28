@@ -17,3 +17,5 @@ node_modules
 assets/atomic-package
 css/
 font
+
+dist
