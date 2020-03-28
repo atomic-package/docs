@@ -8,7 +8,6 @@
     "Components": {
         "Alert": "alert",
         "Align": "align",
-        "Background": "background",
         "Badge": "badge",
         "Base": "base",
         "Box": "box",
@@ -16,7 +15,6 @@
         "Button": "button",
         "Card": "card",
         "Close": "close",
-        "Column": "column",
         "Dropdown": "dropdown",
         "Flex": "flex",
         "Footer": "footer",
@@ -29,7 +27,6 @@
         "Modal": "modal",
         "Nav": "nav",
         "Navbar": "navbar",
-        "Notification": "notification",
         "Overlay": "overlay",
         "Padding": "padding",
         "Pagination": "pagination",
@@ -49,7 +46,6 @@
         "Toggle": "toggle",
         "Tooltip": "tooltip",
         "Totop": "totop",
-        "Upload": "upload",
         "Utility": "utility",
         "Width": "width"
     }
