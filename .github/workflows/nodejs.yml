@@ -36,7 +36,7 @@ jobs:
         public-key: ${{ secrets.SSH_PUBLIC_KEY }}
         known-hosts: ${{ secrets.KNOWN_HOSTS }}
     - name: deploy to server
-      run: ssh -i ~/.ssh/id_rsa $SSH_USER@$SSH_HOST
+      run: ssh -i /home/runner/.ssh/id_rsa $SSH_USER@$SSH_HOST
       env:
         SSH_USER: ${{ secrets.SSH_USER }}
         SSH_PORT: ${{ secrets.SSH_PORT }}
