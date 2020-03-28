@@ -29,22 +29,13 @@ jobs:
         cp -r docs/pages docs/images ./dist/docs/
         cp -r docs/index.html ./dist/docs/
         cp -r docs/app/main.min.js ./dist/docs/app/
+    - name: Install SSH key
+      uses: shimataro/ssh-key-action@v1
+      with:
+        private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        public-key: ${{ secrets.SSH_PUBLIC_KEY }}
     - name: deploy to server
-      uses: AEnterprise/rsync-deploy@v1.0
-      env:
-        DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        ARGS: "-e -c -r --delete"
-        SERVER_PORT: ${{ secrets.SSH_PORT }}
-        FOLDER: "./dist/"
-        SERVER_IP: ${{ secrets.SSH_HOST }}
-        USERNAME: ${{ secrets.SSH_USER }}
-        SERVER_DESTINATION: ${{ secrets.DEPLOY_PATH }}
-    - name: Generate ssh key
-      run: echo "$SSH_PRIVATE_KEY" > key && chmod 600 key
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-    - name: Deploy
-      run: rsync -rlptgoD --delete --exclude ".git/" -e "ssh -i ./key -o StrictHostKeyChecking=no -p ${SSH_PORT}" dist/ $SSH_USER@$SSH_HOST:$DEPLOY_PATH
+      run: rsync -rlptgoD --delete --exclude ".git/" -e "ssh -o StrictHostKeyChecking=no -p ${SSH_PORT}" dist/ $SSH_USER@$SSH_HOST:$DEPLOY_PATH
       env:
         SSH_USER: ${{ secrets.SSH_USER }}
         SSH_PORT: ${{ secrets.SSH_PORT }}
