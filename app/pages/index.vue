@@ -103,7 +103,7 @@ export default {
                 $('[ap-stargazers]').innerText = response.stargazers_count;
             }
         }, noop);
-        ajax('assets/atomic-package/package.json', {responseType: 'json'}).then(({response}) => $('[ap-version]').innerText = response.version);
+        ajax('/assets/atomic-package/package.json', {responseType: 'json'}).then(({response}) => $('[ap-version]').innerText = response.version);
     }
 };
 </script>
