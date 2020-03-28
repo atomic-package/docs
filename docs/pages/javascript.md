@@ -6,13 +6,137 @@ Once you have [installed Atomic Package](installation.md), include the JavaScrip
 <script src="js/atomic-package.min.js"></script>
 ```
 
+You can also read the components individually.
+
+## How to read
+
+### When reading in HTML (not recommended)
+
+```html
+<script src="js/atomic-package.tween.js"></script>
+```
+
+### If you use it with npm install (recommended)
+
+```html
+npm install @atomic-package/tween
+```
+
 ***
 
-## Atomic Package and reactive JavaScript frameworks
+## JavaScript usage
 
-atomic-package is listening for DOM manipulations and will automatically initialize, connect and disconnect components as they are inserted or removed from the DOM. That way it can easily be used with JavaScript frameworks like [Vue.js](http://vuejs.org/) and React.
+### Use with JavaScript
 
-**Note** The Atomic Package website and its documentation that you are currently looking at is built that way. It is a perfect example of how <em>Atomic Package and Vue.js</em> can be integrated. Head over to its [Github repo](https://github.com/uikit/uikit-site) to see what a good setup can look like.
+This is a method that uses JavaScript.
+
+If you load this JavaScript, it will be automatically connected to the global object.
+
+The following example is for AP.common.tween.
+
+```
+AP: {
+  common: {
+    tween: Tween
+  }
+}
+```
+
+If you're managing with npm.
+
+
+```
+const Tween = require('@atomic-package/tween');
+....
+
+let tween = Tween.fromData({
+        start: {
+            opacity: 0,
+            scale: 0.4
+        },
+        end: {
+            opacity: 1,
+            scale: 1
+        },
+        option: {
+            duration: 200,
+            easing: 'easeInOutCubic',
+            step: (val: any) => {
+                elem.style.opacity = val.opacity;
+                elem.style[this.transform] = 'scale(' + val.scale + ')';
+            },
+            complete: () => {
+                tween = null;
+                ....
+            }
+        }
+    });
+```
+
+It's a good idea to use it in the following ways
+
+***
+
+## JavaScript Object
+
+This is how to use it with JavaScript objects.
+
+The fromData function is used as a factory function.
+
+The following is an example of using the Tween object.
+
+
+```
+Tween.fromData({
+  ...
+});
+
+（start property）
+
+Tween.fromData({
+  start: {
+    opacity: 0
+  }
+});
+```
+
+In the start property, you can set the property and number at the start of the tween animation.
+
+**end property**
+
+```
+Tween.fromData({
+  end: {
+    opacity: 1
+  }
+});
+```
+
+You can set the properties and numbers at the end of the tween animation in "end property".
+
+**option property**
+
+The option property is as follows.
+
+```
+Tween.fromData({
+  option: {
+    duration: number (Animation time),
+    easing: number (Tween animation types),
+    step: (val) => {
+       This function will be called each time in the tween animation.     
+       val will return the key and value set in the start object.
+    },
+    complete: () => {
+       This function will be called at the end of the tween animation.
+    }
+  }
+});
+```
+
+and so on.
+
+For details of each process, please refer to each component page.
 
 ***
 
@@ -24,16 +148,6 @@ You can use Atomic Package components by adding `data-ap-*` attributes to your H
 <a href="" data-ap-toggle="#toggleContents">Toggle Button</a>
 
 <p data-ap-toggle="#toggleContents">ToggleContents</p>
-```
-
-**Note** [React](https://facebook.github.io/react/) will work with `data-ap-*` prefixes only.
-
-You can also initialize components via JavaScript and apply them to elements in your document.
-
-```js
-var stickys = Atomic Package.sticky('#sticky', {
-    offset: 50
-});
 ```
 
 ***

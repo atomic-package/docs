@@ -38,10 +38,3 @@ jobs:
       run: ssh-keygen -R "$SSH_HOST"
       env:
         SSH_HOST: ${{ secrets.SSH_HOST }}
-    - name: deploy to server
-      run: ssh -t -i /home/runner/.ssh/id_rsa $SSH_USER@$SSH_HOST
-      env:
-        SSH_USER: ${{ secrets.SSH_USER }}
-        SSH_PORT: ${{ secrets.SSH_PORT }}
-        DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
-        SSH_HOST: ${{ secrets.SSH_HOST }}
