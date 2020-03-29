@@ -18,7 +18,7 @@ To apply this component, add the `alert` class to a block element.
 
 ## Close button
 
-To create a close button and enable its functionality, add the `.btn .close` class to a element inside the alert box. To apply a close icon, add the `btn close` attribute from the [Close component](close.md).
+To create a close button and enable its functionality, add the `.btn .close` class to a element inside the alert box. To apply a close icon.
 
 ```html
 <div class="alert red">
