@@ -40,3 +40,11 @@ jobs:
       run: ssh-keygen -R "$SSH_HOST"
       env:
         SSH_HOST: ${{ secrets.SSH_HOST }}
+    - name: executing remote ssh commands using ssh key
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: ${{ secrets.SSH_PORT }}
+        script: whoami
