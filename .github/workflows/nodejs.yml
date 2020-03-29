@@ -48,6 +48,10 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         passphrase: ${{ secrets.SSH_PRIVATE_KEY_PASSPHRASE }}
         port: ${{ secrets.SSH_PORT }}
-        script: |
-          whoami
-          mkdir hoge
+        script: whoami
+    - name: Deploy
+      run: rsync -rlptgoD --delete dist/ $SSH_USER@$SSH_HOST:$DEPLOY_PATH
+      env:
+        SSH_USER: ${{ secrets.SSH_USER }}
+        DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        SSH_HOST: ${{ secrets.SSH_HOST }}
