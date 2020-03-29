@@ -34,20 +34,6 @@ The following list gives you a short overview of the most commonly used text-lev
 
 ***
 
-## Embedded content
-
-Images and other elements like `<audio>`, `<canvas>`, `<img>`, `<svg>` and `<video>` are responsive by default in UIkit. If the layout is narrowed, they adjust their size and keep their proportions. To prevent this behavior, add the `.uk-preserve-width` class from the [Utility component](utility.md) to the element or any container.
-
-Resize the browser window to see the responsive behavior of the image.
-
-```example
-<div class="uk-width-large">
-    <img src="images/photo.jpg" alt="Image">
-</div>
-```
-
-***
-
 ## Paragraphs
 
 Create a paragraph by using the `<p>` element.
@@ -62,15 +48,15 @@ Create a paragraph by using the `<p>` element.
 
 Use the `<h1>` to `<h6>` elements to define your headings.
 
-Add the `.uk-h1`, `.uk-h2`, `.uk-h3`, `.uk-h4`, `.uk-h5` or `.uk-h6` class to alter the size of your headings, for example have a h1 look like a h3. For additional styling options, take a look at the [Heading component](heading.md).
+You can add a `title` class to change the size of the heading.
 
 ```example
-<h1>h1 Heading 1</h1>
-<h2>h2 Heading 2</h2>
-<h3>h3 Heading 3</h3>
-<h4>h4 Heading 4</h4>
-<h5>h5 Heading 5</h5>
-<h6>h6 Heading 6</h6>
+<h1 class="title">h1 Heading 1</h1>
+<h2 class="title">h2 Heading 2</h2>
+<h3 class="title">h3 Heading 3</h3>
+<h4 class="title">h4 Heading 4</h4>
+<h5 class="title">h5 Heading 5</h5>
+<h6 class="title">h6 Heading 6</h6>
 ```
 
 ***

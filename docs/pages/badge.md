@@ -106,7 +106,7 @@ Circular batch elements can be resized in the same way.
 <p class="badge round red large">1</p>
 ```
 
-
+Here is an example of specifying the smallest mini class up to the largest big class.
 
 ```example
 <p class="badge round red mini">1</p>
@@ -114,4 +114,4 @@ Circular batch elements can be resized in the same way.
 <p class="badge round red">1</p>
 <p class="badge round red large">1</p>
 <p class="badge round red big">1</p>
-<p class="badge round red">1</p>
+```
