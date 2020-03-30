@@ -39,7 +39,37 @@ The following list gives you a short overview of the most commonly used text-lev
 Create a paragraph by using the `<p>` element.
 
 ```example
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p>The text is displayed without specifying any classes.</p>
+```
+
+If you want to use normal text, give the `text`class.
+
+```example
+<p class="text">If you want to use normal text, give the text class.</p>
+```
+
+The text you want to emphasize is given a `strong` class.
+
+```example
+<p class="text strong">Strong is used to indicate strong importance</p>
+```
+
+```example
+<p class="text strong">Strong is used to <strong>indicate strong importance</strong></p>
+```
+
+```example
+<p class="text">The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
+```
+
+
+```example
+<p class="text link"></p>
+```
+
+
+```example
+<p class="text">The <i>i element</i> is text that is set off from the normal text</p>
 ```
 
 ***
@@ -206,6 +236,17 @@ The color classes defined in the atomic package can be adapted.
 <hr class="red dashed">
 ```
 
+
+## Horizontal Other Elements
+
+With Atomic Package, it is possible to express ruled lines even with elements other than hr.
+
+In this case, you can make the rule behave by adding `hr` class to the element.
+
+```example
+<p class="hr"></p>
+```
+
 ***
 
 ## Blockquote
@@ -339,94 +380,3 @@ Due to the properties of APB CSS, the skin class and Semantic class are equivale
 </div>
 
 ***
-
-#### Other Elements
-
-Atomic-Packageでは、 hr以外の要素でも罫線を表現することが可能です。
-
-その際は、要素に `hr` classを付与する事によって、罫線の振る舞いをさせることができます。
-
-<p class="hr"></p>
-
-```
-<p class="hr"></p>
-```
-
-### Inline Elements
-
-<p class="text">テキストテキストテキストテキストテキストテキストテキスト</p>
-
-```html
-<p class="text">テキストテキストテキストテキストテキストテキストテキスト</p>
-```
-
-<p class="text strong">Strong is used to indicate strong importance</p>
-
-```html
-<p class="text strong">Strong is used to indicate strong importance</p>
-```
-
-<p class="text strong">Strong is used to <strong>indicate strong importance</strong></p>
-
-```html
-<p class="text strong">Strong is used to <strong>indicate strong importance</strong></p>
-```
-
-<p class="text">The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
-
-```html
-<p class="text">The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
-```
-
-<p class="text link"></p>
-
-```html
-<p class="text link"></p>
-```
-
-<p class="text">The <i>i element</i> is text that is set off from the normal text</p>
-
-```html
-<p class="text">The <i>i element</i> is text that is set off from the normal text</p>
-```
-
-The u element is text with an unarticulated, though explicitly rendered, non-textual annotation
-
-This text is deleted and  
-
-This text has a strikethrough
-
-Superscript®
-
-Subscript for things like H2O
-
-This small text is small for for fine print, etc.
-
-Abbreviation: HTML
-
-Keybord input: Cmd
-
-“This text is a short inline quotation”
-
-This is a citation
-
-The dfn element indicates a definition.
-
-This is what inline code looks like.
-
-This is sample output from a computer program
-
-The variarble element, such as x = y
-
-
-### Paragraph
-
-Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam.
-
-
-### Time Element
-
-time
-
-### List Element 
-list
