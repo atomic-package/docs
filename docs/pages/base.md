@@ -146,6 +146,68 @@ If you want to adapt the style of the dashed line, you can display it by giving 
 
 ***
 
+#### Horizontal Size Variation
+
+The size class defined in the Atomic Package can be adapted.
+
+```example
+<hr class="large">
+<hr class="large dotted">
+<hr class="large double">
+<hr class="large dashed">
+```
+
+```example
+<hr class="big">
+<hr class="big dotted">
+<hr class="big double">
+<hr class="big dashed">
+```
+
+***
+
+#### Color Variation
+
+The color classes defined in the atomic package can be adapted.
+
+
+```example
+<hr class="primary">
+<hr class="primary double">
+<hr class="primary dotted">
+<hr class="primary dashed">
+```
+
+```example
+<hr class="green">
+<hr class="green double">
+<hr class="green dotted">
+<hr class="green dashed">
+```
+
+```example
+<hr class="blue">
+<hr class="blue double">
+<hr class="blue dotted">
+<hr class="blue dashed">
+```
+
+```example
+<hr class="orange">
+<hr class="orange double">
+<hr class="orange dotted">
+<hr class="orange dashed">
+```
+
+```example
+<hr class="red">
+<hr class="red double">
+<hr class="red dotted">
+<hr class="red dashed">
+```
+
+***
+
 ## Blockquote
 
 To quote multiple lines of content from another source within your document, use the `<blockquote>` element.
@@ -277,144 +339,6 @@ Due to the properties of APB CSS, the skin class and Semantic class are equivale
 </div>
 
 ***
-
-#### Size Variation
-
-**large**
-<hr class="large">
-<br>
-<hr class="large dotted">
-<br>
-<hr class="large double">
-<br>
-<hr class="large dashed">
-
-
-```html
-<hr class="large">
-<hr class="large dotted">
-<hr class="large double">
-<hr class="large dashed">
-```
-
-**big**
-<hr class="big">
-<br>
-<hr class="big dotted">
-<br>
-<hr class="big double">
-<br>
-<hr class="big dashed">
-
-```html
-<hr class="big">
-<hr class="big dotted">
-<hr class="big double">
-<hr class="big dashed">
-```
-
-<br><br>
-
-#### Color Variation
-
-<hr>
-<br>
-<hr class="double">
-<br>
-<hr class="dotted">
-<br>
-<hr class="dashed">
-
-```html
-<hr class="double">
-<hr class="dotted">
-<hr class="dashed">
-```
-
-<br><br>
-
-<hr class="primary">
-<br>
-<hr class="primary double">
-<br>
-<hr class="primary dotted">
-<br>
-<hr class="primary dashed">
-
-
-```html
-<hr class="primary">
-<hr class="primary double">
-<hr class="primary dotted">
-<hr class="primary dashed">
-```
-
-<br>
-
-<hr class="green">
-<br>
-<hr class="green double">
-<br>
-<hr class="green dotted">
-<br>
-<hr class="green dashed">
-
-
-```html
-<hr class="green">
-<hr class="green double">
-<hr class="green dotted">
-<hr class="green dashed">
-```
-
-<hr class="blue">
-<br>
-<hr class="blue double">
-<br>
-<hr class="blue dotted">
-<br>
-<hr class="blue dashed">
-
-```html
-<hr class="blue">
-<hr class="blue double">
-<hr class="blue dotted">
-<hr class="blue dashed">
-```
-
-<br><br>
-
-<hr class="orange">
-<br>
-<hr class="orange double">
-<br>
-<hr class="orange dotted">
-<br>
-<hr class="orange dashed">
-
-```html
-<hr class="orange">
-<hr class="orange double">
-<hr class="orange dotted">
-<hr class="orange dashed">
-```
-
-<br><br>
-
-<hr class="red">
-<br>
-<hr class="red double">
-<br>
-<hr class="red dotted">
-<br>
-<hr class="red dashed">
-
-```html
-<hr class="red">
-<hr class="red double">
-<hr class="red dotted">
-<hr class="red dashed">
-```
 
 #### Other Elements
 
