@@ -33,19 +33,19 @@
                     <dl class="menuList">
                         <dt>CONTACT</dt>
                         <dd>
-                            <a href="">Email Us</a>
+                            <a href="mailto:info@webcyou.com?subject=Contact&nbsp;Us&amp;body=">Email Us</a>
                         </dd>
                     </dl>
                 </div>
 
                 <ul class="list socialList">
                     <li>
-                        <a href="">
+                        <a href="https://twitter.com/webcyou" target="_blank">
                             <p class="icon ap-twitter"></p>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="https://www.facebook.com/webcyou/" target="_blank">
                             <p class="icon ap-facebook"></p>
                         </a>
                     </li>
@@ -55,7 +55,7 @@
 
         <div class="bottom">
             <p class="text license center">Licensed under MIT license.</p>
-            <p class="text copy">&copy; Atomic Package Project.</p>
+            <p class="text center copy">&copy; Atomic Package Project.</p>
         </div>
     </footer>
 </template>
