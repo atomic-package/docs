@@ -88,7 +88,7 @@ Create an unordered list using the `<ul>` element and the `<ol>` element for ord
 
 ## Description list
 
-Create a description list using the `<dl>` element. Use `<dt>` to define the term and `<dd>` for the description. For additional styling options, take a look at the [Description List component](description-list.md).
+Create a description list using the `<dl>` element. Use `<dt>` to define the term and `<dd>` for the description. 
 
 ```example
 <dl>
@@ -105,7 +105,10 @@ Create a description list using the `<dl>` element. Use `<dt>` to define the ter
 
 ## Horizontal rule
 
-Create a horizontal rule by using the `<hr>` element. For additional styling options, take a look at the [Divider component](divider.md).
+Create a horizontal rule by using the `<hr>` element.
+
+The `hr` element, which represents a border, has the default style.
+
 
 ```example
 
@@ -117,6 +120,30 @@ Create a horizontal rule by using the `<hr>` element. For additional styling opt
 
 ```
 
+### Double Horizontal Style
+
+If you want to adapt the style of the double line, you can display it by adding the `double` class
+
+```example
+<hr class="double">
+```
+
+### Dotted Horizontal Style
+
+If you want to adapt the style of a point, you can display it by adding the `dotted` class.
+
+```example
+<hr class="dotted">
+```
+
+### Dashed Horizontal Style
+
+If you want to adapt the style of the dashed line, you can display it by giving it the `dashed` class.
+
+```example
+<hr class="dashed">
+```
+
 ***
 
 ## Blockquote
@@ -125,7 +152,7 @@ To quote multiple lines of content from another source within your document, use
 
 ```example
 <blockquote cite="#">
-    <p class="uk-margin-small-bottom">The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a footer or cite element.</p>
+    <p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a footer or cite element.</p>
     <footer>Someone famous in <cite><a href="#">Source Title</a></cite></footer>
 </blockquote>
 ```
@@ -145,15 +172,11 @@ For multiple lines of code, use the `<pre>` element. It creates a new text block
 &lt;/div&gt;</code></pre>
 ```
 
+***
 
-+++
-title = "Base Component"
-date = "2016-11-14"
-+++
+## Parts Size CSS Class
 
-## Base
-
-### Parts Size CSS Class
+Atomic-Package's Atomic-type UIParts can be easily resized to any size for each part.
 
 <div>
 <table class="table">
@@ -200,8 +223,14 @@ date = "2016-11-14"
 </table>
 </div>
 
+***
 
 ### Parts Color CSS Class
+
+The Atomic-Package's Atomic-type UIParts can easily be changed to their respective colors.
+
+Due to the properties of APB CSS, the skin class and Semantic class are equivalent in appearance.
+
 <div>
 <table class="table">
   <caption>Atomic Parts Color</caption>
@@ -247,56 +276,7 @@ date = "2016-11-14"
 </table>
 </div>
 
-
-
-### Ruled Line
-罫線を表す `hr` 要素には、デフォルトのスタイルが定義されています。
-
-<h3 class="title article sub">Example</h3>
-<div class="box article example">
-  <hr>
-</div>
-
-
-<h3 class="title article sub">Markup</h3>
-```
-<hr>
-```
-
-#### Double
-
-<h3 class="title article sub">Example</h3>
-<div class="box article example">
-  <hr class="double">
-</div>
-
-<h3 class="title article sub">Markup</h3>
-```
-<hr class="double">
-```
-
-#### Dotted
-
-<h3 class="title article sub">Example</h3>
-<div class="box article example">
-  <hr class="dotted">
-</div>
-
-<h3 class="title article sub">Markup</h3>
-```
-<hr class="dotted">
-```
-
-#### dashed
-<h3 class="title article sub">Example</h3>
-<div class="box article example">
-  <hr class="dashed">
-</div>
-
-<h3 class="title article sub">Markup</h3>
-```
-<hr class="dashed">
-```
+***
 
 #### Size Variation
 
