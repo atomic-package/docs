@@ -4,38 +4,11 @@
 
 ## Usage
 
-The Breadcrumb component consists of links, which are aligned side by side and separated by a divider. Add the `.breadcrumb` class to a `<ul>` element to define the component. Use `<a>` elements as breadcrumb items within the list. An active state is automatically applied to the last `<li>` element.
+The breadcrumb components are made up of links, which are arranged side-by-side and separated by a dividing line. You can define a component by adding the class `.breadcrumb` to the `<nav>` element. The `<a>` element is used as a breadcrumb entry in a list. For the active state, add the class `.active`.
 
-To add list items without a link, use a `<span>` element instead of an `<a>`. Alternatively, disable an `<a>` element by adding the `.disabled` class to the `<li>` element and remove the `href` attribute from the anchor to make it inaccessible through keyboard navigation.
+You can disable a list item without a link by adding the class `.disabled` to the `<li>` element.
 
 ```html
-<ul class="breadcrumb">
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><span></span></li>
-</ul>
-```
-
-```example
-<ul class="breadcrumb">
-    <li><a href="#">Item</a></li>
-    <li><a href="#">Item</a></li>
-    <li class="uk-disabled"><a>Disabled</a></li>
-    <li><span>Active</span></li>
-</ul>
-```
-
-+++
-title = "Breadcrumb Component"
-date = "2016-11-14"
-+++
-
-## Breadcrumb Components
-
-Atomic-Packageで用意されている、ベースとなるパンくずリストStyleの一覧です。
-
-<h3 class="title article sub">Example</h3>
-
 <nav class="breadcrumb">
   <ul class="breadcrumbList">
     <li>
@@ -52,10 +25,9 @@ Atomic-Packageで用意されている、ベースとなるパンくずリスト
     </li>
   </ul>
 </nav>
+```
 
-<h3 class="title article sub">Markup</h3>
-
-```html
+```example
 <nav class="breadcrumb">
   <ul class="breadcrumbList">
     <li>
@@ -76,72 +48,9 @@ Atomic-Packageで用意されている、ベースとなるパンくずリスト
 
 ### Breadcrumb Color Variation
 
-default
-
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-```html
-<nav class="breadcrumb">
-  <ul class="breadcrumbList">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-```
-
 primary
 
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-```html
+```example
 <nav class="breadcrumb">
   <ul class="breadcrumbList">
     <li>
@@ -162,28 +71,8 @@ primary
 
 green
 
-<h3 class="title article sub">Example</h3>
 
-<nav class="breadcrumb">
-  <ul class="breadcrumbList">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-```html
+```example
 <nav class="breadcrumb">
   <ul class="breadcrumbList">
     <li>
@@ -202,31 +91,9 @@ green
 </nav>
 ```
 
-
 blue
 
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-```html
+```example
 <nav class="breadcrumb">
   <ul class="breadcrumbList">
     <li>
@@ -247,28 +114,7 @@ blue
 
 orange
 
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-```html
+```example
 <nav class="breadcrumb">
   <ul class="breadcrumbList">
     <li>
@@ -289,28 +135,7 @@ orange
 
 red
 
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-```html
+```example
 <nav class="breadcrumb">
   <ul class="breadcrumbList">
     <li>
@@ -333,28 +158,7 @@ red
 
 Mini
 
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList mini">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-```html
+```example
 <nav class="breadcrumb">
   <ul class="breadcrumbList mini">
     <li>
@@ -375,28 +179,7 @@ Mini
 
 Small
 
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList small">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-```html
+```example
 <nav class="breadcrumb">
   <ul class="breadcrumbList small">
     <li>
@@ -417,28 +200,7 @@ Small
 
 Default
 
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-```html
+```example
 <nav class="breadcrumb">
   <ul class="breadcrumbList">
     <li>
@@ -459,28 +221,7 @@ Default
 
 Large
 
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList large">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-```html
+```example
 <nav class="breadcrumb">
   <ul class="breadcrumbList large">
     <li>
@@ -501,28 +242,7 @@ Large
 
 Big
 
-<h3 class="title article sub">Example</h3>
-
-<nav class="breadcrumb">
-  <ul class="breadcrumbList big">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Blog</a>
-    </li>
-    <li class="disable">
-      <a href="#">Category</a>
-    </li>
-    <li class="active">
-      <a href="#">Post</a>
-    </li>
-  </ul>
-</nav>
-
-<h3 class="title article sub">Markup</h3>
-
-```html
+```example
 <nav class="breadcrumb">
   <ul class="breadcrumbList big">
     <li>
