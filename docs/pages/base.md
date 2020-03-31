@@ -2,6 +2,7 @@
 
 <p class="uk-text-lead">This component provides the default style for all HTML elements.</p>
 
+
 ***
 
 ## Text-level semantics
@@ -176,7 +177,7 @@ If you want to adapt the style of the dashed line, you can display it by giving 
 
 ***
 
-#### Horizontal Size Variation
+## Horizontal Size Variation
 
 The size class defined in the Atomic Package can be adapted.
 
@@ -196,7 +197,7 @@ The size class defined in the Atomic Package can be adapted.
 
 ***
 
-#### Color Variation
+## Color Variation
 
 The color classes defined in the atomic package can be adapted.
 
@@ -328,7 +329,7 @@ Atomic-Package's Atomic-type UIParts can be easily resized to any size for each 
 
 ***
 
-### Parts Color CSS Class
+## Parts Color CSS Class
 
 The Atomic-Package's Atomic-type UIParts can easily be changed to their respective colors.
 
