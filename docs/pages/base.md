@@ -349,22 +349,22 @@ Due to the properties of APB CSS, the skin class and Semantic class are equivale
     <tr>
       <td>default</td>
       <td>default</td>
-      <td>通常のカラー。付与クラスなし</td>
+      <td>Default color. No granting class</td>
     </tr>
     <tr>
       <td>primary</td>
       <td>primary</td>
-      <td>メインカラークラス</td>
+      <td>main color class</td>
     </tr>
     <tr>
       <td>green</td>
       <td>success</td>
-      <td>グリーンカラークラス。成功の表現</td>
+      <td>Green Collar Class. Expressions of success.</td>
     </tr>
     <tr>
       <td>blue</td>
       <td>info</td>
-      <td>ブルーカラークラス。</td>
+      <td>Blue Collar Class. Expressions of Continuity</td>
     </tr>
     <tr>
       <td>orange</td>

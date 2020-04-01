@@ -46,7 +46,7 @@ You can disable a list item without a link by adding the class `.disabled` to th
 </nav>
 ```
 
-### Breadcrumb Color Variation
+## Color Variation
 
 primary
 
@@ -154,7 +154,7 @@ red
 </nav>
 ```
 
-### Breadcrumb Size Variation
+## Size Variation
 
 Mini
 
