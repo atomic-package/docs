@@ -14,8 +14,7 @@ To apply this component, add the class `.btn` and modifiers like `.primary` to v
 
 ```example
 <p class="btn primary"><a href="">Primary</a></p>
-<p class="btn primary disable"><a href="">Success</a></p>
-<p class="btn primary disable"><a href="">Success</a></p>
+<p class="btn primary disable"><a href="">disable</a></p>
 <p class="btn red"><button>Danger</button></p>
 ```
 
@@ -205,7 +204,7 @@ All previous variation classes are available.
 ```
 
 
-```html
+```example
 <a class="btn primary" href="">Button</a>
 <button class="btn primary" value="">Button</button>
 <input class="btn primary" type="submit" value="Button"/>
