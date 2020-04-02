@@ -296,6 +296,19 @@ A button can be used to trigger a dropdown menu.
 <div class="dropdown">
     <a class="btn" href="">DropDown</a>
 </div>
+```
+
+## Button with DropDown - Color Variation
+
+The color classes defined in the atomic package can be adapted.
+
+```html
+<div class="dropdown">
+    <a class="btn green" href="">DropDown</a>
+</div>
+```
+
+```example
 <div class="dropdown">
     <a class="btn primary" href="">DropDown</a>
 </div>
@@ -311,7 +324,19 @@ A button can be used to trigger a dropdown menu.
 <div class="dropdown">
     <a class="btn red" href="">DropDown</a>
 </div>
+```
 
+## Button with DropDown - Color & Size Variation
+
+The size class defined in the Atomic Package can be adapted.
+
+```html
+<div class="dropdown">
+    <a class="btn primary small" href="">DropDown</a>
+</div>
+```
+
+```example
 <div class="dropdown">
     <a class="btn mini" href="">DropDown</a>
 </div>
