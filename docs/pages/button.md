@@ -278,7 +278,6 @@ Color classes can also be used.
     --><button class="btn orange" value="">Button</button><!--
     --><input class="btn red" type="submit" value="Button"/>
 </div>
-
 ```
 
 ***

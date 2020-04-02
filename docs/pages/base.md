@@ -142,13 +142,11 @@ The `hr` element, which represents a border, has the default style.
 
 
 ```example
-
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 <hr>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
 ```
 
 ### Double Horizontal Style

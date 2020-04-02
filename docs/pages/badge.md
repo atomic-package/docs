@@ -90,7 +90,6 @@ You can change the size by granting a defined size class.
 <p class="badge blue">Free</p>
 ```
 
-
 ```example
 <p class="badge primary mini">Info</p>
 <p class="badge primary small">New</p>
