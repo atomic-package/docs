@@ -34,6 +34,8 @@
 
 ## Color Variation
 
+The color classes defined in the atomic package can be adapted.
+
 ```html
 <footer class="footer primary mini center">
   <div class="main">

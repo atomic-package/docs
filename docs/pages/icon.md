@@ -1,393 +1,164 @@
 # Icon
 
-<p class="uk-text-lead">Place scalable vector icons anywhere in your content.</p>
+<p class="uk-text-lead">Place scalable icons anywhere in your content.</p>
 
-UIkit comes with its own SVG icon system and a comprehensive library, which comprises a growing number of elegant outline icons. This component injects SVGs into the site, so that they adopt color and can be styled with CSS.
+The Atomic package comes with an icon system using font awesome, which allows you to adopt colors and style them with CSS.
 
 ***
 
 ## Usage
 
-Make sure to include the icon library script, for more details see the [installation instructions](installation.md).
+The class `icon` is added to an element in order to apply this component. 
+
+To display the actual icon, you must add the `ap-NAME` class. Now we have an icon that inherits the colors in the same way as the text.
 
 ```html
-<script src="uikit/dist/js/uikit-icons.min.js"></script>
-```
-
-To apply this component, add the `uk-icon` attribute to a `<span>` or `<a>` element. To display the actual icon, you need to append the `icon: NAME` parameter to the attribute. Et voilà, you have a vector icon which inherits color just like your text does.
-
-```html
-<span uk-icon="icon: check"></span>
-
-<a href="" uk-icon="icon: heart"></a>
-```
-
-If `icon` is the only option in the attribute value, you can also use `uk-icon="NAME"`
-
-```html
-<span uk-icon="heart"></span>
+<p class="icon ap-phone"></p>
 ```
 
 ```example
-<span class="uk-margin-small-right" uk-icon="check"></span>
-
-<a href="" uk-icon="heart"></a>
+<p class="icon ap-phone"></p>
 ```
 
 ***
+
+## Color Variation
+
+The color classes defined in the atomic package can be adapted.
+
+```html
+<p class="icon ap-toggle-off green"></p>
+```
+
+```example
+<p class="icon ap-lastfm"></p>
+<p class="icon ap-lastfm-square primary"></p>
+<p class="icon ap-toggle-off green"></p>
+<p class="icon ap-toggle-on blue"></p>
+<p class="icon ap-bicycle orange"></p>
+<p class="icon ap-bus red"></p>
+```
+
+## Size Variation
+
+The size class defined in the Atomic Package can be adapted.
+
+```html
+<p class="icon ap-toggle-off green small"></p>
+```
+
+```example
+<p class="icon ap-lastfm mini"></p>
+<p class="icon ap-lastfm-square primary"></p>
+<p class="icon ap-toggle-off green small"></p>
+<p class="icon ap-toggle-on blue large"></p>
+<p class="icon ap-bicycle orange xLarge"></p>
+<p class="icon ap-bus red big"></p>
+```
+
+
+
+```example
+<p class="icon ap-lastfm mini"></p>
+<p class="icon ap-lastfm-square primary"></p>
+<p class="icon ap-toggle-off green x2"></p>
+<p class="icon ap-toggle-on blue x3"></p>
+<p class="icon ap-bicycle orange x4"></p>
+<p class="icon ap-bus red x5"></p>
+```
+
+***
+
+## Icon Button Components
+
+### Icon Button P Element
+
+
+```html
+<p class="iconBtn green"><span class="icon ap-hourglass"></span></p>
+```
+
+```example
+<p class="iconBtn"><span class="icon ap-low-vision"></span></p>
+<p class="iconBtn primary"><span class="icon ap-snapchat"></span></p>
+<p class="iconBtn green"><span class="icon ap-hourglass"></span></p>
+<p class="iconBtn blue"><span class="icon ap-twitter"></span></p>
+<p class="iconBtn orange"><span class="icon ap-viadeo"></span></p>
+<p class="iconBtn red"><span class="icon ap-television"></span></p>
+```
+
+### Icon Button A Element
+
+```html
+<a href="#" class="iconBtn green"><span class="icon ap-hourglass"></span></a>
+```
+
+```example
+<a href="#" class="iconBtn"><span class="icon ap-low-vision"></span></a>
+<a href="#" class="iconBtn primary"><span class="icon ap-snapchat"></span></a>
+<a href="#" class="iconBtn green"><span class="icon ap-hourglass"></span></a>
+<a href="#" class="iconBtn blue"><span class="icon ap-twitter"></span></a>
+<a href="#" class="iconBtn orange"><span class="icon ap-viadeo"></span></a>
+<a href="#" class="iconBtn red"><span class="icon ap-television"></span></a>
+```
+
+### Icon Button Wrap Element
+
+```html
+<p class="iconBtn green"><a href="#"><span class="icon ap-hourglass"></span></a></p>
+```
+
+```example
+<p class="iconBtn"><a href="#"><span class="icon ap-low-vision"></span></a></p>
+<p class="iconBtn primary"><a href="#"><span class="icon ap-snapchat"></span></a></p>
+<p class="iconBtn green"><a href="#"><span class="icon ap-hourglass"></span></a></p>
+<p class="iconBtn blue"><a href="#"><span class="icon ap-twitter"></span></a></p>
+<p class="iconBtn orange"><a href="#"><span class="icon ap-viadeo"></span></a></p>
+<p class="iconBtn red"><a href="#"><span class="icon ap-television"></span></a></p>
+```
+
+### Icon Button Size Variation
+
+```html
+<p class="iconBtn blue large"><span class="icon ap-twitter"></span></p>
+```
+
+```example
+<p class="iconBtn mini"><span class="icon ap-low-vision"></span></p>
+<p class="iconBtn primary small"><span class="icon ap-snapchat"></span></p>
+<p class="iconBtn green"><span class="icon ap-hourglass"></span></p>
+<p class="iconBtn blue large"><span class="icon ap-twitter"></span></p>
+<p class="iconBtn orange big"><span class="icon ap-viadeo"></span></p>
+<p class="iconBtn red big"><span class="icon ap-television"></span></p>
+```
+
+```html
+<a href="#" class="iconBtn blue large"><span class="icon ap-twitter"></span></a>
+```
+
+```example
+<a href="#" class="iconBtn mini"><span class="icon ap-low-vision"></span></a>
+<a href="#" class="iconBtn primary small"><span class="icon ap-snapchat"></span></a>
+<a href="#" class="iconBtn green"><span class="icon ap-hourglass"></span></a>
+<a href="#" class="iconBtn blue large"><span class="icon ap-twitter"></span></a>
+<a href="#" class="iconBtn orange big"><span class="icon ap-viadeo"></span></a>
+<a href="#" class="iconBtn red big"><span class="icon ap-television"></span></a>
+```
+
+```example
+<p class="iconBtn mini"><a href="#"><span class="icon ap-low-vision"></span></a></p>
+<p class="iconBtn primary small"><a href="#"><span class="icon ap-snapchat"></span></a></p>
+<p class="iconBtn green"><a href="#"><span class="icon ap-hourglass"></span></a></p>
+<p class="iconBtn blue large"><a href="#"><span class="icon ap-twitter"></span></a></p>
+<p class="iconBtn orange big"><a href="#"><span class="icon ap-viadeo"></span></a></p>
+<p class="iconBtn red big"><a href="#"><span class="icon ap-television"></span></a></p>
+```
 
 ## Library
 
 Here is an overview of all currently available icons. Over time, we will keep adding new icons to the list.
 
-<h4 class="uk-heading-line"><span>App</span></h4>
-
-<div class="uk-child-width-1-3@s" uk-grid>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="home"></span> home</li>
-            <li><span class="uk-margin-small-right" uk-icon="sign-in"></span> sign-in</li>
-            <li><span class="uk-margin-small-right" uk-icon="sign-out"></span> sign-out</li>
-            <li><span class="uk-margin-small-right" uk-icon="user"></span> user</li>
-            <li><span class="uk-margin-small-right" uk-icon="users"></span> users</li>
-            <li><span class="uk-margin-small-right" uk-icon="lock"></span> lock</li>
-            <li><span class="uk-margin-small-right" uk-icon="unlock"></span> unlock</li>
-            <li><span class="uk-margin-small-right" uk-icon="settings"></span> settings</li>
-            <li><span class="uk-margin-small-right" uk-icon="cog"></span> cog</li>
-            <li><span class="uk-margin-small-right" uk-icon="nut"></span> nut</li>
-            <li><span class="uk-margin-small-right" uk-icon="comment"></span> comment</li>
-            <li><span class="uk-margin-small-right" uk-icon="commenting"></span> commenting</li>
-            <li><span class="uk-margin-small-right" uk-icon="comments"></span> comments</li>
-            <li><span class="uk-margin-small-right" uk-icon="hashtag"></span> hashtag</li>
-            <li><span class="uk-margin-small-right" uk-icon="tag"></span> tag</li>
-            <li><span class="uk-margin-small-right" uk-icon="cart"></span> cart</li>
-            <li><span class="uk-margin-small-right" uk-icon="credit-card"></span> credit-card</li>
-            <li><span class="uk-margin-small-right" uk-icon="mail"></span> mail</li>
-            <li><span class="uk-margin-small-right" uk-icon="receiver"></span> receiver</li>
-            <li><span class="uk-margin-small-right" uk-icon="print"></span> print</li>
-            <li><span class="uk-margin-small-right" uk-icon="search"></span> search</li>
-            <li><span class="uk-margin-small-right" uk-icon="location"></span> location</li>
-            <li><span class="uk-margin-small-right" uk-icon="bookmark"></span> bookmark</li>
-        </ul>
-    </div>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="code"></span> code</li>
-            <li><span class="uk-margin-small-right" uk-icon="paint-bucket"></span> paint-bucket</li>
-            <li><span class="uk-margin-small-right" uk-icon="camera"></span> camera</li>
-            <li><span class="uk-margin-small-right" uk-icon="video-camera"></span> video-camera</li>
-            <li><span class="uk-margin-small-right" uk-icon="bell"></span> bell</li>
-            <li><span class="uk-margin-small-right" uk-icon="microphone"></span> microphone</li>
-            <li><span class="uk-margin-small-right" uk-icon="bolt"></span> bolt</li>
-            <li><span class="uk-margin-small-right" uk-icon="star"></span> star</li>
-            <li><span class="uk-margin-small-right" uk-icon="heart"></span> heart</li>
-            <li><span class="uk-margin-small-right" uk-icon="happy"></span> happy</li>
-            <li><span class="uk-margin-small-right" uk-icon="lifesaver"></span> lifesaver</li>
-            <li><span class="uk-margin-small-right" uk-icon="rss"></span> rss</li>
-            <li><span class="uk-margin-small-right" uk-icon="social"></span> social</li>
-            <li><span class="uk-margin-small-right" uk-icon="git-branch"></span> git-branch</li>
-            <li><span class="uk-margin-small-right" uk-icon="git-fork"></span> git-fork</li>
-            <li><span class="uk-margin-small-right" uk-icon="world"></span> world</li>
-            <li><span class="uk-margin-small-right" uk-icon="calendar"></span> calendar</li>
-            <li><span class="uk-margin-small-right" uk-icon="clock"></span> clock</li>
-            <li><span class="uk-margin-small-right" uk-icon="history"></span> history</li>
-            <li><span class="uk-margin-small-right" uk-icon="future"></span> future</li>
-            <li><span class="uk-margin-small-right" uk-icon="pencil"></span> pencil</li>
-            <li><span class="uk-margin-small-right" uk-icon="trash"></span> trash</li>
-            <li><span class="uk-margin-small-right" uk-icon="move"></span> move</li>
-        </ul>
-    </div>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="link"></span> link</li>
-            <li><span class="uk-margin-small-right" uk-icon="question"></span> question</li>
-            <li><span class="uk-margin-small-right" uk-icon="info"></span> info</li>
-            <li><span class="uk-margin-small-right" uk-icon="warning"></span> warning</li>
-            <li><span class="uk-margin-small-right" uk-icon="image"></span> image</li>
-            <li><span class="uk-margin-small-right" uk-icon="thumbnails"></span> thumbnails</li>
-            <li><span class="uk-margin-small-right" uk-icon="table"></span> table</li>
-            <li><span class="uk-margin-small-right" uk-icon="list"></span> list</li>
-            <li><span class="uk-margin-small-right" uk-icon="menu"></span> menu</li>
-            <li><span class="uk-margin-small-right" uk-icon="grid"></span> grid</li>
-            <li><span class="uk-margin-small-right" uk-icon="more"></span> more</li>
-            <li><span class="uk-margin-small-right" uk-icon="more-vertical"></span> more-vertical</li>
-            <li><span class="uk-margin-small-right" uk-icon="plus"></span> plus</li>
-            <li><span class="uk-margin-small-right" uk-icon="plus-circle"></span> plus-circle</li>
-            <li><span class="uk-margin-small-right" uk-icon="minus"></span> minus</li>
-            <li><span class="uk-margin-small-right" uk-icon="minus-circle"></span> minus-circle</li>
-            <li><span class="uk-margin-small-right" uk-icon="close"></span> close</li>
-            <li><span class="uk-margin-small-right" uk-icon="check"></span> check</li>
-            <li><span class="uk-margin-small-right" uk-icon="ban"></span> ban</li>
-            <li><span class="uk-margin-small-right" uk-icon="refresh"></span> refresh</li>
-            <li><span class="uk-margin-small-right" uk-icon="play"></span> play</li>
-            <li><span class="uk-margin-small-right" uk-icon="play-circle"></span> play-circle</li>
-        </ul>
-    </div>
-</div>
-
-<h4 class="uk-heading-line"><span>Devices</span></h4>
-
-<div class="uk-child-width-1-3@s" uk-grid>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="tv"></span> tv</li>
-            <li><span class="uk-margin-small-right" uk-icon="desktop"></span> desktop</li>
-            <li><span class="uk-margin-small-right" uk-icon="laptop"></span> laptop</li>
-        </ul>
-    </div>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="tablet"></span> tablet</li>
-            <li><span class="uk-margin-small-right" uk-icon="phone"></span> phone</li>
-        </ul>
-    </div>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="tablet-landscape"></span> tablet-landscape</li>
-            <li><span class="uk-margin-small-right" uk-icon="phone-landscape"></span> phone-landscape</li>
-        </ul>
-    </div>
-</div>
-
-<h4 class="uk-heading-line"><span>Storage</span></h4>
-
-<div class="uk-child-width-1-3@s" uk-grid>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="file"></span> file</li>
-            <li><span class="uk-margin-small-right" uk-icon="file-text"></span> file-text</li>
-            <li><span class="uk-margin-small-right" uk-icon="file-pdf"></span> file-pdf</li>
-            <li><span class="uk-margin-small-right" uk-icon="copy"></span> copy</li>
-            <li><span class="uk-margin-small-right" uk-icon="file-edit"></span> file-edit</li>
-        </ul>
-    </div>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="folder"></span> folder</li>
-            <li><span class="uk-margin-small-right" uk-icon="album"></span> album</li>
-            <li><span class="uk-margin-small-right" uk-icon="push"></span> push</li>
-            <li><span class="uk-margin-small-right" uk-icon="pull"></span> pull</li>
-            <li><span class="uk-margin-small-right" uk-icon="server"></span> server</li>
-        </ul>
-    </div>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="database"></span> database</li>
-            <li><span class="uk-margin-small-right" uk-icon="cloud-upload"></span> cloud-upload</li>
-            <li><span class="uk-margin-small-right" uk-icon="cloud-download"></span> cloud-download</li>
-            <li><span class="uk-margin-small-right" uk-icon="download"></span> download</li>
-            <li><span class="uk-margin-small-right" uk-icon="upload"></span> upload</li>
-        </ul>
-    </div>
-</div>
-
-<h4 class="uk-heading-line"><span>Direction</span></h4>
-
-<div class="uk-child-width-1-3@s" uk-grid>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="reply"></span> reply</li>
-            <li><span class="uk-margin-small-right" uk-icon="forward"></span> forward</li>
-            <li><span class="uk-margin-small-right" uk-icon="expand"></span> expand</li>
-            <li><span class="uk-margin-small-right" uk-icon="shrink"></span> shrink</li>
-            <li><span class="uk-margin-small-right" uk-icon="arrow-up"></span> arrow-up</li>
-            <li><span class="uk-margin-small-right" uk-icon="arrow-down"></span> arrow-down</li>
-        </ul>
-    </div>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="arrow-left"></span> arrow-left</li>
-            <li><span class="uk-margin-small-right" uk-icon="arrow-right"></span> arrow-right</li>
-            <li><span class="uk-margin-small-right" uk-icon="chevron-up"></span> chevron-up</li>
-            <li><span class="uk-margin-small-right" uk-icon="chevron-down"></span> chevron-down</li>
-            <li><span class="uk-margin-small-right" uk-icon="chevron-left"></span> chevron-left</li>
-            <li><span class="uk-margin-small-right" uk-icon="chevron-right"></span> chevron-right</li>
-        </ul>
-    </div>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="chevron-double-left"></span> chevron-double-left</li>
-            <li><span class="uk-margin-small-right" uk-icon="chevron-double-right"></span> chevron-double-right</li>
-            <li><span class="uk-margin-small-right" uk-icon="triangle-up"></span> triangle-up</li>
-            <li><span class="uk-margin-small-right" uk-icon="triangle-down"></span> triangle-down</li>
-            <li><span class="uk-margin-small-right" uk-icon="triangle-left"></span> triangle-left</li>
-            <li><span class="uk-margin-small-right" uk-icon="triangle-right"></span> triangle-right</li>
-        </ul>
-    </div>
-</div>
-
-<h4 class="uk-heading-line"><span>Editor</span></h4>
-
-<div class="uk-child-width-1-3@s" uk-grid>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="bold"></span> bold</li>
-            <li><span class="uk-margin-small-right" uk-icon="italic"></span> italic</li>
-        </ul>
-    </div>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="strikethrough"></span> strikethrough</li>
-        </ul>
-    </div>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="quote-right"></span> quote-right</li>
-        </ul>
-    </div>
-</div>
-
-<h4 class="uk-heading-line"><span>Brands</span></h4>
-
-<div class="uk-child-width-1-3@s" uk-grid>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="500px"></span> 500px</li>
-            <li><span class="uk-margin-small-right" uk-icon="behance"></span> behance</li>
-            <li><span class="uk-margin-small-right" uk-icon="dribbble"></span> dribbble</li>
-            <li><span class="uk-margin-small-right" uk-icon="etsy"></span> etsy</li>
-            <li><span class="uk-margin-small-right" uk-icon="facebook"></span> facebook</li>
-            <li><span class="uk-margin-small-right" uk-icon="flickr"></span> flickr</li>
-            <li><span class="uk-margin-small-right" uk-icon="foursquare"></span> foursquare</li>
-            <li><span class="uk-margin-small-right" uk-icon="github"></span> github</li>
-            <li><span class="uk-margin-small-right" uk-icon="github-alt"></span> github-alt</li>
-            <li><span class="uk-margin-small-right" uk-icon="gitter"></span> gitter</li>
-        </ul>
-    </div>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="google"></span> google</li>
-            <li><span class="uk-margin-small-right" uk-icon="google-plus"></span> google-plus</li>
-            <li><span class="uk-margin-small-right" uk-icon="instagram"></span> instagram</li>
-            <li><span class="uk-margin-small-right" uk-icon="joomla"></span> joomla</li>
-            <li><span class="uk-margin-small-right" uk-icon="linkedin"></span> linkedin</li>
-            <li><span class="uk-margin-small-right" uk-icon="pagekit"></span> pagekit</li>
-            <li><span class="uk-margin-small-right" uk-icon="pinterest"></span> pinterest</li>
-            <li><span class="uk-margin-small-right" uk-icon="reddit"></span> reddit</li>
-            <li><span class="uk-margin-small-right" uk-icon="soundcloud"></span> soundcloud</li>
-            <li><span class="uk-margin-small-right" uk-icon="tripadvisor"></span> tripadvisor</li>
-        </ul>
-    </div>
-    <div>
-        <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="tumblr"></span> tumblr</li>
-            <li><span class="uk-margin-small-right" uk-icon="twitter"></span> twitter</li>
-            <li><span class="uk-margin-small-right" uk-icon="uikit"></span> uikit</li>
-            <li><span class="uk-margin-small-right" uk-icon="vimeo"></span> vimeo</li>
-            <li><span class="uk-margin-small-right" uk-icon="whatsapp"></span> whatsapp</li>
-            <li><span class="uk-margin-small-right" uk-icon="wordpress"></span> wordpress</li>
-            <li><span class="uk-margin-small-right" uk-icon="xing"></span> xing</li>
-            <li><span class="uk-margin-small-right" uk-icon="yelp"></span> yelp</li>
-            <li><span class="uk-margin-small-right" uk-icon="youtube"></span> youtube</li>
-        </ul>
-    </div>
-</div>
-
-***
-
-## Ratio
-
-Add the `ratio: 2` parameter to the `uk-icon` attribute to double its size – or any other number, depending on how big you want you icon to be.
-
-```html
-<span uk-icon="icon: check; ratio: 2"></span>
-```
-
 ```example
-<span class="uk-margin-small-right" uk-icon="icon: check; ratio: 2"></span>
-<span uk-icon="icon: check; ratio: 3.5"></span>
-```
-
-***
-
-## Link modifier
-
-To reset the default link styling to a more muted color when using an icon inside an anchor, add the `.uk-icon-link` class.
-
-```html
-<a href="" class="uk-icon-link" uk-icon="heart"></a>
-```
-
-```example
-<a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="copy"></a>
-<a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="file-edit"></a>
-<a href="#" class="uk-icon-link" uk-icon="trash"></a>
-```
-
-***
-
-## Button modifier
-
-Use the modifier `.uk-icon-button` class on an `<a>` element to create an icon button, which can be used for social icons.
-
-```html
-<a href="" class="uk-icon-button" uk-icon="twitter"></a>
-```
-
-```example
-<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
-<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
-<a href="" class="uk-icon-button" uk-icon="google-plus"></a>
-```
-
-***
-
-## Image modifier
-
-You can also make any background image scale to the size of an icon. Just add the `.uk-icon-image` class and a background image path.
-
-```example
-<span class="uk-icon uk-icon-image" style="background-image: url(images/dark.jpg);"></span>
-```
-
-***
-
-## Component options
-
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
-
-| Option  | Value  | Default | Description          |
-|:--------|:-------|:--------|:---------------------|
-| `icon`  | String | `''`    | The icon to display. |
-| `ratio` | Number | `1`     | The icon size ratio. |
-
-`icon` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
-
-```html
-<span uk-icon="heart"></span>
-```
-
-***
-
-## JavaScript
-
-Learn more about [JavaScript components](javascript.md#programmatic-use).
-
-### Initialization
-
-```js
-UIkit.icon(element, options);
-```
-### Properties
-
-#### svg
-
-A JavaScript Promise that will resolve with the added SVG Node.
-
-```js
-UIkit.icon(element).svg.then(function(svg) { svg.querySelector('path').style.stroke = 'red'; })
-```
-
-+++
-title = "Icon Component"
-date = "2016-11-14"
-+++
-
-## Icon Components
-Place vector icons anywhere using an icon font.
-
-
-## Icon mapping
 <ul class="docsIconList">
   <li><p class="icon ap-glass"></p> glass</li>
   <li><p class="icon ap-music"></p> music</li>
@@ -1116,112 +887,4 @@ Place vector icons anywhere using an icon font.
   <li><p class="icon ap-wpforms"></p> wpforms</li>
   <li><p class="icon ap-yoast"></p> yoast</li>  
 </ul>
-
-
-
-<br/>
-<br/>
-
-### Icon Color Variation
-
-<p class="icon ap-lastfm"></p>
-<p class="icon ap-lastfm-square primary"></p>
-<p class="icon ap-toggle-off green"></p>
-<p class="icon ap-toggle-on blue"></p>
-<p class="icon ap-bicycle orange"></p>
-<p class="icon ap-bus red"></p>
-
-<br/>
-<br/>
-
-### Icon Size Variation
-
-<p class="icon ap-lastfm mini"></p>
-<p class="icon ap-lastfm-square primary"></p>
-<p class="icon ap-toggle-off green small"></p>
-<p class="icon ap-toggle-on blue large"></p>
-<p class="icon ap-bicycle orange xLarge"></p>
-<p class="icon ap-bus red big"></p>
-
-
-<br/>
-<br/>
-
-<p class="icon ap-lastfm mini"></p>
-<p class="icon ap-lastfm-square primary"></p>
-<p class="icon ap-toggle-off green x2"></p>
-<p class="icon ap-toggle-on blue x3"></p>
-<p class="icon ap-bicycle orange x4"></p>
-<p class="icon ap-bus red x5"></p>
-
-## Icon Button Components
-
-<br/>
-<br/>
-
-### Icon Button P Element
-<p class="iconBtn"><span class="icon ap-low-vision"></span></p>
-<p class="iconBtn primary"><span class="icon ap-snapchat"></span></p>
-<p class="iconBtn green"><span class="icon ap-hourglass"></span></p>
-<p class="iconBtn blue"><span class="icon ap-twitter"></span></p>
-<p class="iconBtn orange"><span class="icon ap-viadeo"></span></p>
-<p class="iconBtn red"><span class="icon ap-television"></span></p>
-
-<br/>
-<br/>
-
-### Icon Button A Element
-<a href="#" class="iconBtn"><span class="icon ap-low-vision"></span></a>
-<a href="#" class="iconBtn primary"><span class="icon ap-snapchat"></span></a>
-<a href="#" class="iconBtn green"><span class="icon ap-hourglass"></span></a>
-<a href="#" class="iconBtn blue"><span class="icon ap-twitter"></span></a>
-<a href="#" class="iconBtn orange"><span class="icon ap-viadeo"></span></a>
-<a href="#" class="iconBtn red"><span class="icon ap-television"></span></a>
-
-<br/>
-<br/>
-
-### Icon Button Wrap Element
-
-<p class="iconBtn"><a href="#"><span class="icon ap-low-vision"></span></a></p>
-<p class="iconBtn primary"><a href="#"><span class="icon ap-snapchat"></span></a></p>
-<p class="iconBtn green"><a href="#"><span class="icon ap-hourglass"></span></a></p>
-<p class="iconBtn blue"><a href="#"><span class="icon ap-twitter"></span></a></p>
-<p class="iconBtn orange"><a href="#"><span class="icon ap-viadeo"></span></a></p>
-<p class="iconBtn red"><a href="#"><span class="icon ap-television"></span></a></p>
-
-
-<br/>
-<br/>
-<br/>
-<br/>
-
-### Icon Button Size Variation
-
-<p class="iconBtn mini"><span class="icon ap-low-vision"></span></p>
-<p class="iconBtn primary small"><span class="icon ap-snapchat"></span></p>
-<p class="iconBtn green"><span class="icon ap-hourglass"></span></p>
-<p class="iconBtn blue large"><span class="icon ap-twitter"></span></p>
-<p class="iconBtn orange big"><span class="icon ap-viadeo"></span></p>
-<p class="iconBtn red big"><span class="icon ap-television"></span></p>
-
-<br/>
-<br/>
-
-<a href="#" class="iconBtn mini"><span class="icon ap-low-vision"></span></a>
-<a href="#" class="iconBtn primary small"><span class="icon ap-snapchat"></span></a>
-<a href="#" class="iconBtn green"><span class="icon ap-hourglass"></span></a>
-<a href="#" class="iconBtn blue large"><span class="icon ap-twitter"></span></a>
-<a href="#" class="iconBtn orange big"><span class="icon ap-viadeo"></span></a>
-<a href="#" class="iconBtn red big"><span class="icon ap-television"></span></a>
-
-<br/>
-<br/>
-
-<p class="iconBtn mini"><a href="#"><span class="icon ap-low-vision"></span></a></p>
-<p class="iconBtn primary small"><a href="#"><span class="icon ap-snapchat"></span></a></p>
-<p class="iconBtn green"><a href="#"><span class="icon ap-hourglass"></span></a></p>
-<p class="iconBtn blue large"><a href="#"><span class="icon ap-twitter"></span></a></p>
-<p class="iconBtn orange big"><a href="#"><span class="icon ap-viadeo"></span></a></p>
-<p class="iconBtn red big"><a href="#"><span class="icon ap-television"></span></a></p>
-
+```
