@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer">
+    <footer class="footer docs">
         <div class="top">
             <div class="wrap">
                 <div class="box left">
