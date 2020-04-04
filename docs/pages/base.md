@@ -367,12 +367,12 @@ Due to the properties of APB CSS, the skin class and Semantic class are equivale
     <tr>
       <td>orange</td>
       <td>warnig</td>
-      <td>オレンジカラークラス。</td>
+      <td>Orange Color Class. Expressions of Warnings.</td>
     </tr>
     <tr>
       <td>red</td>
       <td>error</td>
-      <td>レッドカラークラス。</td>
+      <td>Red Color Class. Expressions of Errors.</td>
     </tr>
   </tbody>
 </table>
