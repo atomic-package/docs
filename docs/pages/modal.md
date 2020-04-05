@@ -4,48 +4,44 @@
 
 ## Usage
 
-The Modal component consists of an overlay, a dialog and an optional close button. You can use any element to toggle a modal dialog. To enable the necessary JavaScript, add the `uk-toggle` attribute. An `<a>` element needs to be linked to the modal's id. If you are using another element, like a button, just add the `uk-toggle="target: #ID"` attribute to target the id of the modal container.
+The Modal component consists of an overlay, a dialog and an optional close button. You can use any element to toggle a modal dialog. To enable the necessary JavaScript, add the `data-ap-modal` attribute. An `<a>` element needs to be linked to the modal's id. If you are using another element, like a button, just add the `data-ap-modal="#targetID"` attribute to target the id of the modal container.
 
-Add the `uk-modal` attribute to a `<div>` element to create the modal container and an overlay that blanks out the page. It is important to add an `id` to indicate the element for toggling. Use the following classes to define the modal's sections.
+Add the `.modalWindow` class to a `<div>` element to create the modal container and an overlay that blanks out the page. It is important to add an `id` to indicate the element for toggling. Use the following classes to define the modal's sections.
 
 | Class              | Description                                                                                             |
 |:-------------------|:--------------------------------------------------------------------------------------------------------|
-| `.uk-modal-dialog` | Add this class to a child `<div>` element to create the dialog                                          |
-| `.uk-modal-body`   | Add this class to create padding between the modal and its content.                                     |
-| `.uk-modal-title`  | Add this class to a heading element to create the modal title.                                          |
-| `.uk-modal-close`  | Add this class to an `<a>` or `<button>` element to create a close button and enable its functionality. |
+| `.modalWindow` | Add this class to a child `<div>` element to create the dialog.                                          |
+| `.modalDialog` | Add this class to create padding between the modal and its content.                                        |
+| `.modalHeader`   | Add this class to a heading element to create the modal title.                                    |
+| `.modalFooter`  | Add this class to create a modal footer.                                          |
+| `.modalClose`  | Add this class to an `<a>` or `<button>` element to create a close button and enable its functionality. |
 
 ```html
 <!-- This is a button toggling the modal -->
-<button uk-toggle="target: #my-id" type="button"></button>
+<p class="btn primary"><a href="#modalWindow" data-ap-modal>Open ModalWindow</a></p>
 
 <!-- This is the modal -->
-<div id="my-id" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-        <h2 class="uk-modal-title"></h2>
-        <button class="uk-modal-close" type="button"></button>
-    </div>
+<div class="modalWindow" id="modalWindow">
+  <div class="modalDialog">
+    <p class="modalClose" data-ap-modal-close></p>
+    <p class="text">ModalWindow Body contents text</p>
+  </div>
 </div>
 ```
 
 ```example
 <!-- This is a button toggling the modal -->
-<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-example">Open</button>
-
-<!-- This is an anchor toggling the modal -->
-<a href="#modal-example" uk-toggle>Open</a>
+<p class="btn primary"><a href="#modalWindow" data-ap-modal>Open ModalWindow</a></p>
 
 <!-- This is the modal -->
-<div id="modal-example" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-        <h2 class="uk-modal-title">Headline</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="uk-text-right">
-            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-            <button class="uk-button uk-button-primary" type="button">Save</button>
-        </p>
-    </div>
+<div class="modalWindow" id="modalWindow">
+  <div class="modalDialog">
+    <p class="modalClose" data-ap-modal-close></p>
+    <p class="text">ModalWindow Body contents text</p>
+  </div>
 </div>
+
+<div data-ap-modal="#modalWindow">Open ModalWindow</div>
 ```
 
 ***
@@ -54,75 +50,30 @@ Add the `uk-modal` attribute to a `<div>` element to create the modal container 
 
 To create a close button, enable its functionality and add proper styling and positioning, add the `.uk-modal-close-default` class to an `<a>` or `<button>` element. To place the close button outside the modal, add the `.uk-modal-close-outside` class.
 
-Add the `uk-close` attribute from the [Close component](close.md), to apply a close icon.
+Add the `.icon.close` class from the [Icon component](icon.md), to apply a close icon.
 
 ```html
-<div id="my-id">
-    <div class="uk-modal-dialog">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-    </div>
-</div>
-
-<div id="my-id">
-    <div class="uk-modal-dialog">
-        <button class="uk-modal-close-outside" type="button" uk-close></button>
-    </div>
+<div class="modalWindow" id="myId">
+  <div class="modalDialog">
+    <p class="modalClose" data-ap-modal-close></p>
+  </div>
 </div>
 ```
 
 ```example
-<!-- This is a button toggling the modal with the default close button -->
-<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default">Default</button>
+<!-- This is a button toggling the modal -->
+<p class="btn primary"><a href="#modalWindow" data-ap-modal>Open ModalWindow</a></p>
 
-<!-- This is the modal with the default close button -->
-<div id="modal-close-default" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <h2 class="uk-modal-title">Default</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+<!-- This is the modal -->
+<div class="modalWindow" id="modalWindow">
+  <div class="modalDialog">
+    <p class="modalClose" data-ap-modal-close></p>
+    <p class="text">ModalWindow Body contents text</p>
+  </div>
 </div>
 
-<!-- This is a button toggling the modal with the outside close button -->
-<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-close-outside">Outside</button>
-
-<!-- This is the modal with the outside close button -->
-<div id="modal-close-outside" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-        <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <h2 class="uk-modal-title">Outside</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-</div>
+<div data-ap-modal="#modalWindow">Open ModalWindow</div>
 ```
-
-***
-
-## Center modal
-
-To vertically center the modal dialog, you can use the `.uk-margin-auto-vertical` class from the [Margin component](margin.md).
-
-```html
-<div id="my-id" class="uk-flex-top" uk-modal>
-    <div class="uk-modal-dialog uk-margin-auto-vertical"></div>
-</div>
-```
-
-```example
-<a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Open</a>
-
-<div id="modal-center" class="uk-flex-top" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    </div>
-</div>
-```
-
-**Note** `.uk-flex-top` on the modal container is needed to support IE 11.
 
 ***
 
@@ -132,8 +83,8 @@ To divide the modal into different content sections, use the following classes.
 
 | Class              | Description                                                     |
 |:-------------------|:----------------------------------------------------------------|
-| `.uk-modal-header` | Add this class to a `<div>` element to create the modal header. |
-| `.uk-modal-footer` | Add this class to a `<div>` element to create the modal footer. |
+| `.modalHeader` | Add this class to a `<div>` element to create the modal header. |
+| `.modalFooter` | Add this class to a `<div>` element to create the modal footer. |
 
 ```html
 <div id="my-id" uk-modal>
@@ -223,191 +174,6 @@ Using the [grid](grid.md) and [width](width.md) classes, you can create a nice, 
     </div>
 </div>
 ```
-
-***
-
-## Overflow
-
-By default, the page will scroll with the modal, if its content exceeds the window height. To apply a scrollbar inside the modal, add the `uk-overflow-auto` attribute from the [Utility component](utility.md#overflow-auto) to the modal body.
-
-```html
-<div id="my-id" uk-modal>
-    <div class="uk-modal-dialog" uk-overflow-auto></div>
-</div>
-```
-
-```example
-<a class="uk-button uk-button-default" href="#modal-overflow" uk-toggle>Open</a>
-
-<div id="modal-overflow" uk-modal>
-    <div class="uk-modal-dialog">
-
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-
-        <div class="uk-modal-header">
-            <h2 class="uk-modal-title">Headline</h2>
-        </div>
-
-        <div class="uk-modal-body" uk-overflow-auto>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        </div>
-
-        <div class="uk-modal-footer uk-text-right">
-            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-            <button class="uk-button uk-button-primary" type="button">Save</button>
-        </div>
-
-    </div>
-</div>
-```
-
-***
-
-## Media
-
-If you want to display media, you should first check, if the [Lightbox component](lightbox.md) doesn't already offer everything you need. However, you can also use the modal to have more control over the markup to wrap your media in.
-
-**Note** Use the `uk-video` attribute from the [Video component](video.md) to make sure videos are stopped when the modal is closed.
-
-```html
-<div uk-modal>
-    <div class="uk-modal-dialog uk-width-auto">
-        <iframe src="" uk-video></iframe>
-    </div>
-</div>
-```
-
-```example
- <p uk-margin>
-    <a class="uk-button uk-button-default" href="#modal-media-image" uk-toggle>Image</a>
-    <a class="uk-button uk-button-default" href="#modal-media-video" uk-toggle>Video</a>
-    <a class="uk-button uk-button-default" href="#modal-media-youtube" uk-toggle>YouTube</a>
-    <a class="uk-button uk-button-default" href="#modal-media-vimeo" uk-toggle>Vimeo</a>
-</p>
-
-<div id="modal-media-image" class="uk-flex-top" uk-modal>
-    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
-        <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <img src="images/photo.jpg" alt="">
-    </div>
-</div>
-
-<div id="modal-media-video" class="uk-flex-top" uk-modal>
-    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
-        <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" controls playsinline uk-video></video>
-    </div>
-</div>
-
-<div id="modal-media-youtube" class="uk-flex-top" uk-modal>
-    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
-        <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA" width="1920" height="1080" frameborder="0" uk-video></iframe>
-    </div>
-</div>
-
-<div id="modal-media-vimeo" class="uk-flex-top" uk-modal>
-    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
-        <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <iframe src="https://player.vimeo.com/video/1084537" width="500" height="281" frameborder="0" uk-video></iframe>
-    </div>
-</div>
-```
-
-***
-
-## Groups
-
-You can group multiple modals by linking from one to the other and back. Use this to create multistep wizards inside your modals.
-
-```html
-<div id="modal-group-1" uk-modal>
-    <div class="uk-modal-dialog">
-        <a href="#modal-group-2" uk-toggle>Next</a>
-    </div>
-</div>
-
-<div id="modal-group-2" uk-modal>
-    <div class="uk-modal-dialog">
-        <a href="#modal-group-1" uk-toggle>Previous</a>
-    </div>
-</div>
-```
-
-```example
-<p uk-margin>
-    <a class="uk-button uk-button-default" href="#modal-group-1" uk-toggle>Modal 1</a>
-    <a class="uk-button uk-button-default" href="#modal-group-2" uk-toggle>Modal 2</a>
-</p>
-
-<div id="modal-group-1" uk-modal>
-    <div class="uk-modal-dialog">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="uk-modal-header">
-            <h2 class="uk-modal-title">Headline 1</h2>
-        </div>
-        <div class="uk-modal-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="uk-modal-footer uk-text-right">
-            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-            <a href="#modal-group-2" class="uk-button uk-button-primary" uk-toggle>Next</a>
-        </div>
-    </div>
-</div>
-
-<div id="modal-group-2" uk-modal>
-    <div class="uk-modal-dialog">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="uk-modal-header">
-            <h2 class="uk-modal-title">Headline 2</h2>
-        </div>
-        <div class="uk-modal-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="uk-modal-footer uk-text-right">
-            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-            <a href="#modal-group-1" class="uk-button uk-button-primary" uk-toggle>Previous</a>
-        </div>
-    </div>
-</div>
-```
-
-***
-
-## Component options
-
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
-
-| Option      | Value   | Default | Description                                                                                        |
-|:------------|:--------|:--------|:---------------------------------------------------------------------------------------------------|
-| `esc-close` | Boolean | `true`  | Close the modal when the _Esc_ key is pressed.                                                     |
-| `bg-close`  | Boolean | `true`  | Close the modal when the background is clicked.                                                    |
-| `stack`     | Boolean | `false` | Stack modals, when more than one is open. By default, the previous modal will be hidden.           |
-| `container` | String  | `true`  | Define a target container via a selector to specify where the modal should be appended in the DOM. Setting it to `false` will prevent this behavior. |
-| `cls-page`  | String  | `'uk-modal-page'`   | Class to add to `<body>` when modal is active                |
-| `cls-panel` | String  | `'uk-modal-dialog'` | Class of the element to be considered the panel of the modal |
-| `sel-close` | String  | `'.uk-modal-close,` `.uk-modal-close-default,` `.uk-modal-close-outside,` `.uk-modal-close-full'` | CSS selector for all elements that should trigger the closing of the modal |
-
-***
 
 ## JavaScript
 
