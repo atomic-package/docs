@@ -323,28 +323,32 @@ To divide the modal into different content sections, use the following classes.
 ```
 
 ```example
-<div class="modalWindow big">
-  <div class="modalDialog">
-    <div class="modalHeader">
-      <p class="title">Headline</p>
-      <p class="modalClose"></p>
+<div style="overflow: scroll;">
+    <div class="modalWindow big">
+      <div class="modalDialog">
+        <div class="modalHeader">
+          <p class="title">Headline</p>
+          <p class="modalClose"></p>
+        </div>
+        <p class="text">ModalWindow Body contents text</p>
+        </p>
+      </div>
     </div>
-    <p class="text">ModalWindow Body contents text</p>
-    </p>
-  </div>
 </div>
 ```
 
 ```example
-<div class="modalWindow free">
-  <div class="modalDialog">
-    <div class="modalHeader">
-      <p class="title">Headline</p>
-      <p class="modalClose"></p>
+<div style="overflow: scroll;">
+    <div class="modalWindow free">
+      <div class="modalDialog">
+        <div class="modalHeader">
+          <p class="title">Headline</p>
+          <p class="modalClose"></p>
+        </div>
+        <p class="text">ModalWindow Body contents text</p>
+        </p>
+      </div>
     </div>
-    <p class="text">ModalWindow Body contents text</p>
-    </p>
-  </div>
 </div>
 ```
 ***
