@@ -8,7 +8,7 @@ The Navbar component consists of a navbar container, the navbar itself and one o
 
 | Element                | Description                                                                                                    |
 |:-----------------------|:---------------------------------------------------------------------------------------------------------------|
-| `navBar`            | Add this attribute to a `<nav>` element to define the Navbar component.                                        |                                                               |
+| `.navBar`            | Add this attribute to a `<nav>` element to define the Navbar component.                                        |                                                               |
 | `.active`           | Add this class to indicate an active menu item.                                                                |
 
 ```html

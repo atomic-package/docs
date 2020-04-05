@@ -121,41 +121,40 @@ Due to the properties of APB CSS, the skin class and Semantic class are equivale
     <tr>
       <td>default</td>
       <td>default</td>
-      <td>デフォルトカラー</td>
+      <td>default color</td>
     </tr>
     <tr>
       <td>primary</td>
       <td>primary</td>
-      <td>プライマリーカラー</td>
+      <td>primary color</td>
     </tr>
     <tr>
       <td>green</td>
       <td>success</td>
-      <td>グリーンカラー</td>
+      <td>Green Color</td>
     </tr>
     <tr>
       <td>blue</td>
       <td>info</td>
-      <td>ブルーカラー</td>
+      <td>Blue Color</td>
     </tr>
     <tr>
       <td>orange</td>
       <td>warning</td>
-      <td>オレンジカラー</td>
+      <td>Orange Color</td>
     </tr>
     <tr>
       <td>red</td>
       <td>danger</td>
-      <td>レッドカラー</td>
+      <td>Red Color</td>
     </tr>
   </tbody>
 </table>
 
 ## Breakpoints
 
-Atomic-Packageでは、レスポンシブ対応としてStyle切り替えのBreakpointを設けております。
+In the Atomic Package, a breakpoint for style switching is provided for responsive support.
 
-各Breakpointは以下の通りとなります。
 
 ***
 
