@@ -20,9 +20,9 @@ Add one of the following classes to form controls inside a `<form>` element to d
     <p class="input"><input type="radio" checked></p>
     <p class="input"><input type="radio" disabled checked></p>
     <p class="input">
-        <select name="" id="">
-            <option value="">1</option>
-            <option value="">2</option>
+        <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
         </select>
     </p>
 </form>
@@ -32,18 +32,18 @@ Add one of the following classes to form controls inside a `<form>` element to d
 
 ```html
 <p class="input"><input type="text" value="default input"></p>
-<p class="input password"><input type="text" value="input type password"></p>
-<p class="input search"><input type="text" value="input type search"></p>
+<p class="input password"><input type="password" value="input type password"></p>
+<p class="input search"><input type="search" value="input type search"></p>
 ```
 
 
 ```example
 <p class="input"><input type="text" value="default input"></p>
+<p class="input password"><input type="password" value="input type password"></p>
+<p class="input search"><input type="search" value="input type search"></p>
 <p class="input disabled"><input type="text" value="default input"></p>
-<p class="input password"><input type="text" value="input type password"></p>
-<p class="input password disabled"><input type="text" value="input type password"></p>
-<p class="input search"><input type="text" value="input type search"></p>
-<p class="input search disabled"><input type="text" value="input type search"></p>
+<p class="input password disabled"><input type="password" value="input type password"></p>
+<p class="input search disabled"><input type="search" value="input type search"></p>
 ```
 
 ## Input WrapElement
