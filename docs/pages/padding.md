@@ -4,36 +4,23 @@
 
 ## Usage
 
-To apply this component, add one of the following classes to a block element.
+Add one or more of the following classes to any element to create the same vertical and/or horizontal padding that a paragraph usually has.
 
-| Class               | Description                          |
-|:--------------------|:-------------------------------------|
-| `.uk-padding`       | Adds default padding to the element. |
-| `.uk-padding-small` | Adds small padding to the element.   |
-| `.uk-padding-large` | Adds large padding to the element.   |
+'NN' can be a number from 1 to 200, in increments of 5.
+
+| Class               | Description                                                                      |
+| :------------------ | :------------------------------------------------------------------------------- |
+| `.p-NN`        | Adds top padding, if it is preceded by another element, and always bottom padding. |
+| `.pt-NN`    | Adds top padding.                                                                 |
+| `.pb-NN` | Adds bottom padding.                                                              |
+| `.pl-NN`   | Adds left padding.                                                                |
+| `.pr-NN`  | Adds right padding.                                                               |
 
 ```html
-<div class="uk-padding"></div>
+<div class="pt-10"></div>
 ```
 
 ```example
-<div class="uk-padding uk-background-muted uk-width-1-2@s">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</div>
+<p class="text pt-10">padding top 10px text</p>
+<p class="text pb-15">padding bottom 15px text</p>
 ```
-
-***
-
-## Remove padding
-
-In some cases you want to remove padding from an element, rather than adding it. To do so, apply one of the following classes.
-
-| Class                           | Description                                     |
-|:--------------------------------|:------------------------------------------------|
-| `.uk-padding-remove`            | Removes all padding from an element.            |
-| `.uk-padding-remove-top`        | Removes top padding from an element.            |
-| `.uk-padding-remove-bottom`     | Removes bottom padding from an element.         |
-| `.uk-padding-remove-left`       | Removes left padding from an element.           |
-| `.uk-padding-remove-right`      | Removes right padding from an element.          |
-| `.uk-padding-remove-vertical`   | Removes top and bottom padding from an element. |
-| `.uk-padding-remove-horizontal` | Removes left and right padding from an element. |
