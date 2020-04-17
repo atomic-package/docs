@@ -121,40 +121,6 @@ Add zebra-striping to a table by adding the `.striped` class.
 
 ## Hover modifier
 
-Add the `.uk-table-hover` class to display a hover state on table rows.
-
-```html
-<table class="uk-table uk-table-hover">...</table>
-```
-
-```example
-<table class="uk-table uk-table-hover uk-table-divider">
-    <thead>
-        <tr>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-        </tr>
-        <tr>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-        </tr>
-        <tr>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-        </tr>
-    </tbody>
-</table>
-```
 
 ***
 
@@ -245,6 +211,3 @@ Add the `.uk-table-hover` class to display a hover state on table rows.
   </tbody>
 </table>
 ```
-
-## Hover modifier
-
