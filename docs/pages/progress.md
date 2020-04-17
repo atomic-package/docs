@@ -4,294 +4,379 @@
 
 ## Usage
 
-To apply this component, add the `.uk-progress` class to a `<progress>` element.
+To apply this component, add the `.progress` class to a `<div>` element.
 
 ```html
-<progress class="uk-progress" value="" max=""></progress>
-```
-
-```example
-<progress id="js-progressbar" class="uk-progress" value="10" max="100"></progress>
-
-<script>
-    
-    UIkit.util.ready(function () {
-        
-        var bar = document.getElementById('js-progressbar');
-
-        var animate = setInterval(function () {
-
-            bar.value += 10;
-
-            if (bar.value >= bar.max) {
-                clearInterval(animate);
-            }
-
-        }, 1000);
-
-    });
-
-</script>
-
-```
-
-+++
-title = "Progressbar Component"
-date = "2016-12-12"
-+++
-
-## Progressbar Components
-
-Atomic-Packageで用意されている、ベースとなるプログレスバーStyle一覧です。
-
-Default
-
 <div class="progress">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
-### Color Variation
+```example
+<div class="progress">
+  <span id="js-progressbar" class="value" style="width: 50%;"></span>
+</div>
 
-Progressbar Componentsにおける、カラーバリエーション一覧となります。
+<script>
+UIkit.util.ready(function () {
+    var bar = document.getElementById('js-progressbar');
+    var count = 0;
+    var animate = setInterval(function () {
+        count += 10;
+        bar.style.width = count + '%';
+        if (count >= 100) {
+            clearInterval(animate);
+        }
+    }, 1000);
+});
+</script>
+```
 
-Primary
+## ProgressBar Color Variation
+
+This is the list of color variations in Progressbar Components.
+
+### ProgressBar Color Variation - Primary
+
+```example
 <div class="progress">
   <span class="value primary" style="width: 70%;"></span>
 </div>
+```
 
-<br>
+### ProgressBar Color Variation - Green
 
-Green
+```example
 <div class="progress">
   <span class="value green" style="width: 70%;"></span>
 </div>
+```
 
-<br>
+### ProgressBar Color Variation - Blue
 
-Blue
+```example
 <div class="progress">
   <span class="value blue" style="width: 50%;"></span>
 </div>
+```
 
-<br>
+### ProgressBar Color Variation - Orange
 
-Orange
+```example
 <div class="progress">
   <span class="value orange" style="width: 60%;"></span>
 </div>
+```
 
-<br>
+### ProgressBar Color Variation - Red
 
-Red
+```example
 <div class="progress">
   <span class="value red" style="width: 60%;"></span>
 </div>
+```
 
+***
 
-### Stacked
+## ProgressBar Stacked Variation
 
-Progressbar Componentsにおける、StackedStyleの適応例です。
+This is an example of a StackedStyle adaptation in Progressbar Components.
 
+green & blue color StackedStyle.
+
+```html
 <div class="progress free">
   <span class="value green" style="width: 30%;"></span>
   <span class="value blue" style="width: 50%;"></span>
 </div>
+```
+
+```example
+<div class="progress free">
+  <span class="value green" style="width: 30%;"></span>
+  <span class="value blue" style="width: 50%;"></span>
+</div>
+```
+
+***
+
+## Size Variation - width
+
+This is a list of size variations in Progressbar Components.
+
+This is an example of adapting the width of a size variation.
 
 
-### Size Variation - width
+### Size Variation - narrow
 
-Progressbar Componentsにおける、サイズバリエーション一覧となります。
-サイズバリエーションのwidthを適応した例となります。
-
-narrow
+```example
 <div class="progress narrow">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
-short
+### Size Variation - short
+
+```example
 <div class="progress short">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
-Default
+### Size Variation - Default
+
+```example
 <div class="progress">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
-long
+### Size Variation - long
+
+```example
 <div class="progress long">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
-wide
+### Size Variation - wide
+
+```example
 <div class="progress wide">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
-free
+### Size Variation - free
+
+```example
 <div class="progress free">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
+## Size Variation - height
 
-### Size Variation - height
+This is an example of an adaptation of the height of a size variation.
 
-サイズバリエーションのheightを適応した例となります。
+### Size Variation - lower
 
-lower
+```example
 <div class="progress lower">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
-low
+### Size Variation - low
+
+```example
 <div class="progress low">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
-Default
+### Size Variation - Default
+
+```example
 <div class="progress">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
-high
+### Size Variation - high
+
+```example
 <div class="progress high">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
-lofty
+### Size Variation - lofty
+
+```example
 <div class="progress lofty">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
-### Size Variation - width & height
+## Size Variation - width & height
 
-サイズバリエーションのwidthとheightを組み合わせ適応した例となります。
+This is an example of combining and adapting the width and height of a size variation.
 
-mini
+### Size Variation - mini
+
+```example
 <div class="progress mini">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
-small
+### Size Variation - small
+
+```example
 <div class="progress small">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
-Default
+### Size Variation - Default
+
+```example
 <div class="progress">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
-large
+### Size Variation - large
+
+```example
 <div class="progress large">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
-big
+### Size Variation - big
+
+```example
 <div class="progress big">
   <span class="value" style="width: 50%;"></span>
 </div>
+```
 
-### Striped
+## Striped Color Variation
 
-Progressbar Componentsにおける、StripedStyleの適応例です。
+This is an example of an adaptation of StripedStyle in Progressbar Components.
 
+```example
 <div class="progress">
   <span class="value striped" style="width: 50%;"></span>
 </div>
+```
 
-<br>
+### Striped Color Variation - primary
 
+```example
 <div class="progress">
   <span class="value primary striped" style="width: 70%;"></span>
 </div>
+```
 
-<br>
+### Striped Color Variation - green
 
+```example
 <div class="progress">
   <span class="value green striped" style="width: 70%;"></span>
 </div>
+```
 
-<br>
+### Striped Color Variation - blue
 
+```example
 <div class="progress">
   <span class="value blue striped" style="width: 50%;"></span>
 </div>
+```
 
-<br>
+### Striped Color Variation - orange
 
+```example
 <div class="progress">
   <span class="value orange striped" style="width: 60%;"></span>
 </div>
+```
 
-<br>
+### Striped Color Variation - red
 
+```example
 <div class="progress">
   <span class="value red striped" style="width: 60%;"></span>
 </div>
+```
 
 ### Striped Size Variation
 
-StripedStyleのサイズバリエーション一覧となります。
+This is a list of the size variations of StripedStyle.
 
+### Striped Size Variation - mini
+
+```example
 <div class="progress mini">
   <span class="value orange striped" style="width: 60%;"></span>
 </div>
+```
 
-<br>
+### Striped Size Variation - small
 
+```example
 <div class="progress small">
   <span class="value orange striped" style="width: 60%;"></span>
 </div>
+```
 
-<br>
+### Striped Size Variation - Default
 
+```example
 <div class="progress">
   <span class="value orange striped" style="width: 60%;"></span>
 </div>
+```
 
-<br>
+### Striped Size Variation - large
 
+```example
 <div class="progress large">
   <span class="value orange striped" style="width: 60%;"></span>
 </div>
+```
 
-<br>
+### Striped Size Variation - big
 
+```example
 <div class="progress big">
   <span class="value orange striped" style="width: 60%;"></span>
 </div>
+```
 
 ### Striped Size Variation Height
 
-StripedStyleのサイズバリエーションのheightを適応した例となります。
+This is an example of adapting the height of the size variation in StripedStyle.
 
+### Striped Size Variation - lower
+
+```example
 <div class="progress lower">
   <span class="value orange striped" style="width: 60%;"></span>
 </div>
+```
 
-<br>
+### Striped Size Variation - low
 
+```example
 <div class="progress low">
   <span class="value orange striped" style="width: 60%;"></span>
 </div>
+```
 
-<br>
+### Striped Size Variation - Default
 
+```example
 <div class="progress">
   <span class="value orange striped" style="width: 60%;"></span>
 </div>
+```
 
-<br>
+### Striped Size Variation - high
 
+```example
 <div class="progress high">
   <span class="value orange striped" style="width: 60%;"></span>
 </div>
+```
 
-<br>
+### Striped Size Variation - lofty
 
+```example
 <div class="progress lofty">
   <span class="value orange striped" style="width: 60%;"></span>
 </div>
-
-
+```
