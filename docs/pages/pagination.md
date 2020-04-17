@@ -84,7 +84,12 @@ To apply a previous and next button, add the `prev` or `next` attribute to a `<l
 </nav>
 ```
 
+## Standard
 
+previous & next
+
+
+```html
 <nav class="pagination">
   <ul class="paginationList">
     <li class="prev">
@@ -107,11 +112,11 @@ To apply a previous and next button, add the `prev` or `next` attribute to a `<l
     </li>
   </ul>
 </nav>
+```
 
-skin square
-
+```example
 <nav class="pagination">
-  <ul class="paginationList square">
+  <ul class="paginationList">
     <li class="prev">
       <a href="#"><<</a>
     </li>
@@ -132,9 +137,19 @@ skin square
     </li>
   </ul>
 </nav>
+```
 
-previous & next
+previous & next Text
 
+
+```html
+<ul class="paginationList">
+  <li class="prev">
+    <a href="#"><< Previous</a>
+  </li>
+```
+
+```example
 <nav class="pagination">
   <ul class="paginationList">
     <li class="prev">
@@ -157,9 +172,46 @@ previous & next
     </li>
   </ul>
 </nav>
+```
 
-Icon
+## Skin Square Variation
 
+```html
+<ul class="paginationList square">
+```
+
+```example
+<nav class="pagination">
+  <ul class="paginationList square">
+    <li class="prev">
+      <a href="#"><<</a>
+    </li>
+    <li>
+      <a href="#">1</a>
+    </li>
+    <li>
+      <a href="#">2</a>
+    </li>
+    <li class="active">
+      <a href="#">3</a>
+    </li>
+    <li>
+      <a href="#">4</a>
+    </li>
+    <li class="next">
+      <a href="#">>></a>
+    </li>
+  </ul>
+</nav>
+```
+
+## Icon Variation
+
+```html
+<a href="#"><span class="icon ap-arrow-left"></span></a>
+```
+
+```example
 <nav class="pagination">
   <ul class="paginationList">
     <li class="prev">
@@ -182,7 +234,18 @@ Icon
     </li>
   </ul>
 </nav>
+```
 
+```html
+<li class="prev">
+  <a href="#"><span class="icon ap-angle-double-left"></span><span class="icon ap-angle-double-left"></span></a>
+</li>
+<li>
+  <a href="#"><span class="icon ap-angle-double-left"></span></a>
+</li>
+```
+
+```example
 <nav class="pagination">
   <ul class="paginationList">
     <li class="prev">
@@ -205,7 +268,18 @@ Icon
     </li>
   </ul>
 </nav>
+```
 
+```html
+<li class="prev">
+  <a href="#"><span class="icon ap-chevron-left"></span><span class="icon ap-chevron-left"></span></a>
+</li>
+<li>
+  <a href="#"><span class="icon ap-chevron-left"></span></a>
+</li>
+```
+
+```example
 <nav class="pagination">
   <ul class="paginationList">
     <li class="prev">
@@ -228,7 +302,17 @@ Icon
     </li>
   </ul>
 </nav>
+```
 
+### Other Icon Variation
+
+```html
+<li class="prev">
+  <a href="#"><span class="icon ap-hand-o-left"></span></a>
+</li>
+```
+
+```example
 <nav class="pagination">
   <ul class="paginationList">
     <li class="prev">
@@ -251,7 +335,15 @@ Icon
     </li>
   </ul>
 </nav>
+```
 
+```html
+<li class="prev">
+  <a href="#"><span class="icon ap-hand-o-left large"></span></a>
+</li>
+```
+
+```example
 <nav class="pagination">
   <ul class="paginationList">
     <li class="prev">
@@ -274,11 +366,18 @@ Icon
     </li>
   </ul>
 </nav>
+```
 
-### Pagination Size Variation
+## Pagination Size Variation
 
-mini
 
+### Mini Size Style
+
+```html
+<ul class="paginationList mini">
+```
+
+```example
 <nav class="pagination">
   <ul class="paginationList mini">
     <li class="prev">
@@ -301,9 +400,15 @@ mini
     </li>
   </ul>
 </nav>
+```
 
-small
+### Small Size Style
 
+```html
+<ul class="paginationList small">
+```
+
+```example
 <nav class="pagination">
   <ul class="paginationList small">
     <li class="prev">
@@ -326,9 +431,11 @@ small
     </li>
   </ul>
 </nav>
+```
 
-default
+### Default Size Style
 
+```example
 <nav class="pagination">
   <ul class="paginationList">
     <li class="prev">
@@ -351,9 +458,15 @@ default
     </li>
   </ul>
 </nav>
+```
 
-large
+### Large Size Style
 
+```html
+<ul class="paginationList large">
+```
+
+```example
 <nav class="pagination">
   <ul class="paginationList large">
     <li class="prev">
@@ -376,9 +489,15 @@ large
     </li>
   </ul>
 </nav>
+```
 
-big
+### Big Size Style
 
+```html
+<ul class="paginationList big">
+```
+
+```example
 <nav class="pagination">
   <ul class="paginationList big">
     <li class="prev">
@@ -401,11 +520,11 @@ big
     </li>
   </ul>
 </nav>
+```
 
-個別
+### Pagination Size Variation - Width
 
-### Pagination  Size Variation Width
-
+```example
 <nav class="pagination">
   <ul class="paginationList">
     <li class="narrow">
@@ -428,9 +547,11 @@ big
     </li>
   </ul>
 </nav>
+```
 
-### Pagination  Size Variation Height
+## Pagination Size Variation - Height
 
+```example
 <nav class="pagination">
   <ul class="paginationList">
     <li class="lower">
@@ -453,9 +574,11 @@ big
     </li>
   </ul>
 </nav>
+```
 
-### Pagination Width x Height
+## Pagination Size Variation Width x Height
 
+```example
 <nav class="pagination">
   <ul class="paginationList">
     <li class="mini">
@@ -478,9 +601,13 @@ big
     </li>
   </ul>
 </nav>
+```
 
-## Pagination Skin square Components
+## Pagination Skin Square Components
 
+### default Skin Square Components 
+
+```example
 <nav class="pagination">
   <ul class="paginationList square">
     <li class="prev">
@@ -503,9 +630,11 @@ big
     </li>
   </ul>
 </nav>
+```
 
-skin square
+### skin square
 
+```example
 <nav class="pagination">
   <ul class="paginationList square">
     <li class="prev">
@@ -528,9 +657,11 @@ skin square
     </li>
   </ul>
 </nav>
+```
 
-previous & next
+### skin square - previous & next
 
+```example
 <nav class="pagination">
   <ul class="paginationList square">
     <li class="prev">
@@ -553,9 +684,11 @@ previous & next
     </li>
   </ul>
 </nav>
+```
 
-Icon
+### skin square - Icon
 
+```example
 <nav class="pagination">
   <ul class="paginationList square">
     <li class="prev">
@@ -578,7 +711,9 @@ Icon
     </li>
   </ul>
 </nav>
+```
 
+```example
 <nav class="pagination">
   <ul class="paginationList square">
     <li class="prev">
@@ -601,7 +736,9 @@ Icon
     </li>
   </ul>
 </nav>
+```
 
+```example
 <nav class="pagination">
   <ul class="paginationList square">
     <li class="prev">
@@ -624,7 +761,9 @@ Icon
     </li>
   </ul>
 </nav>
+```
 
+```example
 <nav class="pagination">
   <ul class="paginationList square">
     <li class="prev">
@@ -647,7 +786,9 @@ Icon
     </li>
   </ul>
 </nav>
+```
 
+```example
 <nav class="pagination">
   <ul class="paginationList square">
     <li class="prev">
@@ -670,11 +811,13 @@ Icon
     </li>
   </ul>
 </nav>
+```
 
-### Pagination square Color Variation
+## Pagination Square Color Variation
 
-default
+### skin square - Default Color
 
+```example
 <nav class="pagination">
   <ul class="paginationList square">
     <li class="prev">
@@ -697,9 +840,12 @@ default
     </li>
   </ul>
 </nav>
+```
 
-primary
+### skin square - primary Color
 
+
+```example
 <nav class="pagination">
   <ul class="paginationList square primary">
     <li class="prev">
@@ -722,9 +868,12 @@ primary
     </li>
   </ul>
 </nav>
+```
 
-green
+### skin square - Green Color
 
+
+```example
 <nav class="pagination">
   <ul class="paginationList square green">
     <li class="prev">
@@ -747,9 +896,11 @@ green
     </li>
   </ul>
 </nav>
+```
 
-blue
+### skin square - Blue Color
 
+```example
 <nav class="pagination">
   <ul class="paginationList square blue">
     <li class="prev">
@@ -772,9 +923,11 @@ blue
     </li>
   </ul>
 </nav>
+```
 
-orange
+### skin square - Orange Color
 
+```example
 <nav class="pagination">
   <ul class="paginationList square orange">
     <li class="prev">
@@ -797,9 +950,11 @@ orange
     </li>
   </ul>
 </nav>
+```
 
-red
+### skin square - Red Color
 
+```example
 <nav class="pagination">
   <ul class="paginationList square red">
     <li class="prev">
@@ -822,12 +977,13 @@ red
     </li>
   </ul>
 </nav>
+```
 
+## Pagination Square Size Variation
 
-### Pagination square Size Variation
+### Pagination Square Size Variation - Mini
 
-mini
-
+```example
 <nav class="pagination">
   <ul class="paginationList square mini">
     <li class="prev">
@@ -850,9 +1006,11 @@ mini
     </li>
   </ul>
 </nav>
+```
 
-small
+### Pagination Square Size Variation - Small
 
+```example
 <nav class="pagination">
   <ul class="paginationList square small">
     <li class="prev">
@@ -875,9 +1033,11 @@ small
     </li>
   </ul>
 </nav>
+```
 
-default
+### Pagination Square Size Variation - Default
 
+```example
 <nav class="pagination">
   <ul class="paginationList square">
     <li class="prev">
@@ -900,9 +1060,12 @@ default
     </li>
   </ul>
 </nav>
+```
 
-large
+### Pagination Square Size Variation - Large
 
+
+```example
 <nav class="pagination">
   <ul class="paginationList square large">
     <li class="prev">
@@ -925,9 +1088,12 @@ large
     </li>
   </ul>
 </nav>
+```
 
-big
+### Pagination Square Size Variation - Big
 
+
+```example
 <nav class="pagination">
   <ul class="paginationList square big">
     <li class="prev">
@@ -950,11 +1116,11 @@ big
     </li>
   </ul>
 </nav>
+```
 
-個別
+## Pagination Square Size Variation - Width
 
-### Pagination square Width
-
+```example
 <nav class="pagination">
   <ul class="paginationList square">
     <li class="narrow">
@@ -977,9 +1143,11 @@ big
     </li>
   </ul>
 </nav>
+```
 
-### Pagination square Height
+## Pagination Square Size Variation - Height
 
+```example
 <nav class="pagination">
   <ul class="paginationList square">
     <li class="lower">
@@ -1002,9 +1170,10 @@ big
     </li>
   </ul>
 </nav>
+```
+## Pagination Square Size Variation - Width x Height
 
-### Pagination square Width x Height
-
+```example
 <nav class="pagination">
   <ul class="paginationList square">
     <li class="mini">
@@ -1027,10 +1196,4 @@ big
     </li>
   </ul>
 </nav>
-
-### Pagination Previous & Next
-
-rectangle
-
-round
-
+```
