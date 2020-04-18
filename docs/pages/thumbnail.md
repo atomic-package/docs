@@ -79,9 +79,9 @@ You can change the style depending on the class you add.
 
 ***
 
-## Thumbnail Color Variation - Border Color
+## Color Variation - Border Color
 
-### Thumbnail Color Variation - Border Color - Primary
+### Color Variation - Border Color - Primary
 
 ```html
 <p class="thumbnail small border primary"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
@@ -93,7 +93,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail small border primary" src="images/thumbnail_01.jpg" width="45" alt="person"/>
 ```
 
-### Thumbnail Color Variation - Border Color - Green
+### Color Variation - Border Color - Green
 
 ```html
 <p class="thumbnail small border green"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
@@ -105,7 +105,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail small border green" src="images/thumbnail_01.jpg" width="45" alt="person"/>
 ```
 
-### Thumbnail Color Variation - Border Color - Blue
+### Color Variation - Border Color - Blue
 
 ```html
 <p class="thumbnail small border blue"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
@@ -117,7 +117,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail small border blue" src="images/thumbnail_01.jpg" width="45" alt="person"/>
 ```
 
-### Thumbnail Color Variation - Border Color - Orange
+### Color Variation - Border Color - Orange
 
 ```html
 <p class="thumbnail small border orange"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
@@ -129,7 +129,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail small border orange" src="images/thumbnail_01.jpg" width="45" alt="person"/>
 ```
 
-### Thumbnail Color Variation - Border Color - Red
+### Color Variation - Border Color - Red
 
 ```html
 <p class="thumbnail small border red"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
@@ -143,9 +143,9 @@ You can change the style depending on the class you add.
 
 ***
 
-## Thumbnail Color Variation - Frame Color
+## Color Variation - Frame Color
 
-### Thumbnail Color Variation - Frame Color - Primary
+### Color Variation - Frame Color - Primary
 
 ```html
 <p class="thumbnail small frame primary"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
@@ -157,7 +157,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail small frame primary" src="images/thumbnail_01.jpg" width="45" alt="person"/>
 ```
 
-### Thumbnail Color Variation - Frame Color - Green
+### Color Variation - Frame Color - Green
 
 ```html
 <p class="thumbnail small frame green"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
@@ -169,7 +169,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail small frame green" src="images/thumbnail_01.jpg" width="45" alt="person"/>
 ```
 
-### Thumbnail Color Variation - Frame Color - Blue
+### Color Variation - Frame Color - Blue
 
 ```html
 <p class="thumbnail small frame blue"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
@@ -181,7 +181,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail small frame blue" src="images/thumbnail_01.jpg" width="45" alt="person"/>
 ```
 
-### Thumbnail Color Variation - Frame Color - Orange
+### Color Variation - Frame Color - Orange
 
 ```html
 <p class="thumbnail small frame orange"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
@@ -193,7 +193,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail small frame orange" src="images/thumbnail_01.jpg" width="45" alt="person"/>
 ```
 
-### Thumbnail Color Variation - Frame Color - Red
+### Color Variation - Frame Color - Red
 
 ```html
 <p class="thumbnail small frame red"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
@@ -207,9 +207,9 @@ You can change the style depending on the class you add.
 
 ***
 
-## Thumbnail Size Variation
+## Size Variation
 
-### Thumbnail Size Variation - mini
+### Size Variation - mini
 
 ```html
 <p class="thumbnail mini"><img src="images/thumbnail_01.jpg" width="30" alt="person"/></p>
@@ -221,7 +221,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail mini" src="images/thumbnail_01.jpg" width="30" alt="person"/>
 ```
 
-### Thumbnail Size Variation - small
+### Size Variation - small
 
 ```html
 <p class="thumbnail small"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
@@ -233,7 +233,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail small" src="images/thumbnail_01.jpg" width="45" alt="person"/>
 ```
 
-### Thumbnail Size Variation - Default
+### Size Variation - Default
 
 ```html
 <p class="thumbnail"><img src="images/thumbnail_01.jpg" width="60" alt="person"/></p>
@@ -245,7 +245,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail" src="images/thumbnail_01.jpg" width="60" alt="person"/>
 ```
 
-### Thumbnail Size Variation - large
+### Size Variation - large
 
 ```html
 <p class="thumbnail large"><img src="images/thumbnail_01.jpg" width="90" alt="person"/></p>
@@ -257,7 +257,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail large" src="images/thumbnail_01.jpg" width="90" alt="person"/>
 ```
 
-### Thumbnail Size Variation - big
+### Size Variation - big
 
 ```html
 <p class="thumbnail big"><img src="images/thumbnail_01.jpg" width="120" alt="person"/></p>
@@ -269,7 +269,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail big" src="images/thumbnail_01.jpg" width="120" alt="person"/>
 ```
 
-### Thumbnail Size Variation - free
+### Size Variation - free
 
 ```html
 <p class="thumbnail free"><img src="images/thumbnail_01.jpg" width="160" alt="person"/></p>
@@ -283,9 +283,9 @@ You can change the style depending on the class you add.
 
 ***
 
-## Thumbnail Round Style Size Variation
+## Round Style Size Variation
 
-### Thumbnail Round Style Size Variation - mini
+### Round Style Size Variation - mini
 
 ```html
 <p class="thumbnail mini round"><img src="images/thumbnail_01.jpg" width="30" alt="person"/></p>
@@ -297,7 +297,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail mini round" src="images/thumbnail_01.jpg" width="30" alt="person"/>
 ```
 
-### Thumbnail Round Style Size Variation - small
+### Round Style Size Variation - small
 
 ```html
 <p class="thumbnail small round"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
@@ -309,7 +309,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail small round" src="images/thumbnail_01.jpg" width="45" alt="person"/>
 ```
 
-### Thumbnail Round Style Size Variation - Default
+### Round Style Size Variation - Default
 
 ```html
 <p class="thumbnail round"><img src="images/thumbnail_01.jpg" width="60" alt="person"/></p>
@@ -321,7 +321,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail round" src="images/thumbnail_01.jpg" width="60" alt="person"/>
 ```
 
-### Thumbnail Round Style Size Variation - large
+### Round Style Size Variation - large
 
 ```html
 <p class="thumbnail large round"><img src="images/thumbnail_01.jpg" width="90" alt="person"/></p>
@@ -333,7 +333,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail large round" src="images/thumbnail_01.jpg" width="90" alt="person"/>
 ```
 
-### Thumbnail Round Style Size Variation - big
+### Round Style Size Variation - big
 
 ```html
 <p class="thumbnail big round"><img src="images/thumbnail_01.jpg" width="120" alt="person"/></p>
@@ -345,7 +345,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail big round" src="images/thumbnail_01.jpg" width="120" alt="person"/>
 ```
 
-### Thumbnail Round Style Size Variation - free
+### Round Style Size Variation - free
 
 ```html
 <p class="thumbnail free round"><img src="images/thumbnail_01.jpg" width="160" alt="person"/></p>
@@ -359,9 +359,9 @@ You can change the style depending on the class you add.
 
 ***
 
-## Thumbnail Circle Style Size Variation
+## Circle Style Size Variation
 
-### Thumbnail Circle Style Size Variation - mini
+### Circle Style Size Variation - mini
 
 ```html
 <p class="thumbnail mini circle"><img src="images/thumbnail_01.jpg" width="30" alt="person"/></p>
@@ -373,7 +373,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail mini circle" src="images/thumbnail_01.jpg" width="30" alt="person"/>
 ```
 
-### Thumbnail Circle Style Size Variation - small
+### Circle Style Size Variation - small
 
 ```html
 <p class="thumbnail small circle"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
@@ -385,7 +385,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail small circle" src="images/thumbnail_01.jpg" width="45" alt="person"/>
 ```
 
-### Thumbnail Circle Style Size Variation - Default
+### Circle Style Size Variation - Default
 
 ```html
 <p class="thumbnail circle"><img src="images/thumbnail_01.jpg" width="60" alt="person"/></p>
@@ -397,7 +397,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail circle" src="images/thumbnail_01.jpg" width="60" alt="person"/>
 ```
 
-### Thumbnail Circle Style Size Variation - large
+### Circle Style Size Variation - large
 
 ```html
 <p class="thumbnail large circle"><img src="images/thumbnail_01.jpg" width="90" alt="person"/></p>
@@ -409,7 +409,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail large circle" src="images/thumbnail_01.jpg" width="90" alt="person"/>
 ```
 
-### Thumbnail Circle Style Size Variation - big
+### Circle Style Size Variation - big
 
 ```html
 <p class="thumbnail big circle"><img src="images/thumbnail_01.jpg" width="120" alt="person"/></p>
@@ -421,7 +421,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail big circle" src="images/thumbnail_01.jpg" width="120" alt="person"/>
 ```
 
-### Thumbnail Circle Style Size Variation - free
+### Circle Style Size Variation - free
 
 ```html
 <p class="thumbnail free circle"><img src="images/thumbnail_01.jpg" width="160" alt="person"/></p>
@@ -435,11 +435,9 @@ You can change the style depending on the class you add.
 
 ***
 
-## Thumbnail Border Style Size Variation
+## Border Style Size Variation
 
-### Size Variation - border
-
-### Thumbnail Border Style Size Variation - mini
+### Border Style Size Variation - mini
 
 ```html
 <p class="thumbnail mini border"><img src="images/thumbnail_01.jpg" width="30" alt="person"/></p>
@@ -451,7 +449,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail mini border" src="images/thumbnail_01.jpg" width="30" alt="person"/>
 ```
 
-### Thumbnail Border Style Size Variation - small
+### Border Style Size Variation - small
 
 ```html
 <p class="thumbnail small border"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
@@ -463,7 +461,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail small border" src="images/thumbnail_01.jpg" width="45" alt="person"/>
 ```
 
-### Thumbnail Border Style Size Variation - Default
+### Border Style Size Variation - Default
 
 ```html
 <p class="thumbnail border"><img src="images/thumbnail_01.jpg" width="60" alt="person"/></p>
@@ -475,7 +473,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail border" src="images/thumbnail_01.jpg" width="60" alt="person"/>
 ```
 
-### Thumbnail Border Style Size Variation - large
+### Border Style Size Variation - large
 
 ```html
 <p class="thumbnail large border"><img src="images/thumbnail_01.jpg" width="90" alt="person"/></p>
@@ -487,7 +485,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail large border" src="images/thumbnail_01.jpg" width="90" alt="person"/>
 ```
 
-### Thumbnail Border Style Size Variation - big
+### Border Style Size Variation - big
 
 ```html
 <p class="thumbnail big border"><img src="images/thumbnail_01.jpg" width="120" alt="person"/></p>
@@ -499,7 +497,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail big border" src="images/thumbnail_01.jpg" width="120" alt="person"/>
 ```
 
-### Thumbnail Border Style Size Variation - free
+### Border Style Size Variation - free
 
 ```html
 <p class="thumbnail free circle"><img src="images/thumbnail_01.jpg" width="160" alt="person"/></p>
@@ -513,9 +511,9 @@ You can change the style depending on the class you add.
 
 ***
 
-## Thumbnail Frame Style Size Variation
+## Frame Style Size Variation
 
-### Thumbnail Frame Style Size Variation - mini
+### Frame Style Size Variation - mini
 
 ```html
 <p class="thumbnail mini frame"><img src="images/thumbnail_01.jpg" width="30" alt="person"/></p>
@@ -527,7 +525,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail mini frame" src="images/thumbnail_01.jpg" width="30" alt="person"/>
 ```
 
-### Thumbnail Frame Style Size Variation - small
+### Frame Style Size Variation - small
 
 ```html
 <p class="thumbnail small frame"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
@@ -539,7 +537,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail small frame" src="images/thumbnail_01.jpg" width="45" alt="person"/>
 ```
 
-### Thumbnail Frame Style Size Variation - Default
+### Frame Style Size Variation - Default
 
 ```html
 <p class="thumbnail frame"><img src="images/thumbnail_01.jpg" width="60" alt="person"/></p>
@@ -551,7 +549,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail frame" src="images/thumbnail_01.jpg" width="60" alt="person"/>
 ```
 
-### Thumbnail Frame Style Size Variation - large
+### Frame Style Size Variation - large
 
 ```html
 <p class="thumbnail large frame"><img src="images/thumbnail_01.jpg" width="90" alt="person"/></p>
@@ -563,7 +561,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail large frame" src="images/thumbnail_01.jpg" width="90" alt="person"/>
 ```
 
-### Thumbnail Frame Style Size Variation - big
+### Frame Style Size Variation - big
 
 ```html
 <p class="thumbnail big frame"><img src="images/thumbnail_01.jpg" width="120" alt="person"/></p>
@@ -575,7 +573,7 @@ You can change the style depending on the class you add.
 <img class="thumbnail big frame" src="images/thumbnail_01.jpg" width="120" alt="person"/>
 ```
 
-### Thumbnail Frame Style Size Variation - free
+### Frame Style Size Variation - free
 
 ```html
 <p class="thumbnail free frame"><img src="images/thumbnail_01.jpg" width="160" alt="person"/></p>
@@ -602,9 +600,9 @@ Create a style for a thumbnail with a caption.
 
 ***
 
-## Thumbnail Caption Components Size Variation
+## Caption Components Size Variation
 
-### Thumbnail Caption Components Size Variation - mini
+### Caption Components Size Variation - mini
 
 ```html
 <p class="thumbnail mini caption">
@@ -620,7 +618,7 @@ Create a style for a thumbnail with a caption.
 </p>
 ```
 
-### Thumbnail Caption Components Size Variation - small
+### Caption Components Size Variation - small
 
 ```html
 <p class="thumbnail small caption">
@@ -636,7 +634,7 @@ Create a style for a thumbnail with a caption.
 </p>
 ```
 
-### Thumbnail Caption Components Size Variation - Default
+### Caption Components Size Variation - Default
 
 ```html
 <p class="thumbnail caption">
@@ -652,7 +650,7 @@ Create a style for a thumbnail with a caption.
 </p>
 ```
 
-### Thumbnail Caption Components Size Variation - large
+### Caption Components Size Variation - large
 
 ```html
 <p class="thumbnail large caption">
@@ -668,7 +666,7 @@ Create a style for a thumbnail with a caption.
 </p>
 ```
 
-### Thumbnail Caption Components Size Variation - big
+### Caption Components Size Variation - big
 
 ```html
 <p class="thumbnail big caption">
