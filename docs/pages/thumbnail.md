@@ -1,167 +1,685 @@
-+++
-title = "Thumbnail Component"
-date = "2016-11-14"
-+++
+# Thumbnail
 
-## Thumbnail Components
-### Image Elements
+<p class="uk-text-lead">Easily create a nice looking thumbnail that comes in different styles.</p>
 
-<div>
-<img class="thumbnail" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail round" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail circle" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail border" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail frame" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-</div>
+## Style modifiers
 
-### Wrap Elements
-<div>
-<p class="thumbnail"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail round"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail circle"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail border"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail frame"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-</div>
+When stalling a thumbnail, add the '.thumbnail' class to the 'img' element or the element that wraps the 'img' element.
 
-### Color Variation
+```html
+<img class="thumbnail" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+<p class="thumbnail"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+```
 
-<p class="thumbnail small border"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail small border primary"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail small border green"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail small border blue"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail small border orange"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail small border red"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
+```example
+<img class="thumbnail" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+<p class="thumbnail"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+```
 
-<img class="thumbnail small border" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail small border primary" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail small border green" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail small border blue" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail small border orange" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail small border red" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<!--<img class="thumbnail free" src="img/thumbnail_01.jpg" width="45" alt="person"/>-->
+You can change the style depending on the class you add.
 
-<br/><br/>
+| Class | Description |
+|:----------------|:----------------------------------------|
+| `.round`   | You can make the thumbnails rounded corners. |
+| `.circle` | You can make the thumbnail a circle.          |
+| `.border` | You can add borders to your thumbnails.       |
+| `.frame`  | You can add a frame to a thumbnail.           |
 
-<p class="thumbnail small frame"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail small frame primary"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail small frame green"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail small frame blue"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail small frame orange"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail small frame red"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
+***
 
-<img class="thumbnail small frame" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail small frame primary" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail small frame green" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail small frame blue" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail small frame orange" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail small frame red" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<!--<img class="thumbnail free" src="img/thumbnail_01.jpg" width="45" alt="person"/>-->
+## Thumbnail Styled
 
-### Size Variation
-<div>
-<p class="thumbnail mini"><img src="img/thumbnail_01.jpg" width="30" alt="person"/></p>
-<p class="thumbnail small"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail"><img src="img/thumbnail_01.jpg" width="60" alt="person"/></p>
-<p class="thumbnail large"><img src="img/thumbnail_01.jpg" width="90" alt="person"/></p>
-<p class="thumbnail big"><img src="img/thumbnail_01.jpg" width="120" alt="person"/></p>
-<!--<p class="thumbnail free"><img src="img/thumbnail_01.jpg" width="160" alt="person"/></p>-->
-</div>
+### Thumbnail Styled - round
 
-<div>
-<img class="thumbnail mini" src="img/thumbnail_01.jpg" width="30" alt="person"/>
-<img class="thumbnail small" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail" src="img/thumbnail_01.jpg" width="60" alt="person"/>
-<img class="thumbnail large" src="img/thumbnail_01.jpg" width="90" alt="person"/>
-<img class="thumbnail big" src="img/thumbnail_01.jpg" width="120" alt="person"/>
-<!--<img class="thumbnail free" src="img/thumbnail_01.jpg" width="160" alt="person"/>-->
-</div>
+```html
+<p class="thumbnail round"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail round" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
 
-<br/><br/>
+```example
+<p class="thumbnail round"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail round" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
 
-### Size Variation - round
-<p class="thumbnail mini round"><img src="img/thumbnail_01.jpg" width="30" alt="person"/></p>
-<p class="thumbnail small round"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail round"><img src="img/thumbnail_01.jpg" width="60" alt="person"/></p>
-<p class="thumbnail large round"><img src="img/thumbnail_01.jpg" width="90" alt="person"/></p>
-<p class="thumbnail big round"><img src="img/thumbnail_01.jpg" width="120" alt="person"/></p>
-<!--<p class="thumbnail free round"><img src="img/thumbnail_01.jpg" width="160" alt="person"/></p>-->
+### Thumbnail Styled - circle
 
-<img class="thumbnail mini round" src="img/thumbnail_01.jpg" width="30" alt="person"/>
-<img class="thumbnail small round" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail round" src="img/thumbnail_01.jpg" width="60" alt="person"/>
-<img class="thumbnail large round" src="img/thumbnail_01.jpg" width="90" alt="person"/>
-<img class="thumbnail big round" src="img/thumbnail_01.jpg" width="120" alt="person"/>
-<!--<img class="thumbnail free" src="img/thumbnail_01.jpg" width="160" alt="person"/>-->
+```html
+<p class="thumbnail circle"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail circle" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
 
-### Size Variation - circle
-<p class="thumbnail mini circle"><img src="img/thumbnail_01.jpg" width="30" alt="person"/></p>
-<p class="thumbnail small circle"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail circle"><img src="img/thumbnail_01.jpg" width="60" alt="person"/></p>
-<p class="thumbnail large circle"><img src="img/thumbnail_01.jpg" width="90" alt="person"/></p>
-<p class="thumbnail big circle"><img src="img/thumbnail_01.jpg" width="120" alt="person"/></p>
-<!--<p class="thumbnail free circle"><img src="img/thumbnail_01.jpg" width="160" alt="person"/></p>-->
+```example
+<p class="thumbnail circle"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail circle" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
 
-<img class="thumbnail mini circle" src="img/thumbnail_01.jpg" width="30" alt="person"/>
-<img class="thumbnail small circle" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail circle" src="img/thumbnail_01.jpg" width="60" alt="person"/>
-<img class="thumbnail large circle" src="img/thumbnail_01.jpg" width="90" alt="person"/>
-<img class="thumbnail big circle" src="img/thumbnail_01.jpg" width="120" alt="person"/>
-<!--<img class="thumbnail free circle" src="img/thumbnail_01.jpg" width="160" alt="person"/>-->
+### Thumbnail Styled - border
 
-<br/><br/>
+```html
+<p class="thumbnail border"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail border" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail border"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail border" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+### Thumbnail Styled - frame
+
+```html
+<p class="thumbnail frame"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail frame" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail frame"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail frame" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+***
+
+## Thumbnail Color Variation - Border Color
+
+### Thumbnail Color Variation - Border Color - Primary
+
+```html
+<p class="thumbnail small border primary"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small border primary" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail small border primary"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small border primary" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+### Thumbnail Color Variation - Border Color - Green
+
+```html
+<p class="thumbnail small border green"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small border green" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail small border green"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small border green" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+### Thumbnail Color Variation - Border Color - Blue
+
+```html
+<p class="thumbnail small border blue"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small border blue" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail small border blue"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small border blue" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+### Thumbnail Color Variation - Border Color - Orange
+
+```html
+<p class="thumbnail small border orange"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small border orange" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail small border orange"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small border orange" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+### Thumbnail Color Variation - Border Color - Red
+
+```html
+<p class="thumbnail small border red"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small border red" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail small border red"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small border red" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+***
+
+## Thumbnail Color Variation - Frame Color
+
+### Thumbnail Color Variation - Frame Color - Primary
+
+```html
+<p class="thumbnail small frame primary"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small frame primary" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail small frame primary"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small frame primary" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+### Thumbnail Color Variation - Frame Color - Green
+
+```html
+<p class="thumbnail small frame green"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small frame green" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail small frame green"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small frame green" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+### Thumbnail Color Variation - Frame Color - Blue
+
+```html
+<p class="thumbnail small frame blue"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small frame blue" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail small frame blue"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small frame blue" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+### Thumbnail Color Variation - Frame Color - Orange
+
+```html
+<p class="thumbnail small frame orange"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small frame orange" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail small frame orange"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small frame orange" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+### Thumbnail Color Variation - Frame Color - Red
+
+```html
+<p class="thumbnail small frame red"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small frame red" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail small frame red"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small frame red" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+***
+
+## Thumbnail Size Variation
+
+### Thumbnail Size Variation - mini
+
+```html
+<p class="thumbnail mini"><img src="images/thumbnail_01.jpg" width="30" alt="person"/></p>
+<img class="thumbnail mini" src="images/thumbnail_01.jpg" width="30" alt="person"/>
+```
+
+```example
+<p class="thumbnail mini"><img src="images/thumbnail_01.jpg" width="30" alt="person"/></p>
+<img class="thumbnail mini" src="images/thumbnail_01.jpg" width="30" alt="person"/>
+```
+
+### Thumbnail Size Variation - small
+
+```html
+<p class="thumbnail small"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail small"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+### Thumbnail Size Variation - Default
+
+```html
+<p class="thumbnail"><img src="images/thumbnail_01.jpg" width="60" alt="person"/></p>
+<img class="thumbnail" src="images/thumbnail_01.jpg" width="60" alt="person"/>
+```
+
+```example
+<p class="thumbnail"><img src="images/thumbnail_01.jpg" width="60" alt="person"/></p>
+<img class="thumbnail" src="images/thumbnail_01.jpg" width="60" alt="person"/>
+```
+
+### Thumbnail Size Variation - large
+
+```html
+<p class="thumbnail large"><img src="images/thumbnail_01.jpg" width="90" alt="person"/></p>
+<img class="thumbnail large" src="images/thumbnail_01.jpg" width="90" alt="person"/>
+```
+
+```example
+<p class="thumbnail large"><img src="images/thumbnail_01.jpg" width="90" alt="person"/></p>
+<img class="thumbnail large" src="images/thumbnail_01.jpg" width="90" alt="person"/>
+```
+
+### Thumbnail Size Variation - big
+
+```html
+<p class="thumbnail big"><img src="images/thumbnail_01.jpg" width="120" alt="person"/></p>
+<img class="thumbnail big" src="images/thumbnail_01.jpg" width="120" alt="person"/>
+```
+
+```example
+<p class="thumbnail big"><img src="images/thumbnail_01.jpg" width="120" alt="person"/></p>
+<img class="thumbnail big" src="images/thumbnail_01.jpg" width="120" alt="person"/>
+```
+
+### Thumbnail Size Variation - free
+
+```html
+<p class="thumbnail free"><img src="images/thumbnail_01.jpg" width="160" alt="person"/></p>
+<img class="thumbnail free" src="images/thumbnail_01.jpg" width="160" alt="person"/>
+```
+
+```example
+<p class="thumbnail free"><img src="images/thumbnail_01.jpg" width="160" alt="person"/></p>
+<img class="thumbnail free" src="images/thumbnail_01.jpg" width="160" alt="person"/>
+```
+
+***
+
+## Thumbnail Round Style Size Variation
+
+### Thumbnail Round Style Size Variation - mini
+
+```html
+<p class="thumbnail mini round"><img src="images/thumbnail_01.jpg" width="30" alt="person"/></p>
+<img class="thumbnail mini round" src="images/thumbnail_01.jpg" width="30" alt="person"/>
+```
+
+```example
+<p class="thumbnail mini round"><img src="images/thumbnail_01.jpg" width="30" alt="person"/></p>
+<img class="thumbnail mini round" src="images/thumbnail_01.jpg" width="30" alt="person"/>
+```
+
+### Thumbnail Round Style Size Variation - small
+
+```html
+<p class="thumbnail small round"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small round" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail small round"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small round" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+### Thumbnail Round Style Size Variation - Default
+
+```html
+<p class="thumbnail round"><img src="images/thumbnail_01.jpg" width="60" alt="person"/></p>
+<img class="thumbnail round" src="images/thumbnail_01.jpg" width="60" alt="person"/>
+```
+
+```example
+<p class="thumbnail round"><img src="images/thumbnail_01.jpg" width="60" alt="person"/></p>
+<img class="thumbnail round" src="images/thumbnail_01.jpg" width="60" alt="person"/>
+```
+
+### Thumbnail Round Style Size Variation - large
+
+```html
+<p class="thumbnail large round"><img src="images/thumbnail_01.jpg" width="90" alt="person"/></p>
+<img class="thumbnail large round" src="images/thumbnail_01.jpg" width="90" alt="person"/>
+```
+
+```example
+<p class="thumbnail large round"><img src="images/thumbnail_01.jpg" width="90" alt="person"/></p>
+<img class="thumbnail large round" src="images/thumbnail_01.jpg" width="90" alt="person"/>
+```
+
+### Thumbnail Round Style Size Variation - big
+
+```html
+<p class="thumbnail big round"><img src="images/thumbnail_01.jpg" width="120" alt="person"/></p>
+<img class="thumbnail big round" src="images/thumbnail_01.jpg" width="120" alt="person"/>
+```
+
+```example
+<p class="thumbnail big round"><img src="images/thumbnail_01.jpg" width="120" alt="person"/></p>
+<img class="thumbnail big round" src="images/thumbnail_01.jpg" width="120" alt="person"/>
+```
+
+### Thumbnail Round Style Size Variation - free
+
+```html
+<p class="thumbnail free round"><img src="images/thumbnail_01.jpg" width="160" alt="person"/></p>
+<img class="thumbnail free" src="images/thumbnail_01.jpg" width="160" alt="person"/>
+```
+
+```example
+<p class="thumbnail free round"><img src="images/thumbnail_01.jpg" width="160" alt="person"/></p>
+<img class="thumbnail free" src="images/thumbnail_01.jpg" width="160" alt="person"/>
+```
+
+***
+
+## Thumbnail Circle Style Size Variation
+
+### Thumbnail Circle Style Size Variation - mini
+
+```html
+<p class="thumbnail mini circle"><img src="images/thumbnail_01.jpg" width="30" alt="person"/></p>
+<img class="thumbnail mini circle" src="images/thumbnail_01.jpg" width="30" alt="person"/>
+```
+
+```example
+<p class="thumbnail mini circle"><img src="images/thumbnail_01.jpg" width="30" alt="person"/></p>
+<img class="thumbnail mini circle" src="images/thumbnail_01.jpg" width="30" alt="person"/>
+```
+
+### Thumbnail Circle Style Size Variation - small
+
+```html
+<p class="thumbnail small circle"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small circle" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail small circle"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small circle" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+### Thumbnail Circle Style Size Variation - Default
+
+```html
+<p class="thumbnail circle"><img src="images/thumbnail_01.jpg" width="60" alt="person"/></p>
+<img class="thumbnail circle" src="images/thumbnail_01.jpg" width="60" alt="person"/>
+```
+
+```example
+<p class="thumbnail circle"><img src="images/thumbnail_01.jpg" width="60" alt="person"/></p>
+<img class="thumbnail circle" src="images/thumbnail_01.jpg" width="60" alt="person"/>
+```
+
+### Thumbnail Circle Style Size Variation - large
+
+```html
+<p class="thumbnail large circle"><img src="images/thumbnail_01.jpg" width="90" alt="person"/></p>
+<img class="thumbnail large circle" src="images/thumbnail_01.jpg" width="90" alt="person"/>
+```
+
+```example
+<p class="thumbnail large circle"><img src="images/thumbnail_01.jpg" width="90" alt="person"/></p>
+<img class="thumbnail large circle" src="images/thumbnail_01.jpg" width="90" alt="person"/>
+```
+
+### Thumbnail Circle Style Size Variation - big
+
+```html
+<p class="thumbnail big circle"><img src="images/thumbnail_01.jpg" width="120" alt="person"/></p>
+<img class="thumbnail big circle" src="images/thumbnail_01.jpg" width="120" alt="person"/>
+```
+
+```example
+<p class="thumbnail big circle"><img src="images/thumbnail_01.jpg" width="120" alt="person"/></p>
+<img class="thumbnail big circle" src="images/thumbnail_01.jpg" width="120" alt="person"/>
+```
+
+### Thumbnail Circle Style Size Variation - free
+
+```html
+<p class="thumbnail free circle"><img src="images/thumbnail_01.jpg" width="160" alt="person"/></p>
+<img class="thumbnail free circle" src="images/thumbnail_01.jpg" width="160" alt="person"/>
+```
+
+```example
+<p class="thumbnail free circle"><img src="images/thumbnail_01.jpg" width="160" alt="person"/></p>
+<img class="thumbnail free circle" src="images/thumbnail_01.jpg" width="160" alt="person"/>
+```
+
+***
+
+## Thumbnail Border Style Size Variation
 
 ### Size Variation - border
-<p class="thumbnail mini border"><img src="img/thumbnail_01.jpg" width="30" alt="person"/></p>
-<p class="thumbnail small border"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail border"><img src="img/thumbnail_01.jpg" width="60" alt="person"/></p>
-<p class="thumbnail large border"><img src="img/thumbnail_01.jpg" width="90" alt="person"/></p>
-<p class="thumbnail big border"><img src="img/thumbnail_01.jpg" width="120" alt="person"/></p>
-<!--<p class="thumbnail free circle"><img src="img/thumbnail_01.jpg" width="160" alt="person"/></p>-->
 
-<img class="thumbnail mini border" src="img/thumbnail_01.jpg" width="30" alt="person"/>
-<img class="thumbnail small border" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail border" src="img/thumbnail_01.jpg" width="60" alt="person"/>
-<img class="thumbnail large border" src="img/thumbnail_01.jpg" width="90" alt="person"/>
-<img class="thumbnail big border" src="img/thumbnail_01.jpg" width="120" alt="person"/>
-<!--<img class="thumbnail free circle" src="img/thumbnail_01.jpg" width="160" alt="person"/>-->
+### Thumbnail Border Style Size Variation - mini
 
-<br/><br/>
+```html
+<p class="thumbnail mini border"><img src="images/thumbnail_01.jpg" width="30" alt="person"/></p>
+<img class="thumbnail mini border" src="images/thumbnail_01.jpg" width="30" alt="person"/>
+```
 
-### Size Variation - frame
-<p class="thumbnail mini frame"><img src="img/thumbnail_01.jpg" width="30" alt="person"/></p>
-<p class="thumbnail small frame"><img src="img/thumbnail_01.jpg" width="45" alt="person"/></p>
-<p class="thumbnail frame"><img src="img/thumbnail_01.jpg" width="60" alt="person"/></p>
-<p class="thumbnail large frame"><img src="img/thumbnail_01.jpg" width="90" alt="person"/></p>
-<p class="thumbnail big frame"><img src="img/thumbnail_01.jpg" width="120" alt="person"/></p>
-<!--<p class="thumbnail free circle"><img src="img/thumbnail_01.jpg" width="160" alt="person"/></p>-->
+```example
+<p class="thumbnail mini border"><img src="images/thumbnail_01.jpg" width="30" alt="person"/></p>
+<img class="thumbnail mini border" src="images/thumbnail_01.jpg" width="30" alt="person"/>
+```
 
-<img class="thumbnail mini frame" src="img/thumbnail_01.jpg" width="30" alt="person"/>
-<img class="thumbnail small frame" src="img/thumbnail_01.jpg" width="45" alt="person"/>
-<img class="thumbnail frame" src="img/thumbnail_01.jpg" width="60" alt="person"/>
-<img class="thumbnail large frame" src="img/thumbnail_01.jpg" width="90" alt="person"/>
-<img class="thumbnail big frame" src="img/thumbnail_01.jpg" width="120" alt="person"/>
-<!--<img class="thumbnail free circle" src="img/thumbnail_01.jpg" width="160" alt="person"/>-->
+### Thumbnail Border Style Size Variation - small
 
-## Caption Components
-### Size Variation - Caption
-<p class="thumbnail mini caption">
-  <img src="img/thumbnail_01.jpg" width="30" alt="person"/>
-  <span class="title">title</span>
-</p>
-<p class="thumbnail small caption">
-  <img src="img/thumbnail_01.jpg" width="45" alt="person"/>
-  <span class="title">title</span>
-</p>
+```html
+<p class="thumbnail small border"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small border" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail small border"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small border" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+### Thumbnail Border Style Size Variation - Default
+
+```html
+<p class="thumbnail border"><img src="images/thumbnail_01.jpg" width="60" alt="person"/></p>
+<img class="thumbnail border" src="images/thumbnail_01.jpg" width="60" alt="person"/>
+```
+
+```example
+<p class="thumbnail border"><img src="images/thumbnail_01.jpg" width="60" alt="person"/></p>
+<img class="thumbnail border" src="images/thumbnail_01.jpg" width="60" alt="person"/>
+```
+
+### Thumbnail Border Style Size Variation - large
+
+```html
+<p class="thumbnail large border"><img src="images/thumbnail_01.jpg" width="90" alt="person"/></p>
+<img class="thumbnail large border" src="images/thumbnail_01.jpg" width="90" alt="person"/>
+```
+
+```example
+<p class="thumbnail large border"><img src="images/thumbnail_01.jpg" width="90" alt="person"/></p>
+<img class="thumbnail large border" src="images/thumbnail_01.jpg" width="90" alt="person"/>
+```
+
+### Thumbnail Border Style Size Variation - big
+
+```html
+<p class="thumbnail big border"><img src="images/thumbnail_01.jpg" width="120" alt="person"/></p>
+<img class="thumbnail big border" src="images/thumbnail_01.jpg" width="120" alt="person"/>
+```
+
+```example
+<p class="thumbnail big border"><img src="images/thumbnail_01.jpg" width="120" alt="person"/></p>
+<img class="thumbnail big border" src="images/thumbnail_01.jpg" width="120" alt="person"/>
+```
+
+### Thumbnail Border Style Size Variation - free
+
+```html
+<p class="thumbnail free circle"><img src="images/thumbnail_01.jpg" width="160" alt="person"/></p>
+<img class="thumbnail free circle" src="images/thumbnail_01.jpg" width="160" alt="person"/>
+```
+
+```example
+<p class="thumbnail free circle"><img src="images/thumbnail_01.jpg" width="160" alt="person"/></p>
+<img class="thumbnail free circle" src="images/thumbnail_01.jpg" width="160" alt="person"/>
+```
+
+***
+
+## Thumbnail Frame Style Size Variation
+
+### Thumbnail Frame Style Size Variation - mini
+
+```html
+<p class="thumbnail mini frame"><img src="images/thumbnail_01.jpg" width="30" alt="person"/></p>
+<img class="thumbnail mini frame" src="images/thumbnail_01.jpg" width="30" alt="person"/>
+```
+
+```example
+<p class="thumbnail mini frame"><img src="images/thumbnail_01.jpg" width="30" alt="person"/></p>
+<img class="thumbnail mini frame" src="images/thumbnail_01.jpg" width="30" alt="person"/>
+```
+
+### Thumbnail Frame Style Size Variation - small
+
+```html
+<p class="thumbnail small frame"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small frame" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+```example
+<p class="thumbnail small frame"><img src="images/thumbnail_01.jpg" width="45" alt="person"/></p>
+<img class="thumbnail small frame" src="images/thumbnail_01.jpg" width="45" alt="person"/>
+```
+
+### Thumbnail Frame Style Size Variation - Default
+
+```html
+<p class="thumbnail frame"><img src="images/thumbnail_01.jpg" width="60" alt="person"/></p>
+<img class="thumbnail frame" src="images/thumbnail_01.jpg" width="60" alt="person"/>
+```
+
+```example
+<p class="thumbnail frame"><img src="images/thumbnail_01.jpg" width="60" alt="person"/></p>
+<img class="thumbnail frame" src="images/thumbnail_01.jpg" width="60" alt="person"/>
+```
+
+### Thumbnail Frame Style Size Variation - large
+
+```html
+<p class="thumbnail large frame"><img src="images/thumbnail_01.jpg" width="90" alt="person"/></p>
+<img class="thumbnail large frame" src="images/thumbnail_01.jpg" width="90" alt="person"/>
+```
+
+```example
+<p class="thumbnail large frame"><img src="images/thumbnail_01.jpg" width="90" alt="person"/></p>
+<img class="thumbnail large frame" src="images/thumbnail_01.jpg" width="90" alt="person"/>
+```
+
+### Thumbnail Frame Style Size Variation - big
+
+```html
+<p class="thumbnail big frame"><img src="images/thumbnail_01.jpg" width="120" alt="person"/></p>
+<img class="thumbnail big frame" src="images/thumbnail_01.jpg" width="120" alt="person"/>
+```
+
+```example
+<p class="thumbnail big frame"><img src="images/thumbnail_01.jpg" width="120" alt="person"/></p>
+<img class="thumbnail big frame" src="images/thumbnail_01.jpg" width="120" alt="person"/>
+```
+
+### Thumbnail Frame Style Size Variation - free
+
+```html
+<p class="thumbnail free frame"><img src="images/thumbnail_01.jpg" width="160" alt="person"/></p>
+<img class="thumbnail free frame" src="images/thumbnail_01.jpg" width="160" alt="person"/>
+```
+
+```example
+<p class="thumbnail free frame"><img src="images/thumbnail_01.jpg" width="160" alt="person"/></p>
+<img class="thumbnail free frame" src="images/thumbnail_01.jpg" width="160" alt="person"/>
+```
+
+***
+
+## Thumbnail Caption Components
+
+Create a style for a thumbnail with a caption.
+
+```html
 <p class="thumbnail caption">
-  <img src="img/thumbnail_01.jpg" width="60" alt="person"/>
+  <img src="images/thumbnail_01.jpg" width="60" alt="person"/>
   <span class="title">title</span>
 </p>
+```
+
+***
+
+## Thumbnail Caption Components Size Variation
+
+### Thumbnail Caption Components Size Variation - mini
+
+```html
+<p class="thumbnail mini caption">
+  <img src="images/thumbnail_01.jpg" width="30" alt="person"/>
+  <span class="title">title</span>
+</p>
+```
+
+```example
+<p class="thumbnail mini caption">
+  <img src="images/thumbnail_01.jpg" width="30" alt="person"/>
+  <span class="title">title</span>
+</p>
+```
+
+### Thumbnail Caption Components Size Variation - small
+
+```html
+<p class="thumbnail small caption">
+  <img src="images/thumbnail_01.jpg" width="45" alt="person"/>
+  <span class="title">title</span>
+</p>
+```
+
+```example
+<p class="thumbnail small caption">
+  <img src="images/thumbnail_01.jpg" width="45" alt="person"/>
+  <span class="title">title</span>
+</p>
+```
+
+### Thumbnail Caption Components Size Variation - Default
+
+```html
+<p class="thumbnail caption">
+  <img src="images/thumbnail_01.jpg" width="60" alt="person"/>
+  <span class="title">title</span>
+</p>
+```
+
+```example
+<p class="thumbnail caption">
+  <img src="images/thumbnail_01.jpg" width="60" alt="person"/>
+  <span class="title">title</span>
+</p>
+```
+
+### Thumbnail Caption Components Size Variation - large
+
+```html
 <p class="thumbnail large caption">
-  <img src="img/thumbnail_01.jpg" width="90" alt="person"/>
+  <img src="images/thumbnail_01.jpg" width="90" alt="person"/>
   <span class="title">title</span>
 </p>
+```
+
+```example
+<p class="thumbnail large caption">
+  <img src="images/thumbnail_01.jpg" width="90" alt="person"/>
+  <span class="title">title</span>
+</p>
+```
+
+### Thumbnail Caption Components Size Variation - big
+
+```html
 <p class="thumbnail big caption">
-  <img src="img/thumbnail_01.jpg" width="120" alt="person"/>
+  <img src="images/thumbnail_01.jpg" width="120" alt="person"/>
   <span class="title">title</span>
 </p>
-<!--<p class="thumbnail free circle"><img src="img/thumbnail_01.jpg" width="160" alt="person"/></p>-->
+```
+
+```example
+<p class="thumbnail big caption">
+  <img src="images/thumbnail_01.jpg" width="120" alt="person"/>
+  <span class="title">title</span>
+</p>
+```
