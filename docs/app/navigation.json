@@ -34,7 +34,6 @@
         "Text": "text",
         "Thumbnail": "thumbnail",
         "Title": "title",
-        "Toggle": "toggle",
-        "Utility": "utility"
+        "Toggle": "toggle"
     }
 }
