@@ -29,7 +29,7 @@ To create a close button and enable its functionality, add the `.btn .close` cla
 
 ```example
 <div class="alert red">
-  <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <p class="text">An error occurred at runtime.</p>
   <p class="btn close red small"></p>
 </div>
 ```
@@ -49,22 +49,22 @@ There are several style modifiers available. Just add one of the following class
 
 ```example
 <div class="alert">
-  <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+  <p class="text">You have successfully logged in.</p>
   <p class="btn close blue small"></p>
 </div>
 
 <div class="alert green">
-  <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+  <p class="text">You have successfully registered as a member.</p>
   <p class="btn close green small"></p>
 </div>
 
 <div class="alert orange">
-  <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+  <p class="text">Your password is about to expire.</p>
   <p class="btn close orange small"></p>
 </div>
 
 <div class="alert red">
-  <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+  <p class="text">An error occurred at runtime.</p>
   <p class="btn close red small"></p>
 </div>
 ```
