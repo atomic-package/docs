@@ -53,12 +53,6 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://discordapp.com/invite/NEt4Pv7" target="_blank">
-                                        <span class="icon ap-commenting"></span>
-                                        <span class="uk-text-middle">Get help</span>
-                                    </a>
-                                </li>
-                                <li>
                                     <a :href="`https://github.com/atomic-package/docs/tree/master/docs/pages/${page}.md`" target="_blank">
                                         <span class="icon ap-pencil"></span>
                                         <span class="uk-text-middle">Edit this page</span>
