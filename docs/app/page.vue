@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-if="error" class="alert red">{{ error }}</div>
-        <div ref="container"></div>
+        <div class="docsMainContainer" ref="container"></div>
     </div>
 </template>
 

@@ -10,3 +10,13 @@
   font-weight: 300;
 }
 
+.tm-sidebar-right,
+.tm-sidebar-left {
+  font-family: ProximaNova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.docsMainContainer {
+  & > p {
+    font-family: ProximaNova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
