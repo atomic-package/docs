@@ -1,6 +1,6 @@
 # Form
 
-<p class="uk-text-lead">Easily create nice looking forms with different styles and layouts.</p>
+<p class="text docsLeadText">Easily create nice looking forms with different styles and layouts.</p>
 
 ## Usage
 

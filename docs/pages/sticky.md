@@ -1,6 +1,6 @@
 # Sticky
 
-<p class="uk-text-lead">Make elements remain at the top of the viewport, like a sticky navigation.</p>
+<p class="text docsLeadText">Make elements remain at the top of the viewport, like a sticky navigation.</p>
 
 ## Usage
 

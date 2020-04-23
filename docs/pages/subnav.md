@@ -1,6 +1,6 @@
 # Subnav
 
-<p class="uk-text-lead">Defines different styles for a sub navigation.</p>
+<p class="text docsLeadText">Defines different styles for a sub navigation.</p>
 
 ## Usage
 

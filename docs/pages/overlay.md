@@ -1,6 +1,6 @@
 # Overlay
 
-<p class="uk-text-lead">Create an image overlay, which comes in different styles.</p>
+<p class="text docsLeadText">Create an image overlay, which comes in different styles.</p>
 
 ## Usage
 

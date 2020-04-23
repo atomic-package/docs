@@ -1,6 +1,6 @@
 # Thumbnail
 
-<p class="uk-text-lead">Easily create a nice looking thumbnail that comes in different styles.</p>
+<p class="text docsLeadText">Easily create a nice looking thumbnail that comes in different styles.</p>
 
 ## Style modifiers
 

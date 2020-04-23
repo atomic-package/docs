@@ -1,6 +1,6 @@
 # Align
 
-<p class="uk-text-lead">Control the alignment of inline elements depending on the viewport size.</p>
+<p class="text docsLeadText">Control the alignment of inline elements depending on the viewport size.</p>
 
 ## Usage
 

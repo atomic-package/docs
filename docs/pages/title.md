@@ -1,6 +1,6 @@
 # Heading
 
-<p class="uk-text-lead">Define different styles for headings.</p>
+<p class="text docsLeadText">Define different styles for headings.</p>
 
 ## Size modifiers
 

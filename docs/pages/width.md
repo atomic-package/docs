@@ -1,6 +1,6 @@
 # Width
 
-<p class="uk-text-lead">Define the width of elements for different viewport sizes.</p>
+<p class="text docsLeadText">Define the width of elements for different viewport sizes.</p>
 
 UIkit's Width component is often used in combination with [grids](grid.md) to split content into responsive columns. You can apply fractions, automatic width or expand units to fill the remaining space and combine these modes.
 

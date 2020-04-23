@@ -1,6 +1,6 @@
 # Tab
 
-<p class="uk-text-lead">Create a tabbed navigation with different styles.</p>
+<p class="text docsLeadText">Create a tabbed navigation with different styles.</p>
 
 ## Usage
 

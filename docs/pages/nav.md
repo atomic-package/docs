@@ -1,6 +1,6 @@
 # Nav
 
-<p class="uk-text-lead">Defines different styles for list navigations.</p>
+<p class="text docsLeadText">Defines different styles for list navigations.</p>
 
 ## Usage
 

@@ -1,6 +1,6 @@
 # Scroll
 
-<p class="uk-text-lead">Scroll smoothly when jumping to different sections on a page.</p>
+<p class="text docsLeadText">Scroll smoothly when jumping to different sections on a page.</p>
 
 ## Usage
 

@@ -1,6 +1,6 @@
 # Progress
 
-<p class="uk-text-lead">Defines progress bars that indicate how far along a process is.</p>
+<p class="text docsLeadText">Defines progress bars that indicate how far along a process is.</p>
 
 ## Usage
 

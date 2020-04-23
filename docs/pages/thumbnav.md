@@ -1,6 +1,6 @@
 # Thumbnav
 
-<p class="uk-text-lead">Create a flexible thumbnail navigation.</p>
+<p class="text docsLeadText">Create a flexible thumbnail navigation.</p>
 
 ## Usage
 

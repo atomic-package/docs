@@ -1,6 +1,6 @@
 # Margin
 
-<p class="uk-text-lead">A collection of utility classes to add spacing between elements.</p>
+<p class="text docsLeadText">A collection of utility classes to add spacing between elements.</p>
 
 ## Usage
 

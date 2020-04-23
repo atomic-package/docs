@@ -1,6 +1,6 @@
 # List
 
-<p class="uk-text-lead">Easily create nice looking lists, which come in different styles.</p>
+<p class="text docsLeadText">Easily create nice looking lists, which come in different styles.</p>
 
 ## Usage
 

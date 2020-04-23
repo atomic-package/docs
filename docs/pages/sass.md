@@ -1,6 +1,6 @@
 # Sass
 
-<p class="uk-text-lead">Learn how to modify the Atomic Package styling and create your own theme with Sass.</p>
+<p class="text docsLeadText">Learn how to modify the Atomic Package styling and create your own theme with Sass.</p>
 
 When you have [installed Atomic Package](installation.md) with sources you will find the Atomic Package Sass version within the _atomic-package-theme_ folder. The Sass version allows you to include customizations in the build process, rather than manually overwriting a lot of CSS rules by hand.
 

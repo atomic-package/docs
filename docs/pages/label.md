@@ -1,6 +1,6 @@
 # Label
 
-<p class="uk-text-lead">Indicate important notes and highlight parts of your content.</p>
+<p class="text docsLeadText">Indicate important notes and highlight parts of your content.</p>
 
 ## Usage
 

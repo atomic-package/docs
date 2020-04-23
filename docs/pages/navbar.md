@@ -1,6 +1,6 @@
 # Navbar
 
-<p class="uk-text-lead">Create a navigation bar that can be used for your main site navigation.</p>
+<p class="text docsLeadText">Create a navigation bar that can be used for your main site navigation.</p>
 
 ## Usage
 

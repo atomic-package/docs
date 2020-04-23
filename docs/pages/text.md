@@ -1,6 +1,6 @@
 # Text
 
-<p class="uk-text-lead">A collection of useful text utility classes to style your content.</p>
+<p class="text docsLeadText">A collection of useful text utility classes to style your content.</p>
 
 ## Style modifiers
 

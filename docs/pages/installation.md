@@ -1,6 +1,6 @@
 # Installation
 
-<p class="uk-text-lead">Learn where to download and how to compile the Atomic Package sources.</p>
+<p class="text docsLeadText">Learn where to download and how to compile the Atomic Package sources.</p>
 
 ## Download
 

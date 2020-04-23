@@ -1,6 +1,6 @@
 # Base
 
-<p class="uk-text-lead">This component provides the default style for all HTML elements.</p>
+<p class="text docsLeadText">This component provides the default style for all HTML elements.</p>
 
 
 ***

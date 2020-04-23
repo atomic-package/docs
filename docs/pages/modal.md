@@ -1,6 +1,6 @@
 # Modal
 
-<p class="uk-text-lead">Create modal dialogs with different styles and transitions.</p>
+<p class="text docsLeadText">Create modal dialogs with different styles and transitions.</p>
 
 ## Usage
 

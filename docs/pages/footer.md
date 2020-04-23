@@ -1,6 +1,6 @@
 # Footer
 
-<p class="uk-text-lead">Easily create nice looking footer, which come in different styles.</p>
+<p class="text docsLeadText">Easily create nice looking footer, which come in different styles.</p>
 
 ```html
 <footer class="footer">

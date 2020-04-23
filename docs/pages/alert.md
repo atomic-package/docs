@@ -1,6 +1,6 @@
 # Alert
 
-<p class="uk-text-lead">Display success, warning and error messages.</p>
+<p class="text docsLeadText">Display success, warning and error messages.</p>
 
 ## Usage
 

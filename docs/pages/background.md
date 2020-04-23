@@ -1,6 +1,6 @@
 # Background
 
-<p class="uk-text-lead">A collection of utility classes to add different backgrounds to elements.</p>
+<p class="text docsLeadText">A collection of utility classes to add different backgrounds to elements.</p>
 
 ## Usage
 

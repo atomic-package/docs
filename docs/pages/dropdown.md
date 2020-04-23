@@ -1,6 +1,6 @@
 # Dropdown
 
-<p class="uk-text-lead">Defines different styles for a toggleable dropdown.</p>
+<p class="text docsLeadText">Defines different styles for a toggleable dropdown.</p>
 
 ## Usage
 

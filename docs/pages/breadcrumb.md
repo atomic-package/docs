@@ -1,6 +1,6 @@
 # Breadcrumb
 
-<p class="uk-text-lead">Create breadcrumbs to show users their location within a website.</p>
+<p class="text docsLeadText">Create breadcrumbs to show users their location within a website.</p>
 
 ## Usage
 

@@ -1,6 +1,6 @@
 # Notification
 
-<p class="uk-text-lead">Create toggleable notifications that fade out automatically.</p>
+<p class="text docsLeadText">Create toggleable notifications that fade out automatically.</p>
 
 ## Usage
 

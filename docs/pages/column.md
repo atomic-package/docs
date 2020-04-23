@@ -1,6 +1,6 @@
 # Column
 
-<p class="uk-text-lead">Display your content in multiple text columns without having to split it in several containers.</p>
+<p class="text docsLeadText">Display your content in multiple text columns without having to split it in several containers.</p>
 
 ## Usage
 

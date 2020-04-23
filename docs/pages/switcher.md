@@ -1,6 +1,6 @@
 # Switcher
 
-<p class="uk-text-lead">Dynamically transition through different content panes.</p>
+<p class="text docsLeadText">Dynamically transition through different content panes.</p>
 
 ## Usage
 

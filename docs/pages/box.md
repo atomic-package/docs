@@ -1,6 +1,6 @@
 # Box
 
-<p class="uk-text-lead">Defines the basic box style.</p>
+<p class="text docsLeadText">Defines the basic box style.</p>
 
 ## Usage
 

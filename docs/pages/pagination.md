@@ -1,6 +1,6 @@
 # Pagination
 
-<p class="uk-text-lead">Easily create a nice looking pagination to navigate through pages.</p>
+<p class="text docsLeadText">Easily create a nice looking pagination to navigate through pages.</p>
 
 ## Usage
 

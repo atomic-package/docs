@@ -1,6 +1,6 @@
 # Icon
 
-<p class="uk-text-lead">Place scalable icons anywhere in your content.</p>
+<p class="text docsLeadText">Place scalable icons anywhere in your content.</p>
 
 The Atomic package comes with an icon system using font awesome, which allows you to adopt colors and style them with CSS.
 

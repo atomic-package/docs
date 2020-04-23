@@ -1,6 +1,6 @@
 # Upload
 
-<p class="uk-text-lead">Upload files through a file input form element or a placeholder area.</p>
+<p class="text docsLeadText">Upload files through a file input form element or a placeholder area.</p>
 
 ## Usage
 

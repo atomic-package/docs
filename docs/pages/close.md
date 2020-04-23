@@ -1,6 +1,6 @@
 # Close
 
-<p class="uk-text-lead">Create a close icon that can be combined with different components.</p>
+<p class="text docsLeadText">Create a close icon that can be combined with different components.</p>
 
 ## Usage
 

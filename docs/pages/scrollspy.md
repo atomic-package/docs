@@ -1,6 +1,6 @@
 # Scrollspy
 
-<p class="uk-text-lead">Trigger events and animations while scrolling your page.</p>
+<p class="text docsLeadText">Trigger events and animations while scrolling your page.</p>
 
 ## Usage
 

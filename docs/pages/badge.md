@@ -1,6 +1,6 @@
 # Badge
 
-<p class="uk-text-lead">Easily create nice looking notification badges.</p>
+<p class="text docsLeadText">Easily create nice looking notification badges.</p>
 
 ## Usage
 

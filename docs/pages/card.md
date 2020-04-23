@@ -1,6 +1,6 @@
 # Card
 
-<p class="uk-text-lead">Create layout boxes with different styles.</p>
+<p class="text docsLeadText">Create layout boxes with different styles.</p>
 
 ## Usage
 

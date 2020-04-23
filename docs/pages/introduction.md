@@ -1,6 +1,6 @@
 # Introduction
 
-<p class="uk-text-lead">Get familiar with the basic setup and overview of Atomic Package.</p>
+<p class="text docsLeadText">Get familiar with the basic setup and overview of Atomic Package.</p>
 
 First of all you need to download Atomic Package. For other packages and links to a CDN, head to the [installation guide](installation.md) to learn more.
 

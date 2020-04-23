@@ -1,6 +1,6 @@
 # Utility
 
-<p class="uk-text-lead">A collection of useful utility classes to style your content.</p>
+<p class="text docsLeadText">A collection of useful utility classes to style your content.</p>
 
 ## Panel
 
