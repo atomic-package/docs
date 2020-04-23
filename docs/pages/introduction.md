@@ -4,7 +4,7 @@
 
 First of all you need to download Atomic Package. For other packages and links to a CDN, head to the [installation guide](installation.md) to learn more.
 
-<p class="btn primary mt-20"><a href="https://atomic-package.com/download">Download Atomic Package</a></p>
+<p class="btn primary large mt-20"><a href="https://atomic-package.com/download">Download Atomic Package</a></p>
 
 ***
 
