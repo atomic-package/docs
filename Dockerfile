@@ -1,4 +1,4 @@
-FROM node
+FROM node:20
 
 WORKDIR /nodeapp
 
@@ -9,4 +9,4 @@ COPY docs /nodeapp/docs
 COPY images /nodeapp/images
 COPY scss /nodeapp/scss
 
-RUN npm install
+RUN npm install --legacy-peer-deps
