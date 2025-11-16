@@ -3,6 +3,12 @@
   publish = "."
 
 [[redirects]]
+  from = "https://atomic-package.netlify.app/*"
+  to = "https://atomic-package.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/docs/*"
   to = "/docs/index.html"
   status = 200
