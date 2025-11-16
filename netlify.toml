@@ -1,5 +1,5 @@
 [build]
-  command = "npm run postinstall"
+  command = "npm run postinstall && rm -f Dockerfile docker-compose.yml README.md && rm -rf docker/"
   publish = "."
 
 [[redirects]]
