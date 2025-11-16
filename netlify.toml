@@ -1,5 +1,5 @@
 [build]
-  command = "yarn install"
+  command = "npm install --legacy-peer-deps"
   publish = "."
 
 [[redirects]]
