@@ -32,7 +32,7 @@
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "symlink-dir": "^9.0.0",
-    "uikit": "^3.3.7",
+    "uikit": "3.3.7",
     "uniqid": "^5.4.0",
     "vue-loader": "^15.11.1",
     "vue-template-compiler": "^2.7.16",
