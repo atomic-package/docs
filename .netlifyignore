@@ -1,0 +1,13 @@
+# Docker関連
+Dockerfile
+docker-compose.yml
+docker/
+
+# 開発ツール
+.git/
+.gitignore
+README.md
+
+# その他不要なファイル
+*.log
+.DS_Store
