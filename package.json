@@ -1,7 +1,8 @@
 {
   "scripts": {
     "postinstall": "yarn setup && yarn compile-sass && yarn compile-js",
-    "setup": "symlink-dir ./node_modules/atomic-package ./assets/atomic-package && yarn font:link",
+    "setup": "cp -r ./node_modules/atomic-package ./assets/ && yarn font:link && yarn uikit:css",
+    "uikit:css": "make-dir css && cp ./node_modules/uikit/dist/css/uikit.min.css ./css/theme_uikit.css",
     "font:link": "symlink-dir ./assets/atomic-package/dist/font ./font",
     "compile-sass": "make-dir css && yarn sass",
     "sass": "sass scss/atomic-package-docs.scss css/theme.css && yarn autoprefixer",
@@ -31,7 +32,7 @@
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "symlink-dir": "^9.0.0",
-    "uikit": "^3.22.6",
+    "uikit": "^3.3.7",
     "uniqid": "^5.4.0",
     "vue-loader": "^15.11.1",
     "vue-template-compiler": "^2.7.16",
