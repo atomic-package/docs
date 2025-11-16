@@ -35,3 +35,10 @@ $ docker-compose up
 ```
 
 Open http://localhost in your browser.
+
+### Third-Party Libraries
+
+This project includes the following open-source libraries:
+- [UIKit](https://getuikit.com/) - MIT License
+- [Font Awesome Free](https://fontawesome.com/) - Icons: SIL OFL 1.1, Code: MIT License
+
