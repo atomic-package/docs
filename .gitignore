@@ -16,6 +16,7 @@ node_modules
 .sass-cache
 assets/atomic-package
 css/
+!css/theme_uikit.css
 font
 
 dist

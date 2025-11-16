@@ -1,8 +1,7 @@
 {
   "scripts": {
     "postinstall": "yarn setup && yarn compile-sass && yarn compile-js",
-    "setup": "cp -r ./node_modules/atomic-package ./assets/ && yarn font:link && yarn uikit:css",
-    "uikit:css": "make-dir css && cp ./node_modules/uikit/dist/css/uikit.min.css ./css/theme_uikit.css",
+    "setup": "cp -r ./node_modules/atomic-package ./assets/ && yarn font:link",
     "font:link": "cp -r ./assets/atomic-package/dist/font ./font",
     "compile-sass": "make-dir css && yarn sass",
     "sass": "sass scss/atomic-package-docs.scss css/theme.css && yarn autoprefixer",
